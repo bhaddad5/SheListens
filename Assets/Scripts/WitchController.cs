@@ -5,7 +5,7 @@ public class WitchController : MonoBehaviour {
 
 	private float maxWitchDistanceFromPlayer = 1.4f;
 	private float moveAwayFromPlayerSpeed = -0.003f;
-	private float moveTowardsPlayerSpeedModifier = 1f;
+	private float moveTowardsPlayerSpeedModifier = 2f;
 	private float minWitchDirectionTime = 12.0f;
 	private float maxWitchDirectionTime = 24.0f;
 	private float minWitchArcSpeed = 0.002f;
@@ -61,7 +61,7 @@ public class WitchController : MonoBehaviour {
 			ChangeWitchArcDirection();
 		}
 
-		transform.RotateAround(Camera.main.transform.position, Vector3.up, currentWitchArcSpeed * 40f);
+		transform.RotateAround(Camera.main.transform.position, Vector3.up, currentWitchArcSpeed * 10f);
 	}
 
 	private void ChangeWitchArcDirection()
