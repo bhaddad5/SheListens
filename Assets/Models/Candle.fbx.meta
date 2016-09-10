@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: e008f30b8150f43c1ae0c4635838e07c
+timeCreated: 1473524741
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: candle:areaLight1
+    100004: candle:cluster1Handle
+    100006: candle:copyOfflameParticle
+    100008: candle:flame
+    100010: candle:flameBeautyBase
+    100012: candle:flameBeautyBase1
+    100014: candle:flameCentre
+    100016: candle:group1
+    100018: candle:holder
+    100020: candle:main
+    100022: candle:mesh
+    100024: candle:spring1
+    100026: candle:turbulenceField1
+    100028: candle:Wax
+    400000: //RootNode
+    400002: candle:areaLight1
+    400004: candle:cluster1Handle
+    400006: candle:copyOfflameParticle
+    400008: candle:flame
+    400010: candle:flameBeautyBase
+    400012: candle:flameBeautyBase1
+    400014: candle:flameCentre
+    400016: candle:group1
+    400018: candle:holder
+    400020: candle:main
+    400022: candle:mesh
+    400024: candle:spring1
+    400026: candle:turbulenceField1
+    400028: candle:Wax
+    2300000: candle:flame
+    2300002: candle:flameBeautyBase
+    2300004: candle:flameBeautyBase1
+    2300006: candle:flameCentre
+    2300008: candle:holder
+    2300010: candle:mesh
+    2300012: candle:Wax
+    3300000: candle:flame
+    3300002: candle:flameBeautyBase
+    3300004: candle:flameBeautyBase1
+    3300006: candle:flameCentre
+    3300008: candle:holder
+    3300010: candle:mesh
+    3300012: candle:Wax
+    4300000: candle:flameBeautyBase
+    4300002: candle:flameBeautyBase1
+    4300004: candle:flameCentre
+    4300006: candle:holder
+    4300008: candle:mesh
+    4300010: candle:Wax
+    4300012: candle:flame
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
