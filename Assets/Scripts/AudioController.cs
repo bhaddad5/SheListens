@@ -63,8 +63,6 @@ public class AudioController : MonoBehaviour {
 			if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
 			{
 				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
-				Debug.Log("Playing head sound/volume for speed: " + wwiseSpeed + ", on " + currFloorType);
-
 				AkSoundEngine.PostEvent("Play_Footstep", this.gameObject);
 				totalPlayerNoise += headMoveDist;
 			}
@@ -78,7 +76,6 @@ public class AudioController : MonoBehaviour {
 		float candleMoveDist = Vector3.Magnitude(candle.position - prevCandlePos);
 		if (candleMoveDist >= candleNoiseSpeedCutoff)
 		{
-			Debug.Log("Playing candle sound/volume for speed: " + candleMoveDist);
 			totalPlayerNoise += candleMoveDist;
 		}
 		prevCandlePos = candle.position;
