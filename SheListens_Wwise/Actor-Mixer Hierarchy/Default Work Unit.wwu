@@ -6,8 +6,52 @@
 				<SwitchContainer Name="Footsteps" ID="{F411EFF1-DF2F-4A97-9529-77A18FD32B18}" ShortID="589323510">
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="bool" Value="False"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{97A97E93-6A64-4572-B259-0F3AE9279EB8}" ShortID="915118961">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="headSpeed" ID="{855BB069-D1B5-4952-83C9-AD1C26EE9009}" WorkUnitID="{14E44101-145C-4942-B5AA-45B78237D55F}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{BCB210D0-EEE9-4172-BA6C-062F1C1FBCDF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.02932</XPos>
+												<YPos>-17.12085</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

@@ -1,15 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameStateController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	public GameObject blackImage;
+	public GameObject endImage;
+
+	public void TriggerKeyPickupEvent()
+	{
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void TriggerWinGameEvent()
+	{
+		blackImage.SetActive(true);
+
+		StartCoroutine(playTitleScreen());
+	}
+
+	public void TriggerDeathEvent()
+	{
+		blackImage.SetActive(true);
+
+		StartCoroutine(playTitleScreen());
+	}
+
+	IEnumerator playTitleScreen()
+	{
+		yield return new WaitForSeconds(1f);
+		endImage.SetActive(true);
+		blackImage.SetActive(false);
+		StartCoroutine(resetGame());
+	}
+
+	IEnumerator resetGame()
+	{
+		yield return new WaitForSeconds(3f);
+		endImage.SetActive(false);
+		UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
 	}
 }

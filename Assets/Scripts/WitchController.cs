@@ -5,7 +5,7 @@ public class WitchController : MonoBehaviour {
 
 	private float maxWitchDistanceFromPlayer = 2.4f;
 	private float moveAwayFromPlayerSpeed = -0.003f;
-	private float moveTowardsPlayerSpeedModifier = 2f;
+	private float moveTowardsPlayerSpeedModifier = .3f;
 	private float minWitchDirectionTime = 12.0f;
 	private float maxWitchDirectionTime = 24.0f;
 	private float minWitchArcSpeed = 0.002f;
