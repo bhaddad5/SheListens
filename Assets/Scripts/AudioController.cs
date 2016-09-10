@@ -52,7 +52,9 @@ public class AudioController : MonoBehaviour {
             float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
 		if (headMoveDist >= playerHeadNoiseSpeedCutoff)
 		{
-			Debug.Log("Playing head sound/volume for speed: " + headMoveDist + ", on " + currFloorType);
+            float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
+            Debug.Log("Playing head sound/volume for speed: " + wwiseSpeed + ", on " + currFloorType);
+            
             AkSoundEngine.PostEvent("Play_Footstep", this.gameObject);
 			totalPlayerNoise += headMoveDist;
 		}
