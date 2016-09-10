@@ -655,6 +655,263 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<RandomSequenceContainer Name="Creaks" ID="{5A06E821-D4E8-4FD8-AEBE-380E05750F13}" ShortID="533576963">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F493AAB7-D638-46E3-879C-60E913E76C50}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{F79B4BD6-E56C-445C-A8B1-7FEE7103E839}" ShortID="884148405">
+									<ReferenceList/>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SheListens_Creak_Wood_1" ID="{AD3F82A7-480B-4D4C-AE45-F1374580B949}" ShortID="799603050" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_1" ID="{5822EDC2-1DC7-4F0A-9EFE-C1FB6FCF374E}" ShortID="585209740">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_1" ID="{5822EDC2-1DC7-4F0A-9EFE-C1FB6FCF374E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_2" ID="{107A724F-6FCC-4EBE-B46D-9D3C3DF5FB09}" ShortID="684942769" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_2" ID="{E3AAFFAC-06DB-4005-BC11-293AC27700C5}" ShortID="394462381">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="0.302302584792123"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_2" ID="{E3AAFFAC-06DB-4005-BC11-293AC27700C5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_3" ID="{BFC97450-1DC4-4902-991C-94CA81F1FA7D}" ShortID="274121211" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_3" ID="{C2D2FE9C-7E48-4E94-8AE4-0682C4B02003}" ShortID="66675615">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="0.137056550875273"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_3" ID="{C2D2FE9C-7E48-4E94-8AE4-0682C4B02003}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_4" ID="{13EDC20C-7647-425E-AC07-9ED9679FFAAF}" ShortID="196396366" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_4" ID="{4E268339-DE07-45D1-97E1-6C8306F5CF0D}" ShortID="570427769">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="0.230012308533917"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_4" ID="{4E268339-DE07-45D1-97E1-6C8306F5CF0D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_5" ID="{431B02B3-0F8F-4264-B6F0-33A1736D980F}" ShortID="10512503" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_5" ID="{398FBF54-4CCB-4F2A-A4EA-C527062DF904}" ShortID="13544262">
+									<PropertyList>
+										<Property Name="TrimBegin" Type="Real64" Value="0.094007932166302"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_5" ID="{398FBF54-4CCB-4F2A-A4EA-C527062DF904}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_6" ID="{8DC19F33-BD7E-4A53-A5F2-A5E39A58FE7A}" ShortID="551602008" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_6" ID="{A6D72BD7-919F-49AE-9A16-826E398F3A3F}" ShortID="341861976">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_6" ID="{A6D72BD7-919F-49AE-9A16-826E398F3A3F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_7" ID="{85332331-24EF-497A-9D34-2593BAF7275F}" ShortID="245694358" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_7" ID="{8754AD51-1A0E-4C35-8048-BAAAA98DD66D}" ShortID="104720048">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_7.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_7" ID="{8754AD51-1A0E-4C35-8048-BAAAA98DD66D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_8" ID="{70961154-594A-4ECC-ACF7-FC6C4D611241}" ShortID="166711716" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_8" ID="{6FEFF77C-B588-4AEA-BAC7-9057C6447C01}" ShortID="541289826">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_8.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_8" ID="{6FEFF77C-B588-4AEA-BAC7-9057C6447C01}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_9" ID="{699A2765-F960-4D0A-B537-516D37AF8E9D}" ShortID="499196480" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_9" ID="{6DDB35F6-1CDC-4102-B0B3-FF668C7A3358}" ShortID="550486684">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_9.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_9" ID="{6DDB35F6-1CDC-4102-B0B3-FF668C7A3358}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_10" ID="{4A1906EC-DC25-4CA8-8307-39E00052F7E1}" ShortID="887434963" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_10" ID="{8CBA352D-CE56-49EB-8625-F7C0EDF73764}" ShortID="840846409">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_10.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_10" ID="{8CBA352D-CE56-49EB-8625-F7C0EDF73764}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Creak_Wood_11" ID="{1FCAA0BA-7D56-4D3F-82DE-A394A680A135}" ShortID="235594454" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Creak_Wood_11" ID="{9B0C52A1-1A23-4D7A-BE0D-75C02746A4D9}" ShortID="896249823">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Creak_Wood_11.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Creak_Wood_11" ID="{9B0C52A1-1A23-4D7A-BE0D-75C02746A4D9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
