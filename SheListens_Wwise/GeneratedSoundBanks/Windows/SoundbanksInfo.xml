@@ -21,12 +21,25 @@
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1247850169" Name="Play_Creaks" ObjectPath="\Events\Default Work Unit\Play_Creaks"/>
 				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\Play_Footstep"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="13544262" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_5.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_5_EAB50B4A.wem</Path>
+				</File>
+				<File Id="66675615" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_3.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_3_CB04DF94.wem</Path>
+				</File>
 				<File Id="87298882" Language="SFX">
 					<ShortName>Footstep_14.wav</ShortName>
 					<Path>SFX\Footstep_14_67E17904.wem</Path>
+				</File>
+				<File Id="104720048" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_7.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_7_67E17904.wem</Path>
 				</File>
 				<File Id="164643316" Language="SFX">
 					<ShortName>Footstep_03.wav</ShortName>
@@ -72,6 +85,10 @@
 					<ShortName>SheListens_FS_Carpet_11.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_11_67E17904.wem</Path>
 				</File>
+				<File Id="341861976" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_6.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_6_67E17904.wem</Path>
+				</File>
 				<File Id="387299908" Language="SFX">
 					<ShortName>Footstep_12.wav</ShortName>
 					<Path>SFX\Footstep_12_67E17904.wem</Path>
@@ -79,6 +96,10 @@
 				<File Id="388519345" Language="SFX">
 					<ShortName>Footstep_10.wav</ShortName>
 					<Path>SFX\Footstep_10_67E17904.wem</Path>
+				</File>
+				<File Id="394462381" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_2.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_2_9498D8E7.wem</Path>
 				</File>
 				<File Id="478208577" Language="SFX">
 					<ShortName>Footstep_04.wav</ShortName>
@@ -88,9 +109,25 @@
 					<ShortName>Footstep_02.wav</ShortName>
 					<Path>SFX\Footstep_02_67E17904.wem</Path>
 				</File>
+				<File Id="541289826" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_8.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_8_67E17904.wem</Path>
+				</File>
+				<File Id="550486684" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_9.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_9_67E17904.wem</Path>
+				</File>
 				<File Id="551805772" Language="SFX">
 					<ShortName>Footstep_06.wav</ShortName>
 					<Path>SFX\Footstep_06_67E17904.wem</Path>
+				</File>
+				<File Id="570427769" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_4.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_4_9D3E803F.wem</Path>
+				</File>
+				<File Id="585209740" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_1.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_1_67E17904.wem</Path>
 				</File>
 				<File Id="611328875" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_7.wav</ShortName>
@@ -112,9 +149,17 @@
 					<ShortName>SheListens_FS_Carpet_2.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_2_67E17904.wem</Path>
 				</File>
+				<File Id="840846409" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_10.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_10_67E17904.wem</Path>
+				</File>
 				<File Id="894549970" Language="SFX">
 					<ShortName>Footstep_15.wav</ShortName>
 					<Path>SFX\Footstep_15_67E17904.wem</Path>
+				</File>
+				<File Id="896249823" Language="SFX">
+					<ShortName>SheListens_Creak_Wood_11.wav</ShortName>
+					<Path>SFX\SheListens_Creak_Wood_11_67E17904.wem</Path>
 				</File>
 				<File Id="908702896" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_12.wav</ShortName>

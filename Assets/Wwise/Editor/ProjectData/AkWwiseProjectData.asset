@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4C619A7D-53CE-4116-9CA3-20BF9FC7BCAC}'
-    m_lastTimePsrt1: -1751964538
-    m_lastTimePart2: -1999382102
+    m_lastTimePsrt1: 1180945903
+    m_lastTimePart2: -1999382100
     List:
     - Name: Play_Footstep
       Path: Default Work Unit\Play_Footstep
@@ -79,8 +79,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{33850B41-52ED-4C92-9392-F1C39E1E600B}'
-    m_lastTimePsrt1: -1751645335
-    m_lastTimePart2: -1999382102
+    m_lastTimePsrt1: 1181065894
+    m_lastTimePart2: -1999382100
     List:
     - Name: Master
       Path: Default Work Unit\Master

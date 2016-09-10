@@ -8,6 +8,7 @@ public class AudioController : MonoBehaviour {
 	private float detectableMovementStepDist = 0.2f;
 	public Transform candle;
 	public WitchController Witch;
+    public GameObject feet;
 
 	private float totalPlayerNoise;
 	private Vector3 prevCandlePos;
@@ -39,13 +40,13 @@ public class AudioController : MonoBehaviour {
         switch(currFloorType)
         {
             case currentFloorType.Wood:
-                AkSoundEngine.SetSwitch("Floor", "Wood", this.gameObject);
+                AudioTriggers.SetSwitch("Floor", "Wood", this.gameObject);
                 break;
             case currentFloorType.Carpet:
-                AkSoundEngine.SetSwitch("Floor", "Carpet", this.gameObject);
+                AudioTriggers.SetSwitch("Floor", "Carpet", this.gameObject);
                 break;
             case currentFloorType.Glass:
-                AkSoundEngine.SetSwitch("Floor", "Glass", this.gameObject);
+                AudioTriggers.SetSwitch("Floor", "Glass", this.gameObject);
                 break;
             default:
                 break;
@@ -63,8 +64,9 @@ public class AudioController : MonoBehaviour {
 			if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
 			{
 				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
-				AkSoundEngine.PostEvent("Play_Footstep", this.gameObject);
-				totalPlayerNoise += headMoveDist;
+				AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
+                AudioTriggers.PostEvent("Play_Creaks", this.gameObject);
+                totalPlayerNoise += headMoveDist;
 			}
 		}
 		else if(trackindDetectableMovement)

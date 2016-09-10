@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Creaks" ID="{E0B3FB73-12BF-4C3A-8426-F113F0707E02}">
+					<ChildrenList>
+						<Action Name="Play" ID="{A0932F46-3A05-4232-B547-69843498E47D}" ShortID="664207859" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{30AC8A61-EAF8-41A7-805B-C6FBBF02347E}" Global="false">
+									<ObjectRef Name="Creaks" ID="{5A06E821-D4E8-4FD8-AEBE-380E05750F13}" WorkUnitID="{933069CD-88BE-4EB0-BA3B-EE71F9C889E5}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

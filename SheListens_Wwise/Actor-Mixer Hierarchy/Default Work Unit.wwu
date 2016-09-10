@@ -701,7 +701,18 @@
 				</SwitchContainer>
 				<RandomSequenceContainer Name="Creaks" ID="{5A06E821-D4E8-4FD8-AEBE-380E05750F13}" ShortID="533576963">
 					<PropertyList>
+						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>200</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{F493AAB7-D638-46E3-879C-60E913E76C50}">
@@ -715,16 +726,118 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Spatialization" Type="bool" Value="False"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<RTPCList>
 								<RTPC Name="" ID="{F79B4BD6-E56C-445C-A8B1-7FEE7103E839}" ShortID="884148405">
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="headSpeed" ID="{855BB069-D1B5-4952-83C9-AD1C26EE9009}" WorkUnitID="{14E44101-145C-4942-B5AA-45B78237D55F}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{B31E457C-42A6-46FA-8379-192AEE1CF9C6}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.20524</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.56963</XPos>
+												<YPos>-25.10965</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.7267</XPos>
+												<YPos>-21.02473</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.82413</XPos>
+												<YPos>-18.59151</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.88272</XPos>
+												<YPos>-9.52856</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0.94136</XPos>
+												<YPos>-4.79538</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
 								</RTPC>
 							</RTPCList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{0F3AB044-C6F9-48CB-8809-5D33BC2D0E6A}" ShortID="575551202">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{F70C7DB4-E2C3-4D7B-B6B1-C6D4AD106EC8}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
 						</Reference>
@@ -734,6 +847,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="SheListens_Creak_Wood_1" ID="{AD3F82A7-480B-4D4C-AE45-F1374580B949}" ShortID="799603050" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -753,6 +873,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_2" ID="{107A724F-6FCC-4EBE-B46D-9D3C3DF5FB09}" ShortID="684942769" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -775,6 +902,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_3" ID="{BFC97450-1DC4-4902-991C-94CA81F1FA7D}" ShortID="274121211" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -797,6 +931,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_4" ID="{13EDC20C-7647-425E-AC07-9ED9679FFAAF}" ShortID="196396366" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -819,6 +960,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_5" ID="{431B02B3-0F8F-4264-B6F0-33A1736D980F}" ShortID="10512503" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -841,6 +989,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_6" ID="{8DC19F33-BD7E-4A53-A5F2-A5E39A58FE7A}" ShortID="551602008" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -860,6 +1015,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_7" ID="{85332331-24EF-497A-9D34-2593BAF7275F}" ShortID="245694358" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -879,6 +1041,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_8" ID="{70961154-594A-4ECC-ACF7-FC6C4D611241}" ShortID="166711716" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -898,6 +1067,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_9" ID="{699A2765-F960-4D0A-B537-516D37AF8E9D}" ShortID="499196480" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -917,6 +1093,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_10" ID="{4A1906EC-DC25-4CA8-8307-39E00052F7E1}" ShortID="887434963" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -936,6 +1119,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SheListens_Creak_Wood_11" ID="{1FCAA0BA-7D56-4D3F-82DE-A394A680A135}" ShortID="235594454" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
@@ -952,6 +1142,131 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SheListens_Creak_Wood_11" ID="{9B0C52A1-1A23-4D7A-BE0D-75C02746A4D9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence" ID="{68E6C32E-1B18-45CB-8905-BA45E9ACEB26}" ShortID="446960310" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{B1E532B8-609D-427A-AFB0-A72A69B5BC0E}" ShortID="990034027" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="3"/>
+										<Property Name="LengthMax" Type="Real32" Value="1"/>
+										<Property Name="LengthMin" Type="Real32" Value="-1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{B1E532B8-609D-427A-AFB0-A72A69B5BC0E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence_01" ID="{146093FD-D3A9-4D7C-8867-788DC2B425B6}" ShortID="645723455" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{52DABB90-3693-45ED-BB88-C666EFBBE577}" ShortID="348080734" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="3"/>
+										<Property Name="LengthMax" Type="Real32" Value="1"/>
+										<Property Name="LengthMin" Type="Real32" Value="-1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{52DABB90-3693-45ED-BB88-C666EFBBE577}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence_02" ID="{46A58760-82AC-4D33-8C11-093B7F74BC71}" ShortID="141523903" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{529CE8A6-9E3F-4C06-B015-B6918A4D23A3}" ShortID="802155283" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="3"/>
+										<Property Name="LengthMax" Type="Real32" Value="1"/>
+										<Property Name="LengthMin" Type="Real32" Value="-1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{529CE8A6-9E3F-4C06-B015-B6918A4D23A3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence_03" ID="{7999D15D-DFE1-4742-BE76-D83645DD12A8}" ShortID="444131672" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Weight" Type="Real64">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{C96ED2ED-8AE1-4EB0-B43C-170C5BE7C07C}" ShortID="1023861586" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="3"/>
+										<Property Name="LengthMax" Type="Real32" Value="1"/>
+										<Property Name="LengthMin" Type="Real32" Value="-1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{C96ED2ED-8AE1-4EB0-B43C-170C5BE7C07C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
