@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>/Users/Kedar/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/Active Projects/SheListens/SheListens_Wwise/</ProjectRoot>
+		<SourceFilesRoot>/Users/Kedar/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/Active Projects/SheListens/SheListens_Wwise/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Kedar/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/Active Projects/SheListens/SheListens_Wwise/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/Kedar/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/Active Projects/SheListens/SheListens_Wwise/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,12 +21,36 @@
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3187507146" Name="Play_Test" ObjectPath="\Events\Default Work Unit\Play_Test"/>
+				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\Play_Footstep"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="443017643" Language="SFX">
-					<ShortName>White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}.wav</ShortName>
-					<Path>SFX\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}_9E69E797.wem</Path>
+				<File Id="273388217" Language="SFX">
+					<ShortName>SheListens_FS_Wood_6.wav</ShortName>
+					<Path>SFX/SheListens_FS_Wood_6_9E69E797.wem</Path>
+				</File>
+				<File Id="386946919" Language="SFX">
+					<ShortName>SheListens_FS_Wood_7.wav</ShortName>
+					<Path>SFX/SheListens_FS_Wood_7_9E69E797.wem</Path>
+				</File>
+				<File Id="522261767" Language="SFX">
+					<ShortName>SheListens_FS_Wood_2.wav</ShortName>
+					<Path>SFX/SheListens_FS_Wood_2_9E69E797.wem</Path>
+				</File>
+				<File Id="605257588" Language="SFX">
+					<ShortName>SheListens_FS_Wood_5.wav</ShortName>
+					<Path>SFX/SheListens_FS_Wood_5_9E69E797.wem</Path>
+				</File>
+				<File Id="735152636" Language="SFX">
+					<ShortName>SheListens_FS_Wood_4.wav</ShortName>
+					<Path>SFX/SheListens_FS_Wood_4_9E69E797.wem</Path>
+				</File>
+				<File Id="875269659" Language="SFX">
+					<ShortName>SheListens_FS_Wood_1.wav</ShortName>
+					<Path>SFX/SheListens_FS_Wood_1_9E69E797.wem</Path>
+				</File>
+				<File Id="972907020" Language="SFX">
+					<ShortName>SheListens_FS_Wood_3.wav</ShortName>
+					<Path>SFX/SheListens_FS_Wood_3_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

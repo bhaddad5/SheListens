@@ -1,6 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3187507146	Play_Test			\Default Work Unit\Play_Test	
+	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1088209313	Floor			\Default Work Unit\Floor	
+
+Switch	ID	Name	Switch Group			Notes
+	712161697	Rug	Floor			
+	2058049674	Wood	Floor			
+	2449969375	Glass	Floor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	443017643	White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}		10584064
+	273388217	SheListens_FS_Wood_6	Y:\Documents\Active Projects\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Wood_6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\SheListens_FS_Wood_6		298440
+	386946919	SheListens_FS_Wood_7	Y:\Documents\Active Projects\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Wood_7_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\SheListens_FS_Wood_7		295996
+	522261767	SheListens_FS_Wood_2	Y:\Documents\Active Projects\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Wood_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\SheListens_FS_Wood_2		297368
+	605257588	SheListens_FS_Wood_5	Y:\Documents\Active Projects\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Wood_5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\SheListens_FS_Wood_5		296432
+	735152636	SheListens_FS_Wood_4	Y:\Documents\Active Projects\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Wood_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\SheListens_FS_Wood_4		296120
+	875269659	SheListens_FS_Wood_1	Y:\Documents\Active Projects\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Wood_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\SheListens_FS_Wood_1		291040
+	972907020	SheListens_FS_Wood_3	Y:\Documents\Active Projects\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Wood_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\SheListens_FS_Wood_3		296040
 
