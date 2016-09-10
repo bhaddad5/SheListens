@@ -3,8 +3,8 @@ using System.Collections;
 
 public class AudioController : MonoBehaviour {
 
-	private float playerHeadNoiseSpeedCutoff = 0.2f;
-	private float candleNoiseSpeedCutoff = 0.1f;
+	private float playerHeadNoiseSpeedCutoff = 0.003f;
+	private float candleNoiseSpeedCutoff = 0.005f;
 	public Transform candle;
 	public WitchController Witch;
 
