@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4C619A7D-53CE-4116-9CA3-20BF9FC7BCAC}'
-    m_lastTimePsrt1: 1079483307
-    m_lastTimePart2: -1999382171
+    m_lastTimePsrt1: -178423223
+    m_lastTimePart2: -1999382111
     List:
     - Name: Play_Test
       Path: Default Work Unit\Play_Test
@@ -47,9 +47,34 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F0A3B866-5F0D-4D19-B1FE-1A988C6CB7F3}'
-    m_lastTimePsrt1: 1080844273
-    m_lastTimePart2: -1999382171
-    List: []
+    m_lastTimePsrt1: -178388131
+    m_lastTimePart2: -1999382111
+    List:
+    - Name: Floor
+      Path: Default Work Unit\Floor
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Floor
+        ObjectType: 11
+      ID: 1088209313
+      Guid: 4ddd89ede1857d44b4afc14e30f363d8
+      values:
+      - Glass
+      - Rug
+      - Wood
+      ValueIcons:
+      - ElementName: Glass
+        ObjectType: 10
+      - ElementName: Rug
+        ObjectType: 10
+      - ElementName: Wood
+        ObjectType: 10
+      valueIDs: df900792a1b9722a8a58ab7a
+      ValueGuids:
+      - bytes: a1f49f2632c2a940bbd334326d4e342c
+      - bytes: 4e5462da0d4b244db9ab434d91139927
+      - bytes: 0a1b7512478a1843aad1070de21f7a5a
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
