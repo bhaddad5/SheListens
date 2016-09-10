@@ -34,10 +34,26 @@ public class AudioController : MonoBehaviour {
 	{
 		totalPlayerNoise = 0;
 
-		float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
+        switch(currFloorType)
+        {
+            case currentFloorType.Wood:
+                AkSoundEngine.SetSwitch("Floor", "Wood", this.gameObject);
+                break;
+            case currentFloorType.Carpet:
+                AkSoundEngine.SetSwitch("Floor", "Carpet", this.gameObject);
+                break;
+            case currentFloorType.Glass:
+                AkSoundEngine.SetSwitch("Floor", "Glass", this.gameObject);
+                break;
+            default:
+                break;
+        }
+
+            float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
 		if (headMoveDist >= playerHeadNoiseSpeedCutoff)
 		{
 			Debug.Log("Playing head sound/volume for speed: " + headMoveDist + ", on " + currFloorType);
+            AkSoundEngine.PostEvent("Play_Footstep", this.gameObject);
 			totalPlayerNoise += headMoveDist;
 		}
 		prevPlayerPos = playerHead.position;

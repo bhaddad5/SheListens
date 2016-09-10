@@ -6,8 +6,19 @@
 				<SwitchContainer Name="Footsteps" ID="{F411EFF1-DF2F-4A97-9529-77A18FD32B18}" ShortID="589323510">
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="bool" Value="False"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
