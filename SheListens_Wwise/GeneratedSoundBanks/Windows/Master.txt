@@ -9,6 +9,9 @@ Switch	ID	Name	Switch Group			Notes
 	2058049674	Wood	Floor			
 	2449969375	Glass	Floor			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1893836608	headSpeed			\Default Work Unit\headSpeed	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	87298882	Footstep_14	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_14_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\Footstep_14		125536
 	164643316	Footstep_03	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_03_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\Footstep_03		54880
