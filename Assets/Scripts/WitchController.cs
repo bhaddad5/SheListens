@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WitchController : MonoBehaviour {
 
-	private float maxWitchDistanceFromPlayer = 1.4f;
+	private float maxWitchDistanceFromPlayer = 2.4f;
 	private float moveAwayFromPlayerSpeed = -0.003f;
 	private float moveTowardsPlayerSpeedModifier = 2f;
 	private float minWitchDirectionTime = 12.0f;
@@ -80,22 +80,5 @@ public class WitchController : MonoBehaviour {
 	public void updateNoiseLevel(float playerNoise)
 	{
 		currentNoiseLevel = playerNoise;
-	}
-
-	void OnTriggerEnter(Collider other)
-	{
-		if(other.tag == "Wall")
-		{
-			ChangeWitchArcDirection();
-			hittingWall = true;
-		}
-	}
-
-	void OnTriggerExit(Collider other)
-	{
-		if (other.tag == "Wall")
-		{
-			hittingWall = false;
-		}
 	}
 }
