@@ -5,6 +5,7 @@ public class AudioController : MonoBehaviour {
 
 	private float playerHeadNoiseSpeedCutoff = 0.003f;
 	private float candleNoiseSpeedCutoff = 0.005f;
+	private float detectableMovementStepDist = 0.2f;
 	public Transform candle;
 	public WitchController Witch;
 
@@ -12,7 +13,8 @@ public class AudioController : MonoBehaviour {
 	private Vector3 prevCandlePos;
 	private Transform playerHead;
 	private Vector3 prevPlayerPos;
-	
+	private bool trackindDetectableMovement = false;
+	private Vector3 startHeadDetectableMovementPos;
 
 	public enum currentFloorType
 	{
@@ -52,11 +54,24 @@ public class AudioController : MonoBehaviour {
             float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
 		if (headMoveDist >= playerHeadNoiseSpeedCutoff)
 		{
-            float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
-            Debug.Log("Playing head sound/volume for speed: " + wwiseSpeed + ", on " + currFloorType);
-            AkSoundEngine.SetRTPCValue("headSpeed", wwiseSpeed);
-            AkSoundEngine.PostEvent("Play_Footstep", this.gameObject);
-			totalPlayerNoise += headMoveDist;
+			if (!trackindDetectableMovement)
+			{
+				trackindDetectableMovement = true;
+				startHeadDetectableMovementPos = playerHead.position;
+			}
+
+			if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
+			{
+				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
+				Debug.Log("Playing head sound/volume for speed: " + wwiseSpeed + ", on " + currFloorType);
+
+				AkSoundEngine.PostEvent("Play_Footstep", this.gameObject);
+				totalPlayerNoise += headMoveDist;
+			}
+		}
+		else if(trackindDetectableMovement)
+		{
+			trackindDetectableMovement = false;
 		}
 		prevPlayerPos = playerHead.position;
 

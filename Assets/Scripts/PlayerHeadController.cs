@@ -8,10 +8,18 @@ public class PlayerHeadController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("Trigger Enter");
 		if (other.GetComponent<GroundSoundController>())
 		{
 			audioController.currFloorType = other.GetComponent<GroundSoundController>().floorType;
+		}
+
+		if(other.tag == "Win")
+		{
+			gameStateController.TriggerWinGameEvent();
+		}
+		if (other.GetComponent<WitchController>() != null)
+		{
+			gameStateController.TriggerWinGameEvent();
 		}
 	}
 
