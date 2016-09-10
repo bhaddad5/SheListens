@@ -13,6 +13,16 @@ public class PlayerHeadController : MonoBehaviour {
 		{
 			audioController.currFloorType = other.GetComponent<GroundSoundController>().floorType;
 		}
+
+		if(other.tag == "Win")
+		{
+			gameStateController.TriggerWinGameEvent();
+		}
+		if (other.GetComponent<WitchController>() != null)
+		{
+			Debug.Log("She's A Witch!!!");
+			gameStateController.TriggerWinGameEvent();
+		}
 	}
 
 	void OnTriggerExit(Collider other)
