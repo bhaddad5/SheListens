@@ -37,7 +37,7 @@ public class AudioController : MonoBehaviour {
 		float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
 		if (headMoveDist >= playerHeadNoiseSpeedCutoff)
 		{
-			//Debug.Log("Playing head sound/volume for speed: " + headMoveDist + ", on " + currFloorType);
+			Debug.Log("Playing head sound/volume for speed: " + headMoveDist + ", on " + currFloorType);
 			totalPlayerNoise += headMoveDist;
 		}
 		prevPlayerPos = playerHead.position;
@@ -45,7 +45,7 @@ public class AudioController : MonoBehaviour {
 		float candleMoveDist = Vector3.Magnitude(candle.position - prevCandlePos);
 		if (candleMoveDist >= candleNoiseSpeedCutoff)
 		{
-			//Debug.Log("Playing candle sound/volume for speed: " + candleMoveDist);
+			Debug.Log("Playing candle sound/volume for speed: " + candleMoveDist);
 			totalPlayerNoise += candleMoveDist;
 		}
 		prevCandlePos = candle.position;
