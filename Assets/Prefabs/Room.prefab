@@ -959,6 +959,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014291485412}
   - 95: {fileID: 95000012625602384}
+  - 114: {fileID: 114000010078304936}
   m_Layer: 0
   m_Name: HangingLamp
   m_TagString: Untagged
@@ -3838,3 +3839,15 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114000010078304936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014264886248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c5358cb34da4d469bae7acc4d5f6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lamp: {fileID: 108000011933231690}
