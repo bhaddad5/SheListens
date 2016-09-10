@@ -54,7 +54,7 @@ public class AudioController : MonoBehaviour {
 		{
             float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
             Debug.Log("Playing head sound/volume for speed: " + wwiseSpeed + ", on " + currFloorType);
-            
+            AkSoundEngine.SetRTPCValue("headSpeed", wwiseSpeed);
             AkSoundEngine.PostEvent("Play_Footstep", this.gameObject);
 			totalPlayerNoise += headMoveDist;
 		}
