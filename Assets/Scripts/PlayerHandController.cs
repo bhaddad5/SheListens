@@ -7,8 +7,6 @@ public class PlayerHandController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("collided with something!");
-
 		if(other.tag == "Key")
 		{
 			keyPickedUp = true;
