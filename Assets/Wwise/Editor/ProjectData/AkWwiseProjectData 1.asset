@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51ea187e56ab65f45b5dd43342b295c8, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 1
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -66,10 +66,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: -238283129
       Guid: 0c3b636c92480d40980bca7d82c45a85
-  ExpandedItems:
-  - /SheListens_Wwise
-  - /SheListens_Wwise/Events
-  - /SheListens_Wwise/Events/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
