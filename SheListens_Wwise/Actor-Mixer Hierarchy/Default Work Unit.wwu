@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{933069CD-88BE-4EB0-BA3B-EE71F9C889E5}" SchemaVersion="72">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{933069CD-88BE-4EB0-BA3B-EE71F9C889E5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{933069CD-88BE-4EB0-BA3B-EE71F9C889E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}" ID="{EF8925B9-D467-40DC-B875-43A0DC254CBF}" ShortID="321096010" Type="SoundFX">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{9A080182-D16D-4A5A-B990-FBD1CC675ECC}" ShortID="962511580" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}" ID="{62FF15F0-C942-4496-ACA6-C70AE474E0B7}" ShortID="443017643">
+							<Language>SFX</Language>
+							<AudioFile>White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}" ID="{62FF15F0-C942-4496-ACA6-C70AE474E0B7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
