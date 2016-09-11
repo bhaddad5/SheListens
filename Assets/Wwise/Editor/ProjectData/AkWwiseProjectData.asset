@@ -16,9 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4C619A7D-53CE-4116-9CA3-20BF9FC7BCAC}'
-    m_lastTimePsrt1: 1180945903
-    m_lastTimePart2: -1999382100
+    m_lastTimePsrt1: 2112089979
+    m_lastTimePart2: -1999382065
     List:
+    - Name: Play_Creaks
+      Path: Default Work Unit\Play_Creaks
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Creaks
+        ObjectType: 3
+      ID: 1247850169
+      Guid: 73fbb3e0bf123a4c8426f113f0707e02
+      maxAttenuation: 0
     - Name: Play_Footstep
       Path: Default Work Unit\Play_Footstep
       PathAndIcons:
