@@ -109,7 +109,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="witchDist" ID="{92236852-6D08-4686-985C-E882A27551B1}"/>
-							<Value>0</Value>
+							<Value>7</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="headSpeed" ID="{8D65B786-666C-4132-9A9D-CBB1A1CA10F2}"/>
