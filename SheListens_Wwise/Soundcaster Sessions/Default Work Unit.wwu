@@ -121,7 +121,7 @@
 						<CurrentStateRef Name="Off" ID="{1C28A4DE-AF4A-4F85-B9DE-856A2730DDCD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Glass" ID="{9D881860-7C72-4ADF-A58C-30ACC1DF6E7F}"/>
+						<CurrentSwitchRef Name="Carpet" ID="{180C05FD-691A-4B7F-BA39-204EE43F5839}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

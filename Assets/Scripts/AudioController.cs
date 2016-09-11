@@ -84,8 +84,8 @@ public class AudioController : MonoBehaviour {
 			{
 				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
 				//Debug.Log("making player head sound from speed: " + headMoveDist);
-				AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
-                AudioTriggers.PostEvent("Play_Creaks", creakObject);
+				//AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
+                //AudioTriggers.PostEvent("Play_Creaks", creakObject);
 				totalPlayerNoise += headMoveDist;
 			}
 		}
@@ -117,13 +117,11 @@ public class AudioController : MonoBehaviour {
 				witchIdleAnim.SetBool ("witchAngry", false); 
 				AudioTriggers.SetState("Witch", "Idle");
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
-				//Debug.Log("play witch idle sound at distance: " + witchDistance);
 			}
 			else if (witchDistance >= angryDistCutoff)
 			{
 				AudioTriggers.SetState("Witch", "Hunting");
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
-				//Debug.Log("Play witch moving towards you at distance: " + witchDistance);
 			}
 			else
 			{
@@ -132,14 +130,11 @@ public class AudioController : MonoBehaviour {
 				AudioTriggers.SetState("Witch", "Attack");
 				AudioTriggers.PostEvent("Play_Witch_Scream", Witch.gameObject);
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
-				//Debug.Log("Play witch angry at distance: " + witchDistance);
 			}
 
-            //AudioTriggers.PostEvent("Play_ZapOff", lampLight);
         }
 		else
 		{
-            //AudioTriggers.PostEvent("Play_ZapOn", lampLight);
             
         }
 
