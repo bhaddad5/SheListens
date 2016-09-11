@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	727285159	Play_Glass_Smash			\Default Work Unit\Play_Glass_Smash	
 	786657857	Play_MusicEnemy			\Default Work Unit\Play_MusicEnemy	
+	885077343	Play_KeyPickUp			\Default Work Unit\Play_KeyPickUp	
 	921938950	Play_CandleBurn			\Default Work Unit\Play_CandleBurn	
 	1247850169	Play_Creaks			\Default Work Unit\Play_Creaks	
 	1311566966	Play_ZapOff			\Default Work Unit\Play_ZapOff	
@@ -10,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3058690321	Play_Witch_Scream			\Default Work Unit\Play_Witch_Scream	
 	3187507146	Play_Test			\Default Work Unit\Play_Test	
 	3197300806	Play_DoorOpen			\Default Work Unit\Play_DoorOpen	
+	3353471726	Play_KeyBlip			\Default Work Unit\Play_KeyBlip	
 	3859524437	Play_Lightbulb_Buzz			\Default Work Unit\Play_Lightbulb_Buzz	
 	3978663595	Play_Witch_Hunting			\Default Work Unit\Play_Witch_Hunting	
 	4038978142	Play_Witch_Moans			\Default Work Unit\Play_Witch_Moans	
@@ -78,8 +81,10 @@ Effect plug-ins	ID	Name	Type				Notes
 	93950238	Phonon 3D (Custom)	Phonon 3D			
 	162155558	Phonon 3D (Custom)	Phonon 3D			
 	218533386	Phonon 3D (Custom)	Phonon 3D			
+	249059294	Phonon 3D (Custom)	Phonon 3D			
 	347318698	Phonon 3D (Custom)	Phonon 3D			
 	488005132	Phonon 3D (Custom)	Phonon 3D			
+	569241821	Phonon 3D (Custom)	Phonon 3D			
 	585703405	Phonon 3D (Custom)	Phonon 3D			
 	655706665	Phonon 3D (Custom)	Phonon 3D			
 	697379302	Phonon 3D (Custom)	Phonon 3D			
@@ -91,20 +96,25 @@ Effect plug-ins	ID	Name	Type				Notes
 	868083933	Phonon 3D (Custom)	Phonon 3D			
 	972639024	Phonon 3D (Custom)	Phonon 3D			
 	972990973	Phonon 3D (Custom)	Phonon 3D			
+	1014273827	Phonon 3D (Custom)	Phonon 3D			
 	2653529179	Three_Voices	Wwise Harmonizer			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	51417304	SheListens_Creak_Wood_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_9		39026
+	76024798	KeyPickUp	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\UI_SoundPack13_Scroll_version05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\KeyPickUp		4128828
 	81834948	SheListens_Creak_Wood_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_10		81724
 	92973512	SheListens_FS_Carpet_3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_3_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_3		57630
+	104479198	GlassSmash_DSS02_19_3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\GlassSmash_DSS02.19.3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Glass_Smash\Glass_Smash_1\GlassSmash_DSS02_19_3		396376
 	107056119	SheListens_Amb_Layer0	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Amb_Layer0_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer0		10407696
 	115290823	Footstep_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_10		116320
+	117149768	GlassCrash HI014303	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\GlassCrash HI014303_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Glass_Smash\GlassCrash HI014303		682708
 	123667432	SheListens_GlassStep_07	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_GlassStep_07_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Glass\SheListens_GlassStep_07		471652
 	126127760	SheListens_Amb_Layer3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Amb_Layer3_AC0E5EAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		3175296
 	127331604	SheListens_Creak_Wood_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_2_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_2		205718
 	129545976	SheListens_Creak_Wood_5	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_5		196492
 	142057816	SheListens_LightbulbMetalSqueak-003	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_LightbulbMetalSqueak-003_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lightbulb\Lightbulb_Metal\SheListens_LightbulbMetalSqueak-003		365798
 	144440340	SheListens_LightbulbMetalSqueak-002	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_LightbulbMetalSqueak-002_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lightbulb\Lightbulb_Metal\SheListens_LightbulbMetalSqueak-002		316110
+	158986036	GlassSmash_DSS02_21_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\GlassSmash_DSS02.21.2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Glass_Smash\Glass_Smash_2\GlassSmash_DSS02_21_2		243792
 	161389727	DOORCREAKVERYLOUDCREAK1601	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\DOORCREAKVERYLOUDCREAK1601_D0FCE0E3.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\DOORCREAKVERYLOUDCREAK1601		1003732
 	173243695	SheListens_Creak_Wood_7	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_7		153496
 	178602171	SheListens_Witch_Idle_Moan_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_10		571588
@@ -130,6 +140,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	358880674	SheListens_Creak_Wood_8	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_8_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_8		199950
 	359004159	SheListens_GlassStep_04	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_GlassStep_04_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Glass\SheListens_GlassStep_04		381412
 	377767718	SheListens_GlassStep_02	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_GlassStep_02_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Glass\SheListens_GlassStep_02		708760
+	381417556	GlassSmash_DSS02_20_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\GlassSmash_DSS02.20.2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Glass_Smash\Glass_Smash_1\GlassSmash_DSS02_20_2		485460
 	404428200	SheListens_Witch_Idle_Moan_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_4		809984
 	407758813	SheListens_Witch_Idle_Moan_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_2_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_2		777220
 	414843204	SheListens_Creak_Wood_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_4		807384
@@ -150,6 +161,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	586555728	SheListens_GlassStep_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_GlassStep_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Glass\SheListens_GlassStep_10		505364
 	599176027	Footstep_04	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_04_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_04		115296
 	603879417	SheListens_Witch_Scream	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Scream_54811321.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Scream		966108
+	609298479	GlassSmash_DSS02_19_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\GlassSmash_DSS02.19.2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Glass_Smash\Glass_Smash_1\GlassSmash_DSS02_19_2		407548
 	621982090	SheListens_FS_Carpet_1	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_1		58878
 	635358036	SheListens_GlassStep_09	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_GlassStep_09_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Glass\SheListens_GlassStep_09		609640
 	654556409	SheListens_FS_Carpet_13	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_13_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_13		57234
@@ -162,6 +174,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	732045735	SheListens_GlassStep_16	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_GlassStep_16_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Glass\SheListens_GlassStep_16		335400
 	775072888	SheListens_FS_Carpet_5	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_5		57476
 	779403974	SheListens_FS_Carpet_7	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_7		53088
+	782965782	KeyBlip	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SonarPings HI057601_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\KeyBlip		2464960
 	823461823	SheListens_FS_Carpet_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_4		62476
 	826047067	Footstep_13	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_13_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_13		124512
 	829892214	SheListens_Witch_Idle_Moan_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_9		645092
@@ -177,6 +190,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	990739049	Footstep_07	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_07_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_07		125536
 	1009246325	SheListens_Witch_Idle_Long	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Long_F85DB116.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Idle_Long		6018136
 	1021978551	SheListens_Creak_Wood_1	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_1		195654
+	1027994974	GlassSmash_DSS02_20_3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\GlassSmash_DSS02.20.3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Glass_Smash\Glass_Smash_2\GlassSmash_DSS02_20_3		280540
 	1042437932	Footstep_12	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_12_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_12		122464
 	1053429280	Footstep_05	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_05_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_05		122976
 	1063365595	Footstep_09	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_09_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_09		119904

@@ -215,6 +215,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_KeyBlip" ID="{7BC5A171-4E16-4A27-AA3C-EB2FD6F272F1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CF2B6CD2-1C28-4990-B1F2-E75BEED212C7}" ShortID="159372056" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AD40CE53-9633-417C-A896-28EBB7E45503}" Global="false">
+									<ObjectRef Name="KeyBlip" ID="{3A180246-C42B-4A84-834F-9AE95C247C9C}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KeyPickUp" ID="{8765AFB2-3242-47FB-A1A2-2523FD58010E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{ADAD5AFF-5F26-4BB4-BE1D-3BF55CB615D4}" ShortID="33836086" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{244513F6-F5BD-4C21-885D-0DE8016C5BFA}" Global="false">
+									<ObjectRef Name="KeyPickUp" ID="{1F00A23A-A3CB-419C-BE8B-18174B7AB99E}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

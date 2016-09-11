@@ -24,6 +24,9 @@
 				<Event Id="1247850169" Name="Play_Creaks"/>
 				<Event Id="3197300806" Name="Play_DoorOpen"/>
 				<Event Id="1602358412" Name="Play_Footstep"/>
+				<Event Id="727285159" Name="Play_Glass_Smash"/>
+				<Event Id="3353471726" Name="Play_KeyBlip"/>
+				<Event Id="885077343" Name="Play_KeyPickUp"/>
 				<Event Id="3859524437" Name="Play_Lightbulb_Buzz"/>
 				<Event Id="1449975651" Name="Play_Lightbulb_Metal"/>
 				<Event Id="1785283739" Name="Play_Lightbulb_Zap"/>
@@ -40,6 +43,10 @@
 					<ShortName>SheListens_Creak_Wood_9.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_9_67E17904.wem</Path>
 				</File>
+				<File Id="76024798" Language="SFX">
+					<ShortName>UI_SoundPack13_Scroll_version05.wav</ShortName>
+					<Path>SFX\UI_SoundPack13_Scroll_version05_9E69E797.wem</Path>
+				</File>
 				<File Id="81834948" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_10.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_10_67E17904.wem</Path>
@@ -48,6 +55,10 @@
 					<ShortName>SheListens_FS_Carpet_3.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_3_67E17904.wem</Path>
 				</File>
+				<File Id="104479198" Language="SFX">
+					<ShortName>GlassSmash_DSS02.19.3.wav</ShortName>
+					<Path>SFX\GlassSmash_DSS02.19.3_9E69E797.wem</Path>
+				</File>
 				<File Id="107056119" Language="SFX">
 					<ShortName>SheListens_Amb_Layer0.wav</ShortName>
 					<Path>SFX\SheListens_Amb_Layer0_67E17904.wem</Path>
@@ -55,6 +66,10 @@
 				<File Id="115290823" Language="SFX">
 					<ShortName>Footstep_10.wav</ShortName>
 					<Path>SFX\Footstep_10_67E17904.wem</Path>
+				</File>
+				<File Id="117149768" Language="SFX">
+					<ShortName>GlassCrash HI014303.wav</ShortName>
+					<Path>SFX\GlassCrash HI014303_9E69E797.wem</Path>
 				</File>
 				<File Id="123667432" Language="SFX">
 					<ShortName>SheListens_GlassStep_07.wav</ShortName>
@@ -79,6 +94,10 @@
 				<File Id="144440340" Language="SFX">
 					<ShortName>SheListens_LightbulbMetalSqueak-002.wav</ShortName>
 					<Path>SFX\SheListens_LightbulbMetalSqueak-002_9E69E797.wem</Path>
+				</File>
+				<File Id="158986036" Language="SFX">
+					<ShortName>GlassSmash_DSS02.21.2.wav</ShortName>
+					<Path>SFX\GlassSmash_DSS02.21.2_9E69E797.wem</Path>
 				</File>
 				<File Id="161389727" Language="SFX">
 					<ShortName>DOORCREAKVERYLOUDCREAK1601.wav</ShortName>
@@ -180,6 +199,10 @@
 					<ShortName>SheListens_GlassStep_02.wav</ShortName>
 					<Path>SFX\SheListens_GlassStep_02_67E17904.wem</Path>
 				</File>
+				<File Id="381417556" Language="SFX">
+					<ShortName>GlassSmash_DSS02.20.2.wav</ShortName>
+					<Path>SFX\GlassSmash_DSS02.20.2_9E69E797.wem</Path>
+				</File>
 				<File Id="404428200" Language="SFX">
 					<ShortName>SheListens_Witch_Idle_Moan_4.wav</ShortName>
 					<Path>SFX\SheListens_Witch_Idle_Moan_4_67E17904.wem</Path>
@@ -260,6 +283,10 @@
 					<ShortName>SheListens_Witch_Scream.wav</ShortName>
 					<Path>SFX\SheListens_Witch_Scream_54811321.wem</Path>
 				</File>
+				<File Id="609298479" Language="SFX">
+					<ShortName>GlassSmash_DSS02.19.2.wav</ShortName>
+					<Path>SFX\GlassSmash_DSS02.19.2_9E69E797.wem</Path>
+				</File>
 				<File Id="621982090" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_1.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_1_67E17904.wem</Path>
@@ -307,6 +334,10 @@
 				<File Id="779403974" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_7.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_7_67E17904.wem</Path>
+				</File>
+				<File Id="782965782" Language="SFX">
+					<ShortName>SonarPings HI057601.wav</ShortName>
+					<Path>SFX\SonarPings HI057601_9E69E797.wem</Path>
 				</File>
 				<File Id="823461823" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_4.wav</ShortName>
@@ -367,6 +398,10 @@
 				<File Id="1021978551" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_1.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_1_67E17904.wem</Path>
+				</File>
+				<File Id="1027994974" Language="SFX">
+					<ShortName>GlassSmash_DSS02.20.3.wav</ShortName>
+					<Path>SFX\GlassSmash_DSS02.20.3_9E69E797.wem</Path>
 				</File>
 				<File Id="1042437932" Language="SFX">
 					<ShortName>Footstep_12.wav</ShortName>
