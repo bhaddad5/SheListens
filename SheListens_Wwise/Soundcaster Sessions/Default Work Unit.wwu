@@ -107,13 +107,17 @@
 							<GameParameterRef Name="headSpeed" ID="{8D65B786-666C-4132-9A9D-CBB1A1CA10F2}"/>
 							<Value>1</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="candleSpeed" ID="{D085F0CE-C1A3-4D39-84D5-80A0716D6FA6}"/>
+							<Value>13.0535714285714</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Hunting" ID="{7EA7C550-5586-4F7A-A88B-CBDD5168661A}"/>
 						<CurrentStateRef Name="Off" ID="{1C28A4DE-AF4A-4F85-B9DE-856A2730DDCD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Carpet" ID="{180C05FD-691A-4B7F-BA39-204EE43F5839}"/>
+						<CurrentSwitchRef Name="Glass" ID="{9D881860-7C72-4ADF-A58C-30ACC1DF6E7F}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

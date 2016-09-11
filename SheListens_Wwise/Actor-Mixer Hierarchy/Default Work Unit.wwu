@@ -95,7 +95,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-19</Value>
 							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{ABB9558B-8C46-480B-892C-BEACBF648577}" ShortID="531193203">
@@ -238,6 +238,293 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SheListens_GlassStep_16" ID="{82C1A1B8-3FC4-476D-8C40-294A7031A066}" ShortID="488393581" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_16" ID="{A3B06199-91D9-4916-B516-152B652A34BE}" ShortID="732045735">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_16.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_16" ID="{A3B06199-91D9-4916-B516-152B652A34BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_14" ID="{E5EFE8DF-118E-481A-B963-94086A44B831}" ShortID="428314487" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_14" ID="{611C3ABE-B34E-43A2-B2D4-AEF1335EF3CF}" ShortID="307219458">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_14.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_14" ID="{611C3ABE-B34E-43A2-B2D4-AEF1335EF3CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_15" ID="{FFE3DA59-A840-40DF-8D86-9D8DAE4608C0}" ShortID="449561437" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_15" ID="{7B1E1BE1-1C2F-4620-8BF2-23C106EDE362}" ShortID="710382197">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_15.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_15" ID="{7B1E1BE1-1C2F-4620-8BF2-23C106EDE362}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_13" ID="{380F151B-95D3-4651-AFBD-1D9E6FB88700}" ShortID="341700001" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_13" ID="{1051C808-022E-4F6E-888A-D33D2D7B693B}" ShortID="504963804">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_13.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_13" ID="{1051C808-022E-4F6E-888A-D33D2D7B693B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_12" ID="{B2AF6DD9-A20F-4932-AC86-18FE4CC40652}" ShortID="510991038" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_12" ID="{89FC8454-9AB9-45C4-B157-97E7644A76B1}" ShortID="180394713">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_12.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_12" ID="{89FC8454-9AB9-45C4-B157-97E7644A76B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_11" ID="{816F17FD-00D1-4DFD-A45E-46E9318795AD}" ShortID="886064042" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_11" ID="{11C900A3-7DF5-49DF-A3ED-BE426D93847B}" ShortID="417814536">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_11" ID="{11C900A3-7DF5-49DF-A3ED-BE426D93847B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_10" ID="{D3425A0D-386C-4550-B4DC-4BEF188CB997}" ShortID="1003691227" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_10" ID="{E9FC799B-AFB8-433A-BC6C-F696C82EA3CE}" ShortID="586555728">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_10" ID="{E9FC799B-AFB8-433A-BC6C-F696C82EA3CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_08" ID="{5A8755B4-C914-4AA5-8A43-C740D68E5F90}" ShortID="1005759702" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_08" ID="{5688FC23-5B1F-4511-9811-0779E32FC2CB}" ShortID="658068330">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_08" ID="{5688FC23-5B1F-4511-9811-0779E32FC2CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_09" ID="{B029BABE-F429-49C8-93B1-8D2D2E432F8E}" ShortID="799430456" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_09" ID="{38A9FA42-12F0-43F6-BA30-2CA5F218D68A}" ShortID="635358036">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_09" ID="{38A9FA42-12F0-43F6-BA30-2CA5F218D68A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_07" ID="{F73E099A-EF6A-4A1D-9F11-F9910BBC5498}" ShortID="940221263" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_07" ID="{65103E4B-4E43-401F-9760-7A45949B5A35}" ShortID="123667432">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_07" ID="{65103E4B-4E43-401F-9760-7A45949B5A35}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_06" ID="{8B053F39-F4BE-4A98-B854-83710EEBB1DA}" ShortID="312205750" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_06" ID="{16C8CA6E-848C-4EC0-B961-38311055AE73}" ShortID="329403118">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_06" ID="{16C8CA6E-848C-4EC0-B961-38311055AE73}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_04" ID="{01356AC4-9398-4300-B06A-2C7C02A3851F}" ShortID="16885153" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_04" ID="{9434AB2E-50CE-416D-B2F4-C9F4B8221D42}" ShortID="359004159">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_04" ID="{9434AB2E-50CE-416D-B2F4-C9F4B8221D42}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_05" ID="{E8865B1A-7B11-4899-8733-098184250F32}" ShortID="1066728502" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_05" ID="{D3AA348B-B41D-4F13-8EB8-E5B9C088B122}" ShortID="842916075">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_05" ID="{D3AA348B-B41D-4F13-8EB8-E5B9C088B122}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_03" ID="{B65F3357-BB59-4358-A6AA-2DDF2AE99758}" ShortID="441526126" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_03" ID="{6068808C-19F4-44A2-8D53-B7940B30B35F}" ShortID="932133062">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_03" ID="{6068808C-19F4-44A2-8D53-B7940B30B35F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SheListens_GlassStep_02" ID="{9217ADC2-28CD-4171-A24F-7F1A51342D7C}" ShortID="209422917" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SheListens_GlassStep_02" ID="{1BA8DD3E-20D7-45A7-8D42-BDFD9987EAF0}" ShortID="377767718">
+											<Language>SFX</Language>
+											<AudioFile>SheListens_GlassStep_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SheListens_GlassStep_02" ID="{1BA8DD3E-20D7-45A7-8D42-BDFD9987EAF0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Wood" ID="{4FA54DEF-C037-4465-9A3C-BD5AAE2436C0}" ShortID="34212575">
 							<PropertyList>
@@ -3466,6 +3753,295 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<BlendContainer Name="CandleBurn" ID="{F49B7DE0-A6CD-44A6-9B34-F6D8C24797BA}" ShortID="85088000">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SheListens_Candle" ID="{28FCD5E2-A73E-41D0-9595-3753113E624C}" ShortID="696560486" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{8B7509BA-C6D5-4AA2-A524-62FC0910C727}" ShortID="789797534">
+											<ReferenceList/>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Candle" ID="{39666255-2DA8-412B-9531-07E1CB4E669C}" ShortID="697626876">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="4"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="7.62363238512035"/>
+										<Property Name="TrimEnd" Type="Real64" Value="43.6936542669584"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Candle.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Candle" ID="{39666255-2DA8-412B-9531-07E1CB4E669C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SheListens_Candle_01" ID="{3FC35306-C635-4F0F-9942-C298D38A160E}" ShortID="199220002" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1470</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{163EEBB6-F4B4-4E06-BD88-33FCF09073EA}" ShortID="1020438728">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="candleSpeed" ID="{D085F0CE-C1A3-4D39-84D5-80A0716D6FA6}" WorkUnitID="{CE28C5D5-456D-436B-99C2-A28AD088A247}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6D0E3E34-181C-46C5-B56B-776F165E4565}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-466</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>290</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{548762AE-6DB3-468C-A43D-2BCDABA3BB7F}" ShortID="198430812">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="candleSpeed" ID="{D085F0CE-C1A3-4D39-84D5-80A0716D6FA6}" WorkUnitID="{CE28C5D5-456D-436B-99C2-A28AD088A247}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5CBA0469-521F-4DC9-BD06-58F5F4A9A388}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-3.6812</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Candle" ID="{70C63469-9E87-4E4E-ABB6-FA5E45AFE846}" ShortID="952802642">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="4"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="7.62363238512035"/>
+										<Property Name="TrimEnd" Type="Real64" Value="43.6936542669584"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Candle.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="697626876"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Candle" ID="{70C63469-9E87-4E4E-ABB6-FA5E45AFE846}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<Sound Name="UI_SoundPack13_Scroll_version05" ID="{1F00A23A-A3CB-419C-BE8B-18174B7AB99E}" ShortID="325685395" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="UI_SoundPack13_Scroll_version05" ID="{2FA4F977-998E-47B6-A42E-69650E951D86}" ShortID="76024798">
+							<Language>SFX</Language>
+							<AudioFile>UI_SoundPack13_Scroll_version05.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="UI_SoundPack13_Scroll_version05" ID="{2FA4F977-998E-47B6-A42E-69650E951D86}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SonarPings HI057601" ID="{3A180246-C42B-4A84-834F-9AE95C247C9C}" ShortID="808159693" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SonarPings HI057601" ID="{BB64B229-BC36-4B2B-8577-6A811F8CDCC7}" ShortID="782965782">
+							<Language>SFX</Language>
+							<AudioFile>SonarPings HI057601.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SonarPings HI057601" ID="{BB64B229-BC36-4B2B-8577-6A811F8CDCC7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GlassSmash_DSS02_19_2" ID="{B4EFEC2A-A08E-4557-B2EC-C75ABA1E4071}" ShortID="21030299" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GlassSmash_DSS02_19_2" ID="{DDF72705-E07D-4866-9D13-BC17AC59C1E2}" ShortID="609298479">
+							<Language>SFX</Language>
+							<AudioFile>GlassSmash_DSS02.19.2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GlassSmash_DSS02_19_2" ID="{DDF72705-E07D-4866-9D13-BC17AC59C1E2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GlassSmash_DSS02_19_3" ID="{F33CE333-6515-4C8F-9513-64D7A1417EBA}" ShortID="870574209" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GlassSmash_DSS02_19_3" ID="{E1E85A14-2E1D-4F59-9E25-7E696BD06CAC}" ShortID="104479198">
+							<Language>SFX</Language>
+							<AudioFile>GlassSmash_DSS02.19.3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GlassSmash_DSS02_19_3" ID="{E1E85A14-2E1D-4F59-9E25-7E696BD06CAC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GlassSmash_DSS02_20_2" ID="{00C85AAA-F20F-4235-953D-AB6E8ECE4122}" ShortID="1049631597" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GlassSmash_DSS02_20_2" ID="{E8A108E1-D940-4C49-B439-168CF0F2FB91}" ShortID="381417556">
+							<Language>SFX</Language>
+							<AudioFile>GlassSmash_DSS02.20.2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GlassSmash_DSS02_20_2" ID="{E8A108E1-D940-4C49-B439-168CF0F2FB91}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GlassSmash_DSS02_20_3" ID="{4B2EB77D-6A3D-4FDD-A3D0-22B17CAF5EEA}" ShortID="750538457" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GlassSmash_DSS02_20_3" ID="{83A1B464-8B29-49E9-BD32-6C5C17A14AD4}" ShortID="1027994974">
+							<Language>SFX</Language>
+							<AudioFile>GlassSmash_DSS02.20.3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GlassSmash_DSS02_20_3" ID="{83A1B464-8B29-49E9-BD32-6C5C17A14AD4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GlassSmash_DSS02_21_2" ID="{07277749-AD32-4119-8278-D71C1B9F03DB}" ShortID="1006623781" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GlassSmash_DSS02_21_2" ID="{574D8E6A-459B-49CA-B24D-7E6B66C9155D}" ShortID="158986036">
+							<Language>SFX</Language>
+							<AudioFile>GlassSmash_DSS02.21.2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GlassSmash_DSS02_21_2" ID="{574D8E6A-459B-49CA-B24D-7E6B66C9155D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="GlassCrash HI014303" ID="{A17AE144-A417-44F4-95DB-4F7D65BCA892}" ShortID="779318275" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GlassCrash HI014303" ID="{81509970-5B59-40BF-BAD0-C5AB47B957A9}" ShortID="117149768">
+							<Language>SFX</Language>
+							<AudioFile>GlassCrash HI014303.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GlassCrash HI014303" ID="{81509970-5B59-40BF-BAD0-C5AB47B957A9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

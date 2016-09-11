@@ -182,6 +182,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_CandleBurn" ID="{9F8CBE8B-15D6-4D11-9DA9-0A9CEEC1B885}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CC033337-13D7-48DC-8214-854942D7ABF7}" ShortID="482300496" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4CF15B06-FCAC-4371-A407-9E85FD0E85E2}" Global="false">
+									<ObjectRef Name="CandleBurn" ID="{F49B7DE0-A6CD-44A6-9B34-F6D8C24797BA}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
