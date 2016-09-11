@@ -1897,7 +1897,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -1.4873713, y: -2.4741158, z: 0.65712357}
   m_LocalScale: {x: 0.0009286798, y: 0.0010095598, z: 0.0009768842}
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -143.44212, z: 0}
   m_Children:
   - {fileID: 4000011456715778}
   - {fileID: 4000011382575938}
