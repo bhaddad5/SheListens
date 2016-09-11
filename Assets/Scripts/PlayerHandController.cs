@@ -23,7 +23,7 @@ public class PlayerHandController : MonoBehaviour {
 		{
 			other.transform.parent.gameObject.SetActive(false);
 			WinZone.SetActive(true);
-			doorAnim.Play();
+			doorAnim.Play("DoorOpen");
 		}
 	}
 }
