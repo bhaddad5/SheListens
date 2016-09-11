@@ -54,10 +54,6 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_GlassSmash" ID="{A800E4A9-C64F-4571-BDA1-C4601C1A358C}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
-							<Position X="0" Y="3"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_Creaks" ID="{27B1C6A0-5B71-4D7C-9FA4-B5C8916DD76B}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
 							<Position X="1" Y="1"/>
 						</Module>

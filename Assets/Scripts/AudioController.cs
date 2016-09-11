@@ -136,11 +136,11 @@ public class AudioController : MonoBehaviour {
 				Debug.Log("Play witch angry at distance: " + witchDistance);
 			}
 
-            AudioTriggers.PostEvent("Play_ZapOff", lampLight);
+            //AudioTriggers.PostEvent("Play_ZapOff", lampLight);
         }
 		else
 		{
-            AudioTriggers.PostEvent("Play_ZapOn", lampLight);
+            //AudioTriggers.PostEvent("Play_ZapOn", lampLight);
             
         }
 
