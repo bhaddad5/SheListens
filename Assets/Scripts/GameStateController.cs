@@ -9,11 +9,14 @@ public class GameStateController : MonoBehaviour {
 	public GameObject endImage;
 	public GameObject keyPickupSceneUpdatePrefab;
 	public AudioController audioController;
+	private Animator windowAnim; 
 
 	public GameObject[] objsToDestroyOnSpashscreen;
 
 	public void TriggerKeyPickupEvent()
 	{
+		windowAnim = GameObject.Find("WindowGlass").GetComponent<Animator> ();
+		windowAnim.SetBool ("windowBreak", true); 
 		Instantiate(keyPickupSceneUpdatePrefab);
 		audioController.PlayKeyPickupSound();
 	}
