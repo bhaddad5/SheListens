@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}'
-    m_lastTimePsrt1: -635200151
-    m_lastTimePart2: -1999381922
+    m_lastTimePsrt1: 1524763114
+    m_lastTimePart2: -1999381895
     List:
     - Name: Play_BaseLayer
       Path: Default Work Unit\Play_BaseLayer
@@ -48,6 +48,36 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1602358412
       Guid: 25dc1ab65dd3734f9deaab1236bcc1d3
+      maxAttenuation: 0
+    - Name: Play_Lightbulb_Buzz
+      Path: Default Work Unit\Play_Lightbulb_Buzz
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Lightbulb_Buzz
+        ObjectType: 3
+      ID: -435442859
+      Guid: f7b028355d96d84f8cf7067da298df97
+      maxAttenuation: 0
+    - Name: Play_Lightbulb_Metal
+      Path: Default Work Unit\Play_Lightbulb_Metal
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Lightbulb_Metal
+        ObjectType: 3
+      ID: 1449975651
+      Guid: d672ac1d9a1b7d4f9a74b8057d1e6121
+      maxAttenuation: 0
+    - Name: Play_Lightbulb_Zap
+      Path: Default Work Unit\Play_Lightbulb_Zap
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Lightbulb_Zap
+        ObjectType: 3
+      ID: 1785283739
+      Guid: 4c50a6cc459db64182535a8571638a72
       maxAttenuation: 0
     - Name: Play_MusicEnemy
       Path: Default Work Unit\Play_MusicEnemy
@@ -99,6 +129,26 @@ MonoBehaviour:
       ID: -1236276975
       Guid: 5707adb6a7e060479b6efd21021813ab
       maxAttenuation: 0
+    - Name: Play_ZapOff
+      Path: Default Work Unit\Play_ZapOff
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_ZapOff
+        ObjectType: 3
+      ID: 1311566966
+      Guid: 5845d0ede344e246a1e6e8a87d44e3f6
+      maxAttenuation: 0
+    - Name: Play_ZapOn
+      Path: Default Work Unit\Play_ZapOn
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_ZapOn
+        ObjectType: 3
+      ID: 1839672760
+      Guid: 802b20dfff2f7f459869933cd98f7200
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -110,9 +160,34 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8847A6A3-9435-4EC7-A1FB-D58E7A95B363}'
-    m_lastTimePsrt1: -635070112
-    m_lastTimePart2: -1999381922
+    m_lastTimePsrt1: 1524975722
+    m_lastTimePart2: -1999381895
     List:
+    - Name: Lights
+      Path: Default Work Unit\Lights
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Lights
+        ObjectType: 9
+      ID: -1102182550
+      Guid: 86c953d3781e0f41882f56e73ec72ef4
+      values:
+      - None
+      - Off
+      - On
+      ValueIcons:
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Off
+        ObjectType: 8
+      - ElementName: On
+        ObjectType: 8
+      valueIDs: db3ba32c648a79373e177762
+      ValueGuids:
+      - bytes: 8d723ac5274dac43897241479df9aa0d
+      - bytes: dea4281c4aaf854fb9de856a2730ddcd
+      - bytes: 3e3e11e8d8940745a2ac0c650112361a
     - Name: Witch
       Path: Default Work Unit\Witch
       PathAndIcons:
