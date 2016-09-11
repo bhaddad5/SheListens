@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}'
-    m_lastTimePsrt1: 431954004
-    m_lastTimePart2: -1999381885
+    m_lastTimePsrt1: 599656284
+    m_lastTimePart2: -1999381879
     List:
     - Name: Play_BaseLayer
       Path: Default Work Unit\Play_BaseLayer
@@ -49,6 +49,16 @@ MonoBehaviour:
       ID: 1247850169
       Guid: a0c6b127715b7c4d9fa4b5c8916dd76b
       maxAttenuation: 0
+    - Name: Play_DoorOpen
+      Path: Default Work Unit\Play_DoorOpen
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_DoorOpen
+        ObjectType: 3
+      ID: -1097666490
+      Guid: 17fd0e65288e4f4d88c97fc1b480ed72
+      maxAttenuation: 0
     - Name: Play_Footstep
       Path: Default Work Unit\Play_Footstep
       PathAndIcons:
@@ -58,36 +68,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1602358412
       Guid: 25dc1ab65dd3734f9deaab1236bcc1d3
-      maxAttenuation: 0
-    - Name: Play_GlassSmash
-      Path: Default Work Unit\Play_GlassSmash
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_GlassSmash
-        ObjectType: 3
-      ID: 1228833390
-      Guid: a9e400a84fc67145bda1c4601c1a358c
-      maxAttenuation: 0
-    - Name: Play_KeyPickUp
-      Path: Default Work Unit\Play_KeyPickUp
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_KeyPickUp
-        ObjectType: 3
-      ID: 885077343
-      Guid: f712927ef979be42ab1e34f6b415e02e
-      maxAttenuation: 0
-    - Name: Play_KeyPing
-      Path: Default Work Unit\Play_KeyPing
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_KeyPing
-        ObjectType: 3
-      ID: -1081414165
-      Guid: 2d00a4c9eea7a74182b470ca36c353ef
       maxAttenuation: 0
     - Name: Play_Lightbulb_Buzz
       Path: Default Work Unit\Play_Lightbulb_Buzz

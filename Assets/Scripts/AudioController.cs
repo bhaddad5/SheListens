@@ -11,6 +11,9 @@ public class AudioController : MonoBehaviour {
 	public WitchController Witch;
     public GameObject feet;
 	public GameObject creakObject;
+    public GameObject window;
+    public GameObject lampLight;
+    public GameObject lampParent;
 
 	private float totalPlayerNoise;
 	private float prevTotalPlayerNoise = 0;
@@ -41,63 +44,69 @@ public class AudioController : MonoBehaviour {
         AudioTriggers.PostEvent("Play_Witch_Hunting", Witch.gameObject);
         AudioTriggers.PostEvent("Play_Witch_Idle", Witch.gameObject);
 
-	}
+
+        AudioTriggers.PostEvent("Play_Lightbulb_Buzz", lampLight);
+        AudioTriggers.PostEvent("Play_Lightbulb_Metal", lampLight);
+        AudioTriggers.PostEvent("Play_Lightbulb_Zap", lampLight);
+    }
 
 	// Update is called once per frame
 	void Update()
 	{
 		totalPlayerNoise = 0;
 
-		if (!lampOn)
+		switch (currFloorType)
 		{
-			switch (currFloorType)
+			case currentFloorType.Wood:
+				AudioTriggers.SetSwitch("Floor", "Wood", this.gameObject);
+				break;
+			case currentFloorType.Carpet:
+				AudioTriggers.SetSwitch("Floor", "Carpet", this.gameObject);
+				break;
+			case currentFloorType.Glass:
+				AudioTriggers.SetSwitch("Floor", "Glass", this.gameObject);
+				break;
+			default:
+				break;
+		}
+
+		float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
+		if (headMoveDist >= playerHeadNoiseSpeedCutoff)
+		{
+			if (!trackindDetectableMovement)
 			{
-				case currentFloorType.Wood:
-					AudioTriggers.SetSwitch("Floor", "Wood", this.gameObject);
-					break;
-				case currentFloorType.Carpet:
-					AudioTriggers.SetSwitch("Floor", "Carpet", this.gameObject);
-					break;
-				case currentFloorType.Glass:
-					AudioTriggers.SetSwitch("Floor", "Glass", this.gameObject);
-					break;
-				default:
-					break;
+				trackindDetectableMovement = true;
+				startHeadDetectableMovementPos = playerHead.position;
 			}
 
-			float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
-			if (headMoveDist >= playerHeadNoiseSpeedCutoff)
+			if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
 			{
-				if (!trackindDetectableMovement)
-				{
-					trackindDetectableMovement = true;
-					startHeadDetectableMovementPos = playerHead.position;
-				}
-
-				if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
-				{
-					float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
-					//Debug.Log("making player head sound from speed: " + headMoveDist);
-					AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
-					AudioTriggers.PostEvent("Play_Creaks", creakObject);
-					totalPlayerNoise += headMoveDist;
-				}
+				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
+				//Debug.Log("making player head sound from speed: " + headMoveDist);
+				AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
+                AudioTriggers.PostEvent("Play_Creaks", creakObject);
+				totalPlayerNoise += headMoveDist;
 			}
-			else if (trackindDetectableMovement)
-			{
-				trackindDetectableMovement = false;
-			}
-			prevPlayerPos = playerHead.position;
+		}
+		else if (trackindDetectableMovement)
+		{
+			trackindDetectableMovement = false;
+		}
+		prevPlayerPos = playerHead.position;
 
-			float candleMoveDist = Vector3.Magnitude(candle.position - prevCandlePos);
-			if (candleMoveDist >= candleNoiseSpeedCutoff)
-			{
-				//Debug.Log("making candle sound from speed: " + candleMoveDist);
-				totalPlayerNoise += candleMoveDist;
-			}
-			prevCandlePos = candle.position;
+		float candleMoveDist = Vector3.Magnitude(candle.position - prevCandlePos);
+		if (candleMoveDist >= candleNoiseSpeedCutoff)
+		{
+			//Debug.Log("making candle sound from speed: " + candleMoveDist);
+			totalPlayerNoise += candleMoveDist;
+		}
+		prevCandlePos = candle.position;
 
-			if (Witch == null)
+        Debug.Log("lamp on " + lampOn);
+
+        if (!lampOn)
+        {
+            if (Witch == null)
 				return;
 
 			Witch.updateNoiseLevel(totalPlayerNoise);
@@ -115,7 +124,7 @@ public class AudioController : MonoBehaviour {
 			{
 				AudioTriggers.SetState("Witch", "Hunting");
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
-				Debug.Log("Play witch moving towards you at distance: " + witchDistance);
+				//Debug.Log("Play witch moving towards you at distance: " + witchDistance);
 			}
 			else
 			{
@@ -126,11 +135,14 @@ public class AudioController : MonoBehaviour {
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
 				Debug.Log("Play witch angry at distance: " + witchDistance);
 			}
-			}
+
+            AudioTriggers.PostEvent("Play_ZapOff", lampLight);
+        }
 		else
 		{
-			//LAMP IS ON
-		}
+            AudioTriggers.PostEvent("Play_ZapOn", lampLight);
+            
+        }
 
 		prevTotalPlayerNoise = totalPlayerNoise;
 	}
@@ -140,11 +152,12 @@ public class AudioController : MonoBehaviour {
 		AudioTriggers.SetState("Witch", "GameOver");
 	}
 
-	public void PlayKeyPickupSound()
+    public void PlayKeyPickupSound()
 	{
         AudioTriggers.PostEvent("Play_KeyPickUp", candle.gameObject);
-		//Debug.Log("play key pickup sound (glass shatter)");
-	}
+        AudioTriggers.PostEvent("Play_GlassSmash", window);
+        //Debug.Log("play key pickup sound (glass shatter)");
+    }
 
 	public void SetLampState(bool on)
 	{
