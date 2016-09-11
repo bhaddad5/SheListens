@@ -134,14 +134,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{76CF8F96-D186-4BD0-98D2-66492692DF5E}" ShortID="477025912">
+								<Attenuation Name="GameDefault (Custom)" ID="{7AF71666-6B15-4407-8B96-0F42687941C6}" ShortID="466511280">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{53BB2894-E6E2-436C-913B-01C2FBE3E3EB}">
+												<Curve Name="VolumeDry" ID="{A75C9F17-F434-4F36-9B5D-0FA1F36CED08}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -194,7 +194,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{0D0E09BD-79C0-4226-A7C8-2C2E82632927}" ShortID="13076286" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{25A51BD1-7AAD-4FA2-967D-8159FDCF1C03}" ShortID="655706665" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -1233,14 +1233,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{2E948BDC-B8E1-4D77-8A03-DF16D2DE6522}" ShortID="1073660492">
+								<Attenuation Name="GameDefault (Custom)" ID="{DF40D600-1454-40B8-945F-F78DE336B21C}" ShortID="943773008">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{AD559BB7-B246-408F-9881-FD542D348E85}">
+												<Curve Name="VolumeDry" ID="{9C4BA24A-BFD6-4805-BBB0-4E449837EB5C}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -1293,7 +1293,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{86C0328C-FED5-4B1F-9F1C-9A37F0F233B5}" ShortID="243052153" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{A3ECF12F-85AC-4D37-BCAA-C3E56AED9362}" ShortID="347318698" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -1584,14 +1584,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{62DDA2B2-44D0-4A60-B46D-5EB9C25E42C2}" ShortID="705549201">
+								<Attenuation Name="GameDefault (Custom)" ID="{B5753F5B-B8CC-4924-AEC7-75C0679BA239}" ShortID="481513739">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{9F80FB3D-711E-44C1-9CB2-62001F1EED80}">
+												<Curve Name="VolumeDry" ID="{8E8C7624-27F4-470A-B78C-9DBFBBDACF02}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -1644,7 +1644,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{2685A286-4D13-4D40-9AC9-D74878F8B532}" ShortID="90930554" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{0DDD024E-FAAA-46D0-9ED8-A8286D389D82}" ShortID="93950238" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -1955,14 +1955,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{F6CD8163-6852-41DB-89F4-E2645791F679}" ShortID="133182313">
+								<Attenuation Name="GameDefault (Custom)" ID="{E7E087BB-6CEF-4F68-A5D0-90BB407A3CA3}" ShortID="323680158">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{6E5975A0-C52D-48CF-A838-E3409F40D09B}">
+												<Curve Name="VolumeDry" ID="{D444033F-2D1A-4426-A1E6-329D714F7081}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -2015,7 +2015,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{C9D33778-C317-44F4-A0BB-8178B70A501F}" ShortID="34958519" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{8394E8D3-4F4E-4AD2-AC47-020E975272ED}" ShortID="972990973" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -2096,14 +2096,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{0C3159F6-151A-4339-9640-9E00BBD116FA}" ShortID="732710156">
+								<Attenuation Name="GameDefault (Custom)" ID="{6843FC4C-1F5F-4581-B584-DBB925709037}" ShortID="844352154">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{5F2C5264-9DF6-47DF-BAF3-D38EE6BE5E3F}">
+												<Curve Name="VolumeDry" ID="{F1BFF94B-71C5-41EE-A6A3-7E7AA152B711}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -2154,10 +2154,8 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
 						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{240D63AF-3809-4AE8-86AD-4B354F52D714}" ShortID="848206576" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-							</Custom>
+						<Reference Name="Effect0" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+							<ObjectRef Name="Three_Voices" ID="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="Effect1">
 							<Custom>
@@ -2453,14 +2451,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{5A5494F5-B621-4089-BBAF-A07C494FDA43}" ShortID="555503505">
+								<Attenuation Name="GameDefault (Custom)" ID="{62A988EA-37B7-4F16-B2D4-75BAAE7B204E}" ShortID="781779280">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{81138A6B-CB99-4AF4-A663-837F2C6EB14B}">
+												<Curve Name="VolumeDry" ID="{90CB2DA3-9374-4BFA-86A5-1A247E2581D1}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -2513,7 +2511,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{10EC652A-0D41-4DAF-B954-767B91192F5E}" ShortID="70144427" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{4F1DADC5-1FA1-416D-90CC-6F9EEA3871FA}" ShortID="845916475" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -2576,14 +2574,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{9B25165F-4826-4F7A-BF63-4B68CCA64102}" ShortID="756700405">
+								<Attenuation Name="GameDefault (Custom)" ID="{692D6549-13A4-495B-9011-A5ACCAA68AAD}" ShortID="446462097">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{0B91C3B1-8CA3-426A-AD18-B61EF7408F52}">
+												<Curve Name="VolumeDry" ID="{F43DB968-64C8-440F-A9E8-B81D291D5B1F}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -2636,7 +2634,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{FCD312D8-7AE3-4B91-93BB-88182FBCB7CD}" ShortID="699595943" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{CA41715B-BC93-4026-8F5B-89CF79235422}" ShortID="77874754" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -2730,14 +2728,14 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{ACFA6829-A488-4EAC-AC37-FA3A9A87C13B}" ShortID="792774682">
+								<Attenuation Name="GameDefault (Custom)" ID="{EABDE41F-7B47-4425-83A5-59B76FADBBF7}" ShortID="100606011">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{A1396019-6A14-4D55-A218-735560760617}">
+												<Curve Name="VolumeDry" ID="{47F80B2B-7372-4421-806D-E6FAB6084F88}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -2790,7 +2788,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{3408A38D-08DA-4067-8A0E-CACC586F8D19}" ShortID="217126235" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{F0BEC0CF-3D01-44C7-B0A2-BF2EC1454D43}" ShortID="972639024" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -3079,20 +3077,18 @@
 					<PropertyList>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{2A47408F-F38D-4414-B76E-07776F305B42}" ShortID="339419208">
+								<Attenuation Name="GameDefault (Custom)" ID="{F060C91A-8240-40EA-8487-33AC36DAD38E}" ShortID="685242472">
 									<PropertyList>
 										<Property Name="RadiusMax" Type="Real64" Value="20"/>
 									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{7D7FE86C-EC6D-40AD-B06D-4F92BFAA444F}">
+												<Curve Name="VolumeDry" ID="{BE6444E3-A11B-4C28-A99F-77E8B5682AD0}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -3142,11 +3138,6 @@
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{2083F418-7F11-4EC1-88A7-1FF27D21E143}" ShortID="973920175" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -3235,14 +3226,14 @@
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-										<Attenuation Name="GameDefault (Custom)" ID="{1D91B19F-D025-4ADD-ABAC-4EF1BB7C17FC}" ShortID="827698529">
+										<Attenuation Name="GameDefault (Custom)" ID="{1E224064-402F-4746-B580-65F7F3EB225F}" ShortID="809192949">
 											<PropertyList>
 												<Property Name="RadiusMax" Type="Real64" Value="20"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{A26D420A-874B-4DC0-B5AE-4F27970B630C}">
+														<Curve Name="VolumeDry" ID="{5946833D-6747-4917-91FD-0CE2A7E2741A}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -3292,11 +3283,6 @@
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Phonon 3D (Custom)" ID="{E7E15E93-3ECB-4CB2-9149-2725147CDBB1}" ShortID="609493845" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -3337,14 +3323,14 @@
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-										<Attenuation Name="GameDefault (Custom)" ID="{99E7AB9E-EA98-4422-9CD3-B612BD1C0BBC}" ShortID="611143856">
+										<Attenuation Name="GameDefault (Custom)" ID="{8BE12845-2C70-4E90-BE11-AF25A7D85633}" ShortID="378024383">
 											<PropertyList>
 												<Property Name="RadiusMax" Type="Real64" Value="20"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{F286F958-8AFC-4130-BB74-91C452103350}">
+														<Curve Name="VolumeDry" ID="{7FA5F3CE-6809-4EA6-9BC1-B0426EB5995F}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -3394,11 +3380,6 @@
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Phonon 3D (Custom)" ID="{A5AE0863-D89F-4112-BDCE-182E7C3C9968}" ShortID="29352955" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -3427,14 +3408,14 @@
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-										<Attenuation Name="GameDefault (Custom)" ID="{4AD4265C-01A0-4889-B725-4002F2C0B21E}" ShortID="449329794">
+										<Attenuation Name="GameDefault (Custom)" ID="{25412D7C-3583-42AD-BF98-466BB54F8EB4}" ShortID="396789136">
 											<PropertyList>
 												<Property Name="RadiusMax" Type="Real64" Value="20"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{15E9E431-C53F-4AB3-B6A5-6E2142916C07}">
+														<Curve Name="VolumeDry" ID="{B492DA34-AB20-4B14-BF69-6F7F062EF763}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -3484,11 +3465,6 @@
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Phonon 3D (Custom)" ID="{FF08860A-F488-43AE-9BF4-8EDC79C6E9D9}" ShortID="489928463" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -3604,14 +3580,14 @@
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-										<Attenuation Name="GameDefault (Custom)" ID="{5376F2E7-D8B8-4756-8DD1-86FC404E93DA}" ShortID="727547256">
+										<Attenuation Name="GameDefault (Custom)" ID="{D5C5C09F-DC0D-4B11-B0D4-718A39DCB170}" ShortID="822752599">
 											<PropertyList>
 												<Property Name="RadiusMax" Type="Real64" Value="20"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{F68BAD5B-06E7-454D-B13D-29113E73254F}">
+														<Curve Name="VolumeDry" ID="{BC2984D0-63F2-484E-A352-C88BF3C71B99}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -3661,11 +3637,6 @@
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Phonon 3D (Custom)" ID="{9980CD38-9F6E-4C61-842D-A648F9782C6B}" ShortID="837326554" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -3706,14 +3677,14 @@
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-										<Attenuation Name="GameDefault (Custom)" ID="{A5641BC9-13B1-452B-B856-5FDCD5B2EFDC}" ShortID="688977382">
+										<Attenuation Name="GameDefault (Custom)" ID="{890F5CD1-A22D-4A0C-B632-9FA2464C7928}" ShortID="460681159">
 											<PropertyList>
 												<Property Name="RadiusMax" Type="Real64" Value="20"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{24E61D36-C635-430C-9DD7-CDF9A252CD94}">
+														<Curve Name="VolumeDry" ID="{78B04405-8FC3-4751-AE0F-74AA5C2202D7}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -3764,11 +3735,6 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
 								</Reference>
-								<Reference Name="Effect0">
-									<Custom>
-										<Effect Name="Phonon 3D (Custom)" ID="{80CF5176-F16E-40C8-9EA3-4C2B61716F39}" ShortID="216832203" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-									</Custom>
-								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
 								</Reference>
@@ -3789,75 +3755,9 @@
 					</ChildrenList>
 				</Folder>
 				<BlendContainer Name="CandleBurn" ID="{F49B7DE0-A6CD-44A6-9B34-F6D8C24797BA}" ShortID="85088000">
-					<PropertyList>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Spatialization" Type="bool" Value="False"/>
-					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{D239ED97-925C-4FA5-B024-E09DFB56D8A5}" ShortID="482141758">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="20"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{8BDFD68B-3D3D-45A1-91F2-A55D8E44A926}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>5.45454</XPos>
-															<YPos>-9.06019</YPos>
-															<Flags>0</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>20</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{D886AB44-EC20-416D-B791-0E2AB10106D0}" ShortID="568538711" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -3990,75 +3890,9 @@
 					</ChildrenList>
 				</BlendContainer>
 				<Sound Name="UI_SoundPack13_Scroll_version05" ID="{1F00A23A-A3CB-419C-BE8B-18174B7AB99E}" ShortID="325685395" Type="SoundFX">
-					<PropertyList>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Spatialization" Type="bool" Value="False"/>
-					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{E4EAA052-EBF0-4A2E-BD3A-0DF5AB6F80FC}" ShortID="792907403">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="20"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{E7791474-A4A7-43AC-92CE-D1139D5BF92D}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>5.45454</XPos>
-															<YPos>-9.06019</YPos>
-															<Flags>0</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>20</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{E2C497C0-14BA-4173-829D-E508A6743760}" ShortID="555077136" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -4075,75 +3909,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SonarPings HI057601" ID="{3A180246-C42B-4A84-834F-9AE95C247C9C}" ShortID="808159693" Type="SoundFX">
-					<PropertyList>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Spatialization" Type="bool" Value="False"/>
-					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{D58B5668-C0CB-40AD-A357-25F82373969F}" ShortID="147825721">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="20"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{37B03AFF-BB29-4B41-BD72-1B997B226863}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>5.45454</XPos>
-															<YPos>-9.06019</YPos>
-															<Flags>0</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>20</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{5DEB1682-6ECD-44F6-94F5-762631903D57}" ShortID="154970797" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -4163,75 +3931,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<BlendContainer Name="GlassSmash" ID="{BB872A8C-4AAC-4CF7-A5AC-086E6CD27B30}" ShortID="307054485">
-					<PropertyList>
-						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Spatialization" Type="bool" Value="False"/>
-					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<Custom CreatedFrom="{C3876AD2-764D-4504-8943-2C0BCF273026}">
-								<Attenuation Name="GameDefault (Custom)" ID="{BE11BEAA-EC2A-4F30-85D3-91CCF8720880}" ShortID="941438012">
-									<PropertyList>
-										<Property Name="RadiusMax" Type="Real64" Value="20"/>
-									</PropertyList>
-									<CurveUsageInfoList>
-										<VolumeDryUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{0AC2295B-82F2-4AE9-9D99-F45A7F8F05B3}">
-													<PropertyList>
-														<Property Name="Flags" Type="int32" Value="3"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>0</YPos>
-															<Flags>5</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>5.45454</XPos>
-															<YPos>-9.06019</YPos>
-															<Flags>0</Flags>
-															<SegmentShape>Log1</SegmentShape>
-														</Point>
-														<Point>
-															<XPos>20</XPos>
-															<YPos>-200</YPos>
-															<Flags>37</Flags>
-														</Point>
-													</PointList>
-												</Curve>
-											</CurveUsageInfo>
-										</VolumeDryUsage>
-										<VolumeWetGameUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetGameUsage>
-										<VolumeWetUserUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-										</VolumeWetUserUsage>
-										<LowPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</LowPassFilterUsage>
-										<HighPassFilterUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</HighPassFilterUsage>
-										<SpreadUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</SpreadUsage>
-										<FocusUsage>
-											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-										</FocusUsage>
-									</CurveUsageInfoList>
-								</Attenuation>
-							</Custom>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{9D82070C-49F0-4ABC-8089-60F562CC0082}" ShortID="505183716" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
-							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>

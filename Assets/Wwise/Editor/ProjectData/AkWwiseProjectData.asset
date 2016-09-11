@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}'
-    m_lastTimePsrt1: 1229050
-    m_lastTimePart2: -1999381893
+    m_lastTimePsrt1: 374727228
+    m_lastTimePart2: -1999381887
     List:
     - Name: Play_BaseLayer
       Path: Default Work Unit\Play_BaseLayer
@@ -28,6 +28,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: -252752164
       Guid: de607b5890675e45ba9ea2c39f71d1e9
+      maxAttenuation: 0
+    - Name: Play_CandleBurn
+      Path: Default Work Unit\Play_CandleBurn
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_CandleBurn
+        ObjectType: 3
+      ID: 921938950
+      Guid: 8bbe8c9fd615114d9da90a9ceec1b885
       maxAttenuation: 0
     - Name: Play_Creaks
       Path: Default Work Unit\Play_Creaks
@@ -48,6 +58,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1602358412
       Guid: 25dc1ab65dd3734f9deaab1236bcc1d3
+      maxAttenuation: 0
+    - Name: Play_GlassSmash
+      Path: Default Work Unit\Play_GlassSmash
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_GlassSmash
+        ObjectType: 3
+      ID: 1228833390
+      Guid: a9e400a84fc67145bda1c4601c1a358c
       maxAttenuation: 0
     - Name: Play_Lightbulb_Buzz
       Path: Default Work Unit\Play_Lightbulb_Buzz
