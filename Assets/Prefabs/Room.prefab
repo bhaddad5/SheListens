@@ -513,7 +513,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013823695154}
-  - 95: {fileID: 95000010089594844}
+  - 111: {fileID: 111000014264536598}
   m_Layer: 0
   m_Name: WindowGlass
   m_TagString: Untagged
@@ -5346,23 +5346,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10.000001}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95000010089594844
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011732889878}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f1d90704333bf4e5fa88a5f226a2a764, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95000012625602384
 Animator:
   serializedVersion: 3
@@ -5414,6 +5397,21 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!111 &111000014264536598
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011732889878}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8529c542b19984ae598c868b6e65d446, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8529c542b19984ae598c868b6e65d446, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114000010078304936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5425,4 +5423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c5358cb34da4d469bae7acc4d5f6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lamp: {fileID: 0}
+  lamp: {fileID: 108000011933231690}
+  keyController: {fileID: 0}
+  witch: {fileID: 0}
