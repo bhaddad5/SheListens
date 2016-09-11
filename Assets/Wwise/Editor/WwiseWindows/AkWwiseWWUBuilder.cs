@@ -24,8 +24,8 @@ public class AkWwiseWWUBuilder
 	int		m_totWwuCnt 		= 1;
     HashSet<string> m_WwuToProcess = new HashSet<string>();
 
-    static string[] FoldersOfInterest = new string[] { "Events", "States", "Switches", "SoundBanks", "Master-Mixer Hierarchy" };
-    static DateTime s_lastFileCheck = DateTime.Now.AddSeconds(-s_SecondsBetweenChecks);
+    static string[] FoldersOfInterest = new string[] { "Events", "States", "Switches", "SoundBanks", "Master-Mixer Hierarchy" };    
+    static DateTime s_lastFileCheck = DateTime.Now;
     const int s_SecondsBetweenChecks = 3;    
 	
 	public class AssetType
@@ -48,7 +48,7 @@ public class AkWwiseWWUBuilder
 	{
         if (AkWwiseProjectInfo.GetData() != null)
         {
-            if (DateTime.Now.Subtract(s_lastFileCheck).Seconds > s_SecondsBetweenChecks && !EditorApplication.isCompiling && !EditorApplication.isPlayingOrWillChangePlaymode)
+            if (AkWwiseProjectInfo.GetData().autoPopulateEnabled && DateTime.Now.Subtract(s_lastFileCheck).Seconds > s_SecondsBetweenChecks && !EditorApplication.isCompiling && !EditorApplication.isPlayingOrWillChangePlaymode)
             {
                 AkWwisePicker.treeView.SaveExpansionStatus();
                 if (AutoPopulate())
@@ -79,13 +79,6 @@ public class AkWwiseWWUBuilder
         {
             return false;
         }
-
-        AkPluginActivator.Update();
-		
-		if(!AkWwiseProjectInfo.GetData().autoPopulateEnabled)
-		{
-			return false;
-		}
 
         AkWwiseWWUBuilder builder = new AkWwiseWWUBuilder();
         if(!builder.GatherModifiedFiles())
@@ -252,9 +245,8 @@ public class AkWwiseWWUBuilder
         return wwuIndex;
 	}
 
-    public static void StartWWUWatcher()
+     public static void StartWWUWatcher()
     {
-        Tick();
         EditorApplication.update += Tick;
     }
 
@@ -279,7 +271,7 @@ public class AkWwiseWWUBuilder
         bool bChanged = false;
         int iBasePathLen = s_wwiseProjectPath.Length + 1;
         foreach (string dir in FoldersOfInterest)
-        {            
+        {
             List<int> deleted = new List<int>();            
             ArrayList knownFiles = AkWwiseProjectInfo.GetData().GetWwuListByString(dir);    
             int cKnownBefore = knownFiles.Count;
@@ -290,7 +282,7 @@ public class AkWwiseWWUBuilder
             {
                 //Get all Wwus in this folder.
                 di = new DirectoryInfo(Path.Combine(s_wwiseProjectPath, dir));
-                files = di.GetFiles("*.wwu", SearchOption.AllDirectories);                
+                files = di.GetFiles("*.wwu", SearchOption.AllDirectories);     
             }
             catch(Exception)
             {

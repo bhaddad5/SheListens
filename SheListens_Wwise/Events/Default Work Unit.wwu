@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{4C619A7D-53CE-4116-9CA3-20BF9FC7BCAC}" SchemaVersion="70">
+<WwiseDocument Type="WorkUnit" ID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}" SchemaVersion="70">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{4C619A7D-53CE-4116-9CA3-20BF9FC7BCAC}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Footstep" ID="{A7B4CEE9-D7A2-4A74-BF7E-4528212763AB}">
+				<Event Name="Play_Test" ID="{D4716A11-4611-4B51-BB05-A0AE8C058847}">
 					<ChildrenList>
-						<Action Name="Play" ID="{DD278096-F3DF-4453-88CB-52084929E4CF}" ShortID="186231894" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{21442192-62B6-4D49-8BA3-729919EBC981}" ShortID="886463240" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{E80E84F6-35D0-4147-BE5B-08925D13ED2E}" Global="false">
-									<ObjectRef Name="Footsteps" ID="{F411EFF1-DF2F-4A97-9529-77A18FD32B18}" WorkUnitID="{933069CD-88BE-4EB0-BA3B-EE71F9C889E5}"/>
+								<Element ID="{528DCBF0-A58D-468A-B8B5-404B15FA284D}" Global="false">
+									<ObjectRef Name="Test" ID="{0B7E0828-8FC2-4728-8DA2-2056839F96B1}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Creaks" ID="{E0B3FB73-12BF-4C3A-8426-F113F0707E02}">
+				<Event Name="Play_Footstep" ID="{B61ADC25-D35D-4F73-9DEA-AB1236BCC1D3}">
 					<ChildrenList>
-						<Action Name="Play" ID="{A0932F46-3A05-4232-B547-69843498E47D}" ShortID="664207859" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{0F28A20A-1D60-4F47-9471-DAE80BA56868}" ShortID="598254075" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{30AC8A61-EAF8-41A7-805B-C6FBBF02347E}" Global="false">
-									<ObjectRef Name="Creaks" ID="{5A06E821-D4E8-4FD8-AEBE-380E05750F13}" WorkUnitID="{933069CD-88BE-4EB0-BA3B-EE71F9C889E5}"/>
+								<Element ID="{6A60C9D7-A195-45EF-AF32-DCE149468189}" Global="false">
+									<ObjectRef Name="Footsteps" ID="{8A4EE226-1E5F-4684-90BF-6BB05D8E7C46}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
 								</Element>
 							</ElementList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Test" ID="{E2A00C7F-05BA-4037-B79E-D473A84288FC}">
+				<Event Name="Play_Creaks" ID="{27B1C6A0-5B71-4D7C-9FA4-B5C8916DD76B}">
 					<ChildrenList>
-						<Action Name="Play" ID="{1103DF11-1746-436A-9D9B-5EF664EA08CB}" ShortID="50300447" Type="Play" Scope="One" Global="false">
+						<Action Name="Play" ID="{4EB9699C-4B7E-4EBC-9F6B-A63A3E470BA2}" ShortID="672536461" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{CB2A1251-74D3-4A17-83C1-6991513CCABE}" Global="false">
-									<ObjectRef Name="Test" ID="{1CC4FFF2-F11F-4DAD-92AA-3ED75E088C8F}" WorkUnitID="{933069CD-88BE-4EB0-BA3B-EE71F9C889E5}"/>
+								<Element ID="{32D85FBD-208A-46A3-86BF-C80195C4B81F}" Global="false">
+									<ObjectRef Name="Creaks" ID="{F4871EB8-3A7F-4DE6-A245-6A686CB18775}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
 								</Element>
 							</ElementList>
 						</Action>
