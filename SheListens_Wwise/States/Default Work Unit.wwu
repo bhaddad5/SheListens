@@ -32,6 +32,16 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Lights" ID="{D353C986-1E78-410F-882F-56E73EC72EF4}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C53A728D-4D27-43AC-8972-41479DF9AA0D}"/>
+						<State Name="On" ID="{E8113E3E-94D8-4507-A2AC-0C650112361A}"/>
+						<State Name="Off" ID="{1C28A4DE-AF4A-4F85-B9DE-856A2730DDCD}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -112,6 +112,76 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Lightbulb_Metal" ID="{1DAC72D6-1B9A-4F7D-9A74-B8057D1E6121}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2C259F20-E325-4EBB-91B9-7A2469BF511B}" ShortID="938615976" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3E1E251F-899E-44CB-AE18-5C67149D39BE}" Global="false">
+									<ObjectRef Name="Lightbulb_Metal" ID="{F8B57D4C-19F8-4750-AD54-EE3B0DC3332A}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Lightbulb_Buzz" ID="{3528B0F7-965D-4FD8-8CF7-067DA298DF97}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6A469AD7-ECCC-475C-A417-743F77A9AE84}" ShortID="212763101" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{AF32A5AB-DDB6-405A-9F1E-04F0A78F06E6}" Global="false">
+									<ObjectRef Name="SheListens_Buzz" ID="{303957C2-0C77-426D-AC32-B00F7C4BC217}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Lightbulb_Zap" ID="{CCA6504C-9D45-41B6-8253-5A8571638A72}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5FA8A525-5120-4A4D-9DA8-D92B7B6DDA70}" ShortID="458561354" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4D0121DD-5128-4120-85CB-51E419B0341B}" Global="false">
+									<ObjectRef Name="SheListens_LightbulbZap" ID="{95E5107E-1117-4EE3-8294-43722F2077BD}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ZapOff" ID="{EDD04558-44E3-46E2-A1E6-E8A87D44E3F6}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8260A780-77F9-4411-B206-A00D41D6AB20}" ShortID="85347511" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{9DECC07F-1EBE-45A4-B584-9A52BC574D5A}" Global="false">
+									<ObjectRef Name="SheListens_ZapOff-001" ID="{248B3DD7-7BFD-4CAC-9654-FD30A3929B07}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set State" ID="{A084147A-59E9-49AC-84D5-7ECC67332A20}" ShortID="998459458" Type="SetState" Scope="All" Global="true">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.65"/>
+							</PropertyList>
+							<SetItemParam>
+								<Group Name="Lights" ID="{D353C986-1E78-410F-882F-56E73EC72EF4}"/>
+								<GroupItem Name="Off" ID="{1C28A4DE-AF4A-4F85-B9DE-856A2730DDCD}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ZapOn" ID="{DF202B80-2FFF-457F-9869-933CD98F7200}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DD7F7AEA-91B7-465B-A335-FF90F3AFDC9B}" ShortID="982537091" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{43AD9494-5C73-43D7-A837-52A283243D53}" Global="false">
+									<ObjectRef Name="SheListens_ZapOn" ID="{26565006-DB78-4311-91C0-31791B447973}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set State" ID="{5312692B-3F7B-4A7B-9D61-ADCE73229DE3}" ShortID="88320904" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="Lights" ID="{D353C986-1E78-410F-882F-56E73EC72EF4}"/>
+								<GroupItem Name="On" ID="{E8113E3E-94D8-4507-A2AC-0C650112361A}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
