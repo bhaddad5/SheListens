@@ -2083,7 +2083,6 @@
 				</Sound>
 				<Sound Name="SheListens_Witch_Scream" ID="{4F0A02F2-326D-4340-94CC-27E134118A86}" ShortID="728800453" Type="SoundFX">
 					<PropertyList>
-						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
@@ -2101,6 +2100,11 @@
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
