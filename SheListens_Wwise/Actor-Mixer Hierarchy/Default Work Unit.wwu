@@ -2565,14 +2565,6 @@
 									</PropertyList>
 								</State>
 							</CustomState>
-							<CustomState>
-								<StateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
-								<State Name="Custom State" ID="{4B46FA16-7BD8-4336-83AE-C280D800EB8D}" ShortID="709226448">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-96"/>
-									</PropertyList>
-								</State>
-							</CustomState>
 						</CustomStateList>
 					</StateInfo>
 					<ActiveSourceList>
@@ -2923,7 +2915,7 @@
 						</Reference>
 						<Reference Name="Effect0">
 							<Custom>
-								<Effect Name="Phonon 3D (Custom)" ID="{AAC88B3B-B728-440C-8EC7-848A94EF26DF}" ShortID="697379302" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+								<Effect Name="Phonon 3D (Custom)" ID="{CF24C859-B980-424E-8266-95B8FF84A694}" ShortID="581662741" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
 							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
@@ -3092,6 +3084,11 @@
 					<PropertyList>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -3358,7 +3355,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-96</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3747,7 +3744,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-96</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -4048,6 +4045,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="UI_SoundPack13_Scroll_version05" ID="{2FA4F977-998E-47B6-A42E-69650E951D86}" ShortID="76024798">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.648"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.36"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>UI_SoundPack13_Scroll_version05.wav</AudioFile>
 						</AudioFileSource>
