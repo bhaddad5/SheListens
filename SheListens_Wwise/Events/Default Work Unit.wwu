@@ -204,6 +204,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Glass_Smash" ID="{3955262D-86AC-4DCF-B856-71BCEDB809FA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{660FAB37-8BAF-4E34-9A23-F7805EA6368A}" ShortID="303033782" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DECC47F6-A943-4DD0-97EB-71B455B55144}" Global="false">
+									<ObjectRef Name="Glass_Smash" ID="{EA7BF76E-B3C2-4126-9D56-B32EECBCEAB4}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

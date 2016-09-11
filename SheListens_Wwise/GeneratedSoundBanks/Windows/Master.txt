@@ -51,6 +51,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	501359476	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		
 	508822265	On	Lights	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		
 	581184148	On	Lights	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer1		
+	709226448	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer2		
 	744172163	Attacking	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer4		
 	758821831	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer4		
 	801516103	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Idle_Long		
@@ -75,13 +76,19 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	77874754	Phonon 3D (Custom)	Phonon 3D			
 	93950238	Phonon 3D (Custom)	Phonon 3D			
+	162155558	Phonon 3D (Custom)	Phonon 3D			
 	218533386	Phonon 3D (Custom)	Phonon 3D			
 	347318698	Phonon 3D (Custom)	Phonon 3D			
 	488005132	Phonon 3D (Custom)	Phonon 3D			
+	585703405	Phonon 3D (Custom)	Phonon 3D			
 	655706665	Phonon 3D (Custom)	Phonon 3D			
 	697379302	Phonon 3D (Custom)	Phonon 3D			
 	704487814	Phonon 3D (Custom)	Phonon 3D			
+	711645189	Phonon 3D (Custom)	Phonon 3D			
+	831113625	Phonon 3D (Custom)	Phonon 3D			
+	835166482	Phonon 3D (Custom)	Phonon 3D			
 	845916475	Phonon 3D (Custom)	Phonon 3D			
+	868083933	Phonon 3D (Custom)	Phonon 3D			
 	972639024	Phonon 3D (Custom)	Phonon 3D			
 	972990973	Phonon 3D (Custom)	Phonon 3D			
 	2653529179	Three_Voices	Wwise Harmonizer			
