@@ -6,6 +6,7 @@ public class AudioController : MonoBehaviour {
 	private float playerHeadNoiseSpeedCutoff = 0.003f;
 	private float candleNoiseSpeedCutoff = 0.005f;
 	private float detectableMovementStepDist = 0.2f;
+	private float angryDistCutoff = 1.0f;
 	public Transform candle;
 	public WitchController Witch;
     public GameObject feet;
@@ -95,13 +96,13 @@ public class AudioController : MonoBehaviour {
 		{
 			//Debug.Log("play witch idle sound at distance: " + witchDistance);
 		}
-		else if(prevTotalPlayerNoise == 0)
+		else if(Vector3.Magnitude(Witch.transform.position - transform.position) >= angryDistCutoff)
 		{
-			//Debug.Log("Play sound that the witch just saw me!");
+			//Debug.Log("Play witch moving towards you at distance: " + witchDistance");
 		}
 		else
 		{
-			//Debug.Log("Play witch attack at distance: " + witchDistance);
+			//Debug.Log("Play witch angry at distance: " + witchDistance);
 		}
 
 		prevTotalPlayerNoise = totalPlayerNoise;
