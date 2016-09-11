@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WitchController : MonoBehaviour {
 
-	private float maxWitchDistanceFromPlayer = 2.4f;
+	private float maxWitchDistanceFromPlayer = 2.8f;
 	private float moveAwayFromPlayerSpeed = -0.003f;
 	private float moveTowardsPlayerSpeedModifier = 1.3f;
 	private float minWitchDirectionTime = 12.0f;
