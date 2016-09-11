@@ -65,7 +65,7 @@ public class GameStateController : MonoBehaviour {
 	IEnumerator resetGame()
 	{
 		yield return new WaitForSeconds(6f);
-		else UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
+		UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
 	}
 
 	IEnumerator winCreditsScreen()
