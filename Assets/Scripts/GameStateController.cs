@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class GameStateController : MonoBehaviour {
 
-	public GameObject spashCanvas;
+	public GameObject splashCanvas;
 	public GameObject blackImage;
 	public GameObject endImage;
 	public GameObject keyPickupSceneUpdatePrefab;
@@ -41,10 +41,8 @@ public class GameStateController : MonoBehaviour {
 			Destroy(obj);
 		}
 
-		spashCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 10f;
-		spashCanvas.transform.eulerAngles = Camera.main.transform.eulerAngles * -1;
-		spashCanvas.transform.eulerAngles = new Vector3(0f, spashCanvas.transform.eulerAngles.y, 0f);
-		spashCanvas.transform.Rotate(new Vector3(0, 180f, 0));
+		splashCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 10f;
+		splashCanvas.transform.LookAt(Camera.main.transform);
 
 		endImage.SetActive(true);
 		blackImage.SetActive(false);
