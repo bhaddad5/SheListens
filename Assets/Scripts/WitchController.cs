@@ -31,25 +31,26 @@ public class WitchController : MonoBehaviour {
 
 	private Vector3 UpdateWitchNoiseMovement()
 	{
-		Vector3 witchNoiseMocement = new Vector3();
+		Vector3 witchNoiseMovement = new Vector3();
 
 		if (currentNoiseLevel == 0 && !hittingWall)
 		{
 			if (Vector3.Magnitude(transform.position - Camera.main.transform.position) < maxWitchDistanceFromPlayer)
 			{
-				witchNoiseMocement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, moveAwayFromPlayerSpeed);
+				witchNoiseMovement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, moveAwayFromPlayerSpeed);
 			}
 			else
 			{
-				witchNoiseMocement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, -moveAwayFromPlayerSpeed);
+				witchNoiseMovement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, -moveAwayFromPlayerSpeed);
 			}
 		}
 		else
 		{
-			witchNoiseMocement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, currentNoiseLevel * moveTowardsPlayerSpeedModifier);
+			witchNoiseMovement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, currentNoiseLevel * moveTowardsPlayerSpeedModifier);
+			transform.LookAt(Camera.main.transform.position);
 		}
 
-		return witchNoiseMocement;
+		return witchNoiseMovement;
 	}
 
 	private void UpdateWitchRotationAroundPlayer()
