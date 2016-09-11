@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}'
-    m_lastTimePsrt1: -1101073726
-    m_lastTimePart2: -1999381943
+    m_lastTimePsrt1: -1393303605
+    m_lastTimePart2: -1999381924
     List:
     - Name: Play_Creaks
       Path: Default Work Unit\Play_Creaks
@@ -53,22 +53,22 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}'
-    m_lastTimePsrt1: -737626886
-    m_lastTimePart2: -1999381949
+    m_lastTimePsrt1: -1391418715
+    m_lastTimePart2: -1999381924
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8847A6A3-9435-4EC7-A1FB-D58E7A95B363}'
-    m_lastTimePsrt1: -737446758
-    m_lastTimePart2: -1999381949
+    m_lastTimePsrt1: -1391086085
+    m_lastTimePart2: -1999381924
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B69A6D90-8969-4075-96A4-4A845642D289}'
-    m_lastTimePsrt1: 453768920
-    m_lastTimePart2: -1999381943
+    m_lastTimePsrt1: -1388547101
+    m_lastTimePart2: -1999381924
     List:
     - Name: Floor
       Path: Default Work Unit\Floor
@@ -99,8 +99,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D0B48778-5B23-4100-8D69-20C1D36E6C26}'
-    m_lastTimePsrt1: 10258799
-    m_lastTimePart2: -1999381948
+    m_lastTimePsrt1: -1391137938
+    m_lastTimePart2: -1999381924
     List:
     - Name: Master
       Path: Default Work Unit\Master
@@ -111,8 +111,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: -238283129
       Guid: f096f241a9802c429c685f6e17714e91
-  ExpandedItems:
-  - /SheListens_Wwise
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

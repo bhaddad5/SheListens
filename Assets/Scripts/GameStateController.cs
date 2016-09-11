@@ -40,7 +40,7 @@ public class GameStateController : MonoBehaviour {
 
 		foreach (GameObject obj in objsToDestroyOnSpashscreen)
 		{
-			Destroy(obj);
+			obj.SetActive(false);
 		}
 
 		splashCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 10f;
