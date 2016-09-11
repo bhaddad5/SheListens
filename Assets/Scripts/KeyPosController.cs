@@ -27,13 +27,11 @@ public class KeyPosController : MonoBehaviour {
             if (newPos == transform.position)
             {
                 RespawnKey();
-                audioController.KeyMove(gameObject);
-
             }
             else
             {
                 transform.position = newPos;
-
+				audioController.KeyMove(gameObject);
 			}
         }
 	}
