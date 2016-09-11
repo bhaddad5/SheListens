@@ -17,6 +17,14 @@ public class KeyPosController : MonoBehaviour {
 
 	public void RespawnKey()
 	{
-		transform.position = keyPositions[UnityEngine.Random.Range(0, keyPositions.Count)];
+		Vector3 newPos = keyPositions[UnityEngine.Random.Range(0, keyPositions.Count)];
+		if(newPos == transform.position)
+		{
+			RespawnKey();
+		}
+		else
+		{
+			transform.position = newPos;
+		}
 	}
 }
