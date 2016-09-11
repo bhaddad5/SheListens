@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>C:\Users\info\Documents\SheListens2\SheListens_Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\info\Documents\SheListens2\SheListens_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\info\Documents\SheListens2\SheListens_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\info\Documents\SheListens\SheListens_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -19,9 +19,14 @@
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4042215132" Name="Play_BaseLayer"/>
 				<Event Id="1247850169" Name="Play_Creaks"/>
 				<Event Id="1602358412" Name="Play_Footstep"/>
+				<Event Id="786657857" Name="Play_MusicEnemy"/>
 				<Event Id="3187507146" Name="Play_Test"/>
+				<Event Id="3978663595" Name="Play_Witch_Hunting"/>
+				<Event Id="4038978142" Name="Play_Witch_Moans"/>
+				<Event Id="3058690321" Name="Play_Witch_Scream"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="51417304" Language="SFX">
@@ -36,9 +41,17 @@
 					<ShortName>SheListens_FS_Carpet_3.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_3_67E17904.wem</Path>
 				</File>
+				<File Id="107056119" Language="SFX">
+					<ShortName>SheListens_Amb_Layer0.wav</ShortName>
+					<Path>SFX\SheListens_Amb_Layer0_67E17904.wem</Path>
+				</File>
 				<File Id="115290823" Language="SFX">
 					<ShortName>Footstep_10.wav</ShortName>
 					<Path>SFX\Footstep_10_67E17904.wem</Path>
+				</File>
+				<File Id="126127760" Language="SFX">
+					<ShortName>SheListens_Amb_Layer3.wav</ShortName>
+					<Path>SFX\SheListens_Amb_Layer3_AC0E5EAE.wem</Path>
 				</File>
 				<File Id="127331604" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_2.wav</ShortName>
@@ -52,6 +65,10 @@
 					<ShortName>SheListens_Creak_Wood_7.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_7_67E17904.wem</Path>
 				</File>
+				<File Id="178602171" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_10.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_10_67E17904.wem</Path>
+				</File>
 				<File Id="185999367" Language="SFX">
 					<ShortName>Footstep_14.wav</ShortName>
 					<Path>SFX\Footstep_14_67E17904.wem</Path>
@@ -60,17 +77,37 @@
 					<ShortName>Footstep_03.wav</ShortName>
 					<Path>SFX\Footstep_03_67E17904.wem</Path>
 				</File>
+				<File Id="219413562" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_3.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_3_67E17904.wem</Path>
+				</File>
 				<File Id="221527334" Language="SFX">
 					<ShortName>White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}.wav</ShortName>
 					<Path>SFX\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}_9E69E797.wem</Path>
+				</File>
+				<File Id="222769142" Language="SFX">
+					<ShortName>SheListens_Amb_Layer2.wav</ShortName>
+					<Path>SFX\SheListens_Amb_Layer2_AC0E5EAE.wem</Path>
 				</File>
 				<File Id="270585669" Language="SFX">
 					<ShortName>Footstep_02.wav</ShortName>
 					<Path>SFX\Footstep_02_67E17904.wem</Path>
 				</File>
+				<File Id="275247023" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_11.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_11_67E17904.wem</Path>
+				</File>
 				<File Id="278930139" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_11.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_11_67E17904.wem</Path>
+				</File>
+				<File Id="285462319" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_5.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_5_67E17904.wem</Path>
+				</File>
+				<File Id="311775558" Language="SFX">
+					<ShortName>SheListens_Amb_Layer4.wav</ShortName>
+					<Path>SFX\SheListens_Amb_Layer4_AC0E5EAE.wem</Path>
 				</File>
 				<File Id="340000999" Language="SFX">
 					<ShortName>Footstep_01.wav</ShortName>
@@ -88,9 +125,21 @@
 					<ShortName>SheListens_Creak_Wood_8.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_8_67E17904.wem</Path>
 				</File>
+				<File Id="404428200" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_4.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_4_67E17904.wem</Path>
+				</File>
+				<File Id="407758813" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_2.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_2_67E17904.wem</Path>
+				</File>
 				<File Id="414843204" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_4.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_4_67E17904.wem</Path>
+				</File>
+				<File Id="421229816" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_7.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_7_67E17904.wem</Path>
 				</File>
 				<File Id="447024962" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_8.wav</ShortName>
@@ -104,6 +153,10 @@
 					<ShortName>Footstep_17.wav</ShortName>
 					<Path>SFX\Footstep_17_67E17904.wem</Path>
 				</File>
+				<File Id="472129186" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_8 (1).wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_8 (1)_67E17904.wem</Path>
+				</File>
 				<File Id="480694559" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_2.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_2_67E17904.wem</Path>
@@ -112,6 +165,14 @@
 					<ShortName>Footstep_06.wav</ShortName>
 					<Path>SFX\Footstep_06_67E17904.wem</Path>
 				</File>
+				<File Id="529957784" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_8.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_8_67E17904.wem</Path>
+				</File>
+				<File Id="541240031" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_12.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_12_67E17904.wem</Path>
+				</File>
 				<File Id="570207068" Language="SFX">
 					<ShortName>Footstep_15.wav</ShortName>
 					<Path>SFX\Footstep_15_67E17904.wem</Path>
@@ -119,6 +180,10 @@
 				<File Id="599176027" Language="SFX">
 					<ShortName>Footstep_04.wav</ShortName>
 					<Path>SFX\Footstep_04_67E17904.wem</Path>
+				</File>
+				<File Id="603879417" Language="SFX">
+					<ShortName>SheListens_Witch_Scream.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Scream_54811321.wem</Path>
 				</File>
 				<File Id="621982090" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_1.wav</ShortName>
@@ -131,6 +196,10 @@
 				<File Id="704993998" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_9.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_9_67E17904.wem</Path>
+				</File>
+				<File Id="714370144" Language="SFX">
+					<ShortName>SheListens_Amb_Layer1.wav</ShortName>
+					<Path>SFX\SheListens_Amb_Layer1_67E17904.wem</Path>
 				</File>
 				<File Id="717254643" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_6.wav</ShortName>
@@ -152,6 +221,10 @@
 					<ShortName>Footstep_13.wav</ShortName>
 					<Path>SFX\Footstep_13_67E17904.wem</Path>
 				</File>
+				<File Id="829892214" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_9.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_9_67E17904.wem</Path>
+				</File>
 				<File Id="906100957" Language="SFX">
 					<ShortName>Footstep_08.wav</ShortName>
 					<Path>SFX\Footstep_08_67E17904.wem</Path>
@@ -159,6 +232,14 @@
 				<File Id="909384599" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_6.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_6_67E17904.wem</Path>
+				</File>
+				<File Id="914270262" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_6.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_6_67E17904.wem</Path>
+				</File>
+				<File Id="919377872" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Moan_1.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Moan_1_67E17904.wem</Path>
 				</File>
 				<File Id="927981805" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_11.wav</ShortName>
@@ -171,6 +252,10 @@
 				<File Id="990739049" Language="SFX">
 					<ShortName>Footstep_07.wav</ShortName>
 					<Path>SFX\Footstep_07_67E17904.wem</Path>
+				</File>
+				<File Id="1009246325" Language="SFX">
+					<ShortName>SheListens_Witch_Idle_Long.wav</ShortName>
+					<Path>SFX\SheListens_Witch_Idle_Long_F85DB116.wem</Path>
 				</File>
 				<File Id="1021978551" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_1.wav</ShortName>

@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	760583530	Witch			\Default Work Unit\Witch	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Witch			
+	1225919746	Hunting	Witch			
+	1641806523	Attacking	Witch			
+	1874288895	Idle	Witch			
+	4158285989	GameOver	Witch			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

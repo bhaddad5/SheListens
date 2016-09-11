@@ -1,7 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	786657857	Play_MusicEnemy			\Default Work Unit\Play_MusicEnemy	
 	1247850169	Play_Creaks			\Default Work Unit\Play_Creaks	
 	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
+	3058690321	Play_Witch_Scream			\Default Work Unit\Play_Witch_Scream	
 	3187507146	Play_Test			\Default Work Unit\Play_Test	
+	3978663595	Play_Witch_Hunting			\Default Work Unit\Play_Witch_Hunting	
+	4038978142	Play_Witch_Moans			\Default Work Unit\Play_Witch_Moans	
+	4042215132	Play_BaseLayer			\Default Work Unit\Play_BaseLayer	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1088209313	Floor			\Default Work Unit\Floor	
@@ -11,54 +16,115 @@ Switch	ID	Name	Switch Group			Notes
 	2412606308	Carpet	Floor			
 	2449969375	Glass	Floor			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	760583530	Witch			\Default Work Unit\Witch	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Witch			
+	1225919746	Hunting	Witch			
+	1641806523	Attacking	Witch			
+	1874288895	Idle	Witch			
+	4158285989	GameOver	Witch			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	54342826	Attacking	Witch	\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans		
+	74064182	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Idle_Long		
+	341603656	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		
+	362072781	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Scream		
+	465217627	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer2		
+	501359476	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		
+	709226448	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer2		
+	758821831	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer4		
+	801516103	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Idle_Long		
+	856251451	Hunting	Witch	\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans		
+	884309707	Hunting	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Scream		
+	998420324	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Scream		
+	1048862980	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans		
+	1067074232	Attacking	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Idle_Long		
+	1067843378	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer4		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1893836608	headSpeed			\Default Work Unit\headSpeed	
+	4007242070	witchDist			\Default Work Unit\witchDist	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	832347536	WetScreamLFO			\Default Work Unit\WetScreamLFO	
+	896730353	WitchMoanLFO			\Default Work Unit\WitchMoanLFO	
 
 Effect plug-ins	ID	Name	Type				Notes
+	77874754	Phonon 3D (Custom)	Phonon 3D			
+	93950238	Phonon 3D (Custom)	Phonon 3D			
 	218533386	Phonon 3D (Custom)	Phonon 3D			
 	347318698	Phonon 3D (Custom)	Phonon 3D			
+	488005132	Phonon 3D (Custom)	Phonon 3D			
 	655706665	Phonon 3D (Custom)	Phonon 3D			
+	697379302	Phonon 3D (Custom)	Phonon 3D			
+	704487814	Phonon 3D (Custom)	Phonon 3D			
+	845916475	Phonon 3D (Custom)	Phonon 3D			
+	972639024	Phonon 3D (Custom)	Phonon 3D			
+	972990973	Phonon 3D (Custom)	Phonon 3D			
+	2653529179	Three_Voices	Wwise Harmonizer			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	51417304	SheListens_Creak_Wood_9	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_9		39026
-	81834948	SheListens_Creak_Wood_10	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_10		81724
-	92973512	SheListens_FS_Carpet_3	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_3_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_3		57630
-	115290823	Footstep_10	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_10		116320
-	127331604	SheListens_Creak_Wood_2	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_2_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_2		205718
-	129545976	SheListens_Creak_Wood_5	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_5		196492
-	173243695	SheListens_Creak_Wood_7	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_7		153496
-	185999367	Footstep_14	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_14_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_14		125536
-	192170085	Footstep_03	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_03_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_03		54880
-	221527334	Test	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		10584064
-	270585669	Footstep_02	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_02_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_02		55904
-	278930139	SheListens_FS_Carpet_11	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_11_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_11		48110
-	340000999	Footstep_01	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_01_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_01		62048
-	352986027	SheListens_Creak_Wood_3	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_3_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_3		267338
-	353582821	SheListens_FS_Carpet_10	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_10		50056
-	358880674	SheListens_Creak_Wood_8	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_8_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_8		199950
-	414843204	SheListens_Creak_Wood_4	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_4		807384
-	447024962	SheListens_FS_Carpet_8	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_8_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_8		53522
-	458480143	SheListens_FS_Carpet_12	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_12_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_12		55108
-	459503261	Footstep_17	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_17_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_17		128608
-	480694559	SheListens_FS_Carpet_2	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_2_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_2		61768
-	522004884	Footstep_06	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_06_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_06		117344
-	570207068	Footstep_15	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_15_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_15		117856
-	599176027	Footstep_04	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_04_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_04		115296
-	621982090	SheListens_FS_Carpet_1	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_1		58878
-	654556409	SheListens_FS_Carpet_13	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_13_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_13		57234
-	704993998	SheListens_FS_Carpet_9	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_9		57630
-	717254643	SheListens_Creak_Wood_6	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_6_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_6		130404
-	775072888	SheListens_FS_Carpet_5	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_5		57476
-	779403974	SheListens_FS_Carpet_7	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_7		53088
-	823461823	SheListens_FS_Carpet_4	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_4		62476
-	826047067	Footstep_13	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_13_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_13		124512
-	906100957	Footstep_08	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_08_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_08		120928
-	909384599	SheListens_FS_Carpet_6	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_6_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_6		55360
-	927981805	SheListens_Creak_Wood_11	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_11_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_11		214704
-	978937480	Footstep_11	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_11_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_11		125536
-	990739049	Footstep_07	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_07_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_07		125536
-	1021978551	SheListens_Creak_Wood_1	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_1		195654
-	1042437932	Footstep_12	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_12_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_12		122464
-	1053429280	Footstep_05	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_05_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_05		122976
-	1063365595	Footstep_09	C:\Users\info\Documents\SheListens2\SheListens_Wwise\.cache\Windows\SFX\Footstep_09_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_09		119904
+	51417304	SheListens_Creak_Wood_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_9		39026
+	81834948	SheListens_Creak_Wood_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_10		81724
+	92973512	SheListens_FS_Carpet_3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_3_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_3		57630
+	107056119	SheListens_Amb_Layer0	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Amb_Layer0_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer0		10407696
+	115290823	Footstep_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_10		116320
+	126127760	SheListens_Amb_Layer3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Amb_Layer3_AC0E5EAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		3175296
+	127331604	SheListens_Creak_Wood_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_2_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_2		205718
+	129545976	SheListens_Creak_Wood_5	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_5		196492
+	173243695	SheListens_Creak_Wood_7	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_7		153496
+	178602171	SheListens_Witch_Idle_Moan_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_10		571588
+	185999367	Footstep_14	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_14_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_14		125536
+	192170085	Footstep_03	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_03_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_03		54880
+	219413562	SheListens_Witch_Idle_Moan_3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_3_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_3		744452
+	221527334	Test	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		10584064
+	222769142	SheListens_Amb_Layer2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Amb_Layer2_AC0E5EAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer2		9702096
+	270585669	Footstep_02	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_02_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_02		55904
+	275247023	SheListens_Witch_Idle_Moan_11	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_11_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_11		659428
+	278930139	SheListens_FS_Carpet_11	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_11_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_11		48110
+	285462319	SheListens_Witch_Idle_Moan_5	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_5		744452
+	311775558	SheListens_Amb_Layer4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Amb_Layer4_AC0E5EAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer4		3175296
+	340000999	Footstep_01	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_01_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_01		62048
+	352986027	SheListens_Creak_Wood_3	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_3_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_3		267338
+	353582821	SheListens_FS_Carpet_10	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_10_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_10		50056
+	358880674	SheListens_Creak_Wood_8	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_8_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_8		199950
+	404428200	SheListens_Witch_Idle_Moan_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_4		809984
+	407758813	SheListens_Witch_Idle_Moan_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_2_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_2		777220
+	414843204	SheListens_Creak_Wood_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_4		807384
+	421229816	SheListens_Witch_Idle_Moan_7	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_7		602464
+	447024962	SheListens_FS_Carpet_8	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_8_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_8		53522
+	458480143	SheListens_FS_Carpet_12	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_12_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_12		55108
+	459503261	Footstep_17	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_17_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_17		128608
+	472129186	SheListens_Witch_Idle_Moan_8 (1)	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_8 (1)_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_8 (1)		603748
+	480694559	SheListens_FS_Carpet_2	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_2_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_2		61768
+	522004884	Footstep_06	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_06_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_06		117344
+	529957784	SheListens_Witch_Idle_Moan_8	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_8_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_8		603748
+	541240031	SheListens_Witch_Idle_Moan_12	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_12_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_12		811584
+	570207068	Footstep_15	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_15_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_15		117856
+	599176027	Footstep_04	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_04_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_04		115296
+	603879417	SheListens_Witch_Scream	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Scream_54811321.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Scream		966108
+	621982090	SheListens_FS_Carpet_1	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_1		58878
+	654556409	SheListens_FS_Carpet_13	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_13_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_13		57234
+	704993998	SheListens_FS_Carpet_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_9		57630
+	714370144	SheListens_Amb_Layer1	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Amb_Layer1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer1		7056096
+	717254643	SheListens_Creak_Wood_6	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_6_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_6		130404
+	775072888	SheListens_FS_Carpet_5	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_5		57476
+	779403974	SheListens_FS_Carpet_7	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_7		53088
+	823461823	SheListens_FS_Carpet_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_4		62476
+	826047067	Footstep_13	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_13_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_13		124512
+	829892214	SheListens_Witch_Idle_Moan_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_9		645092
+	906100957	Footstep_08	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_08_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_08		120928
+	909384599	SheListens_FS_Carpet_6	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_6_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_6		55360
+	914270262	SheListens_Witch_Idle_Moan_6	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_6_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_6		875520
+	919377872	SheListens_Witch_Idle_Moan_1	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_1		887188
+	927981805	SheListens_Creak_Wood_11	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_11_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_11		214704
+	978937480	Footstep_11	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_11_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_11		125536
+	990739049	Footstep_07	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_07_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_07		125536
+	1009246325	SheListens_Witch_Idle_Long	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Long_F85DB116.wem		\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Idle_Long		6018136
+	1021978551	SheListens_Creak_Wood_1	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_1		195654
+	1042437932	Footstep_12	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_12_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_12		122464
+	1053429280	Footstep_05	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_05_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_05		122976
+	1063365595	Footstep_09	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_09_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_09		119904
 

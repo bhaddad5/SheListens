@@ -9,7 +9,12 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="witchDist" ID="{92236852-6D08-4686-985C-E882A27551B1}"/>
+				<GameParameter Name="witchDist" ID="{92236852-6D08-4686-985C-E882A27551B1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="3"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

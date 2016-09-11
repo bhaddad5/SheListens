@@ -6,6 +6,7 @@ public class LampController : MonoBehaviour {
 	public Light lamp;
 	public KeyPosController keyController;
 	public WitchController witch;
+	public AudioController audioController;
 	private float lampFlickerIntervalDefault = 16.0f;
 	private float lamoFlickerIntervalRange = 6.0f;
 	private float flickerRandomRange = 1.0f;
@@ -33,6 +34,7 @@ public class LampController : MonoBehaviour {
 			nextLampFlickerTime = Random.Range(lampFlickerIntervalDefault - flickerRandomRange, lampFlickerIntervalDefault + flickerRandomRange);
 			flickerTimeout = flickerOnTime;
 			witch.gameObject.SetActive(false);
+			audioController.SetLampState(true);
 		}
 		else if(flickerTimeout > 0)
 		{
@@ -46,6 +48,7 @@ public class LampController : MonoBehaviour {
 			keyController.RespawnKey();
 			witch.gameObject.SetActive(true);
 			witch.resetWitchPosition();
+			audioController.SetLampState(false);
 		}
 	}
 }
