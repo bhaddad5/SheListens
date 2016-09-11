@@ -16,9 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}'
-    m_lastTimePsrt1: -1393303605
-    m_lastTimePart2: -1999381924
+    m_lastTimePsrt1: 293158120
+    m_lastTimePart2: -1999381923
     List:
+    - Name: Play_BaseLayer
+      Path: Default Work Unit\Play_BaseLayer
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_BaseLayer
+        ObjectType: 3
+      ID: -252752164
+      Guid: de607b5890675e45ba9ea2c39f71d1e9
+      maxAttenuation: 0
     - Name: Play_Creaks
       Path: Default Work Unit\Play_Creaks
       PathAndIcons:
@@ -39,6 +49,16 @@ MonoBehaviour:
       ID: 1602358412
       Guid: 25dc1ab65dd3734f9deaab1236bcc1d3
       maxAttenuation: 0
+    - Name: Play_MusicEnemy
+      Path: Default Work Unit\Play_MusicEnemy
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MusicEnemy
+        ObjectType: 3
+      ID: 786657857
+      Guid: 5c52a5fc927f344487c3625a8b95b93e
+      maxAttenuation: 0
     - Name: Play_Test
       Path: Default Work Unit\Play_Test
       PathAndIcons:
@@ -48,6 +68,36 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1107460150
       Guid: 116a71d41146514bbb05a0ae8c058847
+      maxAttenuation: 0
+    - Name: Play_Witch_Hunting
+      Path: Default Work Unit\Play_Witch_Hunting
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Witch_Hunting
+        ObjectType: 3
+      ID: -316303701
+      Guid: 517cccdc0ddd914cb11f6ef64772f7a8
+      maxAttenuation: 0
+    - Name: Play_Witch_Moans
+      Path: Default Work Unit\Play_Witch_Moans
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Witch_Moans
+        ObjectType: 3
+      ID: -255989154
+      Guid: b78c13306b629846890e7a09923aa040
+      maxAttenuation: 0
+    - Name: Play_Witch_Scream
+      Path: Default Work Unit\Play_Witch_Scream
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Witch_Scream
+        ObjectType: 3
+      ID: -1236276975
+      Guid: 5707adb6a7e060479b6efd21021813ab
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -60,9 +110,42 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8847A6A3-9435-4EC7-A1FB-D58E7A95B363}'
-    m_lastTimePsrt1: -1391086085
-    m_lastTimePart2: -1999381924
-    List: []
+    m_lastTimePsrt1: 1787817902
+    m_lastTimePart2: -1999381923
+    List:
+    - Name: Witch
+      Path: Default Work Unit\Witch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Witch
+        ObjectType: 9
+      ID: 760583530
+      Guid: 846a094c64b0f144b192e33438defdc4
+      values:
+      - Attacking
+      - GameOver
+      - Hunting
+      - Idle
+      - None
+      ValueIcons:
+      - ElementName: Attacking
+        ObjectType: 8
+      - ElementName: GameOver
+        ObjectType: 8
+      - ElementName: Hunting
+        ObjectType: 8
+      - ElementName: Idle
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: bbfadb61a568daf7020d1249ff60b76fdb3ba32c
+      ValueGuids:
+      - bytes: be6d75639041db41baa00b42f6037938
+      - bytes: 307e769781d0224c90f6fc36bf889e55
+      - bytes: 50c5a77e86557a4fa88bcbdd5168661a
+      - bytes: 93afec709f672640bde292f9e5c104f2
+      - bytes: 2c99beaef115b848b8b9a51d2c07a2e2
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
