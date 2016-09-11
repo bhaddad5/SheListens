@@ -2089,19 +2089,8 @@
 								<Value>1</Value>
 							</ValueList>
 						</Property>
-						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
-						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="bool" Value="False"/>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -2555,6 +2544,14 @@
 							<CustomState>
 								<StateRef Name="On" ID="{E8113E3E-94D8-4507-A2AC-0C650112361A}"/>
 								<State Name="Custom State" ID="{B31E12BF-9731-4549-AE0D-837725EB956D}" ShortID="175086214">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+								<State Name="Custom State" ID="{4B46FA16-7BD8-4336-83AE-C280D800EB8D}" ShortID="709226448">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64" Value="-96"/>
 									</PropertyList>
@@ -3795,7 +3792,9 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
-										<RTPC Name="" ID="{8B7509BA-C6D5-4AA2-A524-62FC0910C727}" ShortID="789797534"/>
+										<RTPC Name="" ID="{8B7509BA-C6D5-4AA2-A524-62FC0910C727}" ShortID="789797534">
+											<ReferenceList/>
+										</RTPC>
 									</RTPCList>
 								</Property>
 							</PropertyList>

@@ -102,8 +102,6 @@ public class AudioController : MonoBehaviour {
 		}
 		prevCandlePos = candle.position;
 
-        Debug.Log("lamp on " + lampOn);
-
         if (!lampOn)
         {
             if (Witch == null)
@@ -145,6 +143,11 @@ public class AudioController : MonoBehaviour {
         }
 
 		prevTotalPlayerNoise = totalPlayerNoise;
+	}
+
+	public void KeyMove(GameObject key)
+	{
+		//AudioTriggers.PostEvent("Play_KeyMove", key);
 	}
 
 	public void GameOver()

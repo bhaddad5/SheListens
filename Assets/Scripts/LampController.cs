@@ -33,7 +33,7 @@ public class LampController : MonoBehaviour {
 		else if(flickerTimeout > 0)
 		{
 			flickerTimeout--;
-			lamp.intensity = currIntensity - (1-(flickerTimeout / flickerOnTime))*currIntensity;
+			//lamp.intensity = currIntensity - (1-(flickerTimeout / flickerOnTime))*currIntensity;
 		}
 		else if(flickerTimeout == 0)
 		{
