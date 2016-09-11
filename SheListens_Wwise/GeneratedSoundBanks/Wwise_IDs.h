@@ -96,6 +96,11 @@ namespace AK
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
     } // namespace BUSSES
 
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID NEW_AUXILIARY_BUS = 373392551U;
+    } // namespace AUX_BUSSES
+
 }// namespace AK
 
 #endif // __WWISE_IDS_H__
