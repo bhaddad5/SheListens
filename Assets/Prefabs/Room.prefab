@@ -4878,7 +4878,7 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.39
+  m_Intensity: 1.13
   m_Range: 5
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -4928,7 +4928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c5358cb34da4d469bae7acc4d5f6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lamp: {fileID: 0}
+  lamp: {fileID: 108000011933231690}
   keyController: {fileID: 0}
   witch: {fileID: 0}
   audioController: {fileID: 0}
