@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_CREAKS = 1247850169U;
         static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
+        static const AkUniqueID PLAY_TEST = 3187507146U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -59,6 +60,7 @@ namespace AK
         static const AkUniqueID AURO3D = 2798509819U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
+        static const AkUniqueID TOA = 1080872027U;
     } // namespace BUSSES
 
 }// namespace AK

@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1247850169	Play_Creaks			\Default Work Unit\Play_Creaks	
 	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
+	3187507146	Play_Test			\Default Work Unit\Play_Test	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1088209313	Floor			\Default Work Unit\Floor	
@@ -45,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	550486684	SheListens_Creak_Wood_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_9		39026
 	551805772	Footstep_06	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_06_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\Footstep_06		117344
 	570427769	SheListens_Creak_Wood_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_4_9D3E803F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_4		785302
+	581192136	Test	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		10584096
 	585209740	SheListens_Creak_Wood_1	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_1_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_1		195654
 	611328875	SheListens_FS_Carpet_7	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Rug\SheListens_FS_Carpet_7		53088
 	749205012	Footstep_17	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_17_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FS_Wood\Footstep_17		128608

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="72" WwiseVersion="v2016.1.2" WwiseBuild="5863">
+<WwiseDocument Type="Project" SchemaVersion="70">
 	<ProjectInfo>
 		<Project Name="SheListens_Wwise" ID="{CBB4CF61-66DC-41FF-96C6-1C46CD8A3D30}">
 			<Platforms>
@@ -10,14 +10,14 @@
 				<Property Name="DefaultLanguage" Type="int32" Value="12"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
-						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjI5NTYiIG1hc2s9IlBIVEM1NjYzIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMSIgcGxhdGZvcm1zPSIxMCIgZXhwaXJlcz0iMjAxNi0xMC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIiIG5hbWU9IlN1cHBvcnQiIHR5cGU9IjEiICBleHBpcmVzPSIyMDE2LTEwLTMxIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIxIiBwbGF0Zm9ybXM9IjEwIiBleHBpcmVzPSIyMDE2LTEwLTMxIiAgLz48bGljZW5zZSBpZD0iMjMiIG5hbWU9IkxldmVsIEIgTGljZW5zZSIgdHlwZT0iMSIgcGxhdGZvcm1zPSIxMCIgZXhwaXJlcz0iMjAxNi0xMC0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjI1IiBuYW1lPSJBbGwgV3dpc2UgUGx1Zy1JbnMiIHR5cGU9IjEiICBleHBpcmVzPSIyMDE2LTEwLTMxIiAgLz48bGljZW5zZSBpZD0iMTkiIG5hbWU9Ild3aXNlIEJldGEgQnVpbGRzIiB0eXBlPSIxIiAgZXhwaXJlcz0iMjAxNi0xMC0zMSIgIC8+PC9wcm9qZWN0Pg==|PA5rTf6bnS0QexojWPphIbx+e+vWKFBWNCPTU7Dh4zGCuseuhCFrTk9kTd/usWG3GeXuZmHLHxwB8iU7ykWyM3d03OcxHzZgQZl18+0uxRw2bvGgX5X1F+Q/uctq8WpDRkJ7/5vKC6OwN8qlYNwp2fB4ZLoaW5EjT0LGCP4+efmWXOuZ3PmO1M4jla2xbqklZ5NwlAnsDnkbAMKtjGPnG8Mlb12vvYmUwYafrx0ZZlqJTaUMLm6iPoG8tMtNMPPwuGnn72R4K74M8nQ/GH3kGOUNqSnYbPtL6gWnjpw8CSPP/TT3SkJaw+4Btio5GilwgicmBn6AGwxLjYBH1pv0Uw=="/>
@@ -26,32 +26,32 @@
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\info\Documents\SheListens\Assets\StreamingAssets\Audio\GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
-						<Value Platform="Mac">Copy Streamed Files</Value>
 						<Value Platform="Windows">Copy Streamed Files</Value>
+						<Value Platform="Mac">Copy Streamed Files</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
-						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Windows">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
-						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
-						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2016.1|Build=5863|VersionName=v2016.1.2|Config=Release"/>
@@ -574,7 +574,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Phonon 3D" PluginType="3" CompanyID="128" PluginID="2">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="128" PluginID="2">
 					<PropertyList>
 						<Property Name="East-West Preview" Type="int32">
 							<ValueList>
@@ -1028,7 +1028,6 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Event" PluginType="0" CompanyID="1" PluginID="4"/>
 				<SharedPropertyList ClassName="iZotope Trash Delay" PluginType="3" CompanyID="259" PluginID="4">
 					<PropertyList>
 						<Property Name="DelayType" Type="int32">
@@ -1264,11 +1263,6 @@
 							</ValueList>
 						</Property>
 						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
 								<Value>0</Value>
 							</ValueList>
@@ -2976,11 +2970,6 @@
 						<Property Name="PanY" Type="Real64">
 							<ValueList>
 								<Value>35</Value>
-							</ValueList>
-						</Property>
-						<Property Name="PanZ" Type="Real64">
-							<ValueList>
-								<Value>0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="PlayMechanismLoop" Type="bool">
@@ -8205,11 +8194,6 @@
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="Wwise Meter" PluginType="3" CompanyID="0" PluginID="129">
 					<PropertyList>
-						<Property Name="ApplyDownstreamVolume" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
 						<Property Name="AttackTime" Type="Real32">
 							<ValueList>
 								<Value>0</Value>
@@ -8325,7 +8309,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise Recorder" PluginType="3" CompanyID="0" PluginID="132">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="0" PluginID="132">
 					<PropertyList>
 						<Property Name="ApplyDownstreamVolume" Type="bool">
 							<ValueList>
@@ -8744,6 +8728,15 @@
 						<Property Name="AudioInputGain" Type="Real32">
 							<ValueList>
 								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="Wwise MP3 Input" PluginType="2" CompanyID="0" PluginID="201">
+					<PropertyList>
+						<Property Name="Token" Type="int32">
+							<ValueList>
+								<Value>0</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -9349,9 +9342,6 @@
 				</PhysicalFolder>
 				<PhysicalFolder Path="Attenuations">
 					<WorkUnit Name="Attenuations" ID="{017BDDA0-1BB1-4CE1-8077-79594EC4585C}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Audio Devices">
-					<WorkUnit Name="Audio Devices" ID="{27092F88-225A-1154-6725-C8A34F3D4482}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Control Surface Sessions">
 					<WorkUnit Name="Control Surface Sessions" ID="{1751E4CD-8018-4E2C-9A8A-C77764D1D653}" PersistMode="Standalone"/>

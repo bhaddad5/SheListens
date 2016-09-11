@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="1247850169" Name="Play_Creaks" ObjectPath="\Events\Default Work Unit\Play_Creaks"/>
 				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\Play_Footstep"/>
+				<Event Id="3187507146" Name="Play_Test" ObjectPath="\Events\Default Work Unit\Play_Test"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="13544262" Language="SFX">
@@ -124,6 +125,10 @@
 				<File Id="570427769" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_4.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_4_9D3E803F.wem</Path>
+				</File>
+				<File Id="581192136" Language="SFX">
+					<ShortName>White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}.wav</ShortName>
+					<Path>SFX\White_Noise_-3dBFS_44100Hz_32bit_Mono {5212a4f4-44c0-4694-a41e-3cf5c3866828}_67E17904.wem</Path>
 				</File>
 				<File Id="585209740" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_1.wav</ShortName>

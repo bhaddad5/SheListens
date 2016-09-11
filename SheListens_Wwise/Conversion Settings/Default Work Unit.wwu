@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}" SchemaVersion="72">
+<WwiseDocument Type="WorkUnit" ID="{F8733D2C-0561-4BFA-8111-FD70A2D2B4FD}" SchemaVersion="70">
 	<Conversions>
-		<WorkUnit Name="Default Work Unit" ID="{0612290C-F5B3-445D-826D-F957EE4A8EA1}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{F8733D2C-0561-4BFA-8111-FD70A2D2B4FD}" PersistMode="Standalone">
 			<ChildrenList>
 				<Conversion Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
 					<PropertyList>
 						<Property Name="Channels" Type="int32">
 							<ValueList>
-								<Value Platform="Mac">4</Value>
 								<Value Platform="Windows">4</Value>
+								<Value Platform="Mac">4</Value>
 							</ValueList>
 						</Property>
 						<Property Name="LRMix" Type="Real64">
 							<ValueList>
-								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="MaxSampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="MinSampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ConversionPluginInfoList>
-						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{CF282D9D-FDCB-4DD0-91F8-F1F39ED109B1}" PluginName="PCM" CompanyID="0" PluginID="1"/>
-						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{5938323D-EFDA-4F9D-B090-C26AE891C02F}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{CDE2544E-475C-47B6-9E26-C0ADBB3CDB24}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{DB7644A6-2567-4E0F-B5ED-6A6FDD2AF9B9}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
