@@ -65,7 +65,7 @@ public class AudioController : MonoBehaviour {
 			if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
 			{
 				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
-				Debug.Log("making player head sound from speed: " + headMoveDist);
+				//Debug.Log("making player head sound from speed: " + headMoveDist);
 				AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
                 AudioTriggers.PostEvent("Play_Creaks", this.gameObject);
                 totalPlayerNoise += headMoveDist;
@@ -80,25 +80,28 @@ public class AudioController : MonoBehaviour {
 		float candleMoveDist = Vector3.Magnitude(candle.position - prevCandlePos);
 		if (candleMoveDist >= candleNoiseSpeedCutoff)
 		{
-			Debug.Log("making candle sound from speed: " + candleMoveDist);
+			//Debug.Log("making candle sound from speed: " + candleMoveDist);
 			totalPlayerNoise += candleMoveDist;
 		}
 		prevCandlePos = candle.position;
+
+        if (Witch == null)
+            return;
 
 		Witch.updateNoiseLevel(totalPlayerNoise);
 
 		float witchDistance = Vector3.Magnitude(transform.position - Witch.transform.position);
 		if (totalPlayerNoise == 0)
 		{
-			Debug.Log("play witch idle sound at distance: " + witchDistance);
+			//Debug.Log("play witch idle sound at distance: " + witchDistance);
 		}
 		else if(prevTotalPlayerNoise == 0)
 		{
-			Debug.Log("Play sound that the witch just saw me!");
+			//Debug.Log("Play sound that the witch just saw me!");
 		}
 		else
 		{
-			Debug.Log("Play witch attack at distance: " + witchDistance);
+			//Debug.Log("Play witch attack at distance: " + witchDistance);
 		}
 
 		prevTotalPlayerNoise = totalPlayerNoise;
@@ -106,6 +109,6 @@ public class AudioController : MonoBehaviour {
 
 	public void PlayKeyPickupSound()
 	{
-		Debug.Log("play key pickup sound (glass shatter)");
+		//Debug.Log("play key pickup sound (glass shatter)");
 	}
 }

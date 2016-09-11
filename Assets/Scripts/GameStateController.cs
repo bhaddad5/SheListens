@@ -8,12 +8,14 @@ public class GameStateController : MonoBehaviour {
 	public GameObject blackImage;
 	public GameObject endImage;
 	public GameObject keyPickupSceneUpdatePrefab;
+	public AudioController audioController;
 
 	public GameObject[] objsToDestroyOnSpashscreen;
 
 	public void TriggerKeyPickupEvent()
 	{
 		Instantiate(keyPickupSceneUpdatePrefab);
+		audioController.PlayKeyPickupSound();
 	}
 
 	public void TriggerWinGameEvent()

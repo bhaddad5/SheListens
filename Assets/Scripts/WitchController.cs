@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WitchController : MonoBehaviour {
 
-	private float maxWitchDistanceFromPlayer = 2.4f;
+	private float maxWitchDistanceFromPlayer = 2.8f;
 	private float moveAwayFromPlayerSpeed = -0.003f;
 	private float moveTowardsPlayerSpeedModifier = 1.3f;
 	private float minWitchDirectionTime = 12.0f;
@@ -70,6 +70,13 @@ public class WitchController : MonoBehaviour {
 		currentWitchArcDir = currentWitchArcDir * -1;
 
 		currentWitchArcSpeed = Random.Range(minWitchArcSpeed, maxWitchArcSpeed) * currentWitchArcDir;
+	}
+
+	public void resetWitchPosition()
+	{
+		transform.position = Camera.main.transform.position + new Vector3(0f, 0f, maxWitchDistanceFromPlayer);
+		transform.RotateAround(Camera.main.transform.position, Vector3.up, Random.Range(0, 360f));
+		transform.LookAt(Camera.main.transform);
 	}
 
 	private void updateWitchPosition()
