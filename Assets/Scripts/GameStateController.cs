@@ -46,6 +46,12 @@ public class GameStateController : MonoBehaviour {
 		splashCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 10f;
 		splashCanvas.transform.LookAt(Camera.main.transform);
 
+		StartCoroutine(tempdelay());
+	}
+
+	IEnumerator tempdelay()
+	{
+		yield return new WaitForSeconds(3f);
 		endImage.SetActive(true);
 		blackImage.SetActive(false);
 		StartCoroutine(resetGame());
@@ -53,8 +59,7 @@ public class GameStateController : MonoBehaviour {
 
 	IEnumerator resetGame()
 	{
-		yield return new WaitForSeconds(3f);
-		endImage.SetActive(false);
+		yield return new WaitForSeconds(6f);
 		UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
 	}
 }
