@@ -53,7 +53,6 @@ Custom State	ID	Name	State Group	Owner		Notes
 	501359476	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		
 	508822265	On	Lights	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer3		
 	581184148	On	Lights	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer1		
-	709226448	Idle	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer2		
 	744172163	Attacking	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer4		
 	758821831	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Amb_Layer4		
 	801516103	GameOver	Witch	\Actor-Mixer Hierarchy\Default Work Unit\SheListens_Witch_Idle_Long		
@@ -72,30 +71,22 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4007242070	witchDist			\Default Work Unit\witchDist	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
+	832347536	WetScreamLFO			\Default Work Unit\WetScreamLFO	
 	896730353	WitchMoanLFO			\Default Work Unit\WitchMoanLFO	
 
 Effect plug-ins	ID	Name	Type				Notes
-	13076286	Phonon 3D (Custom)	Phonon 3D			
-	29352955	Phonon 3D (Custom)	Phonon 3D			
-	34958519	Phonon 3D (Custom)	Phonon 3D			
-	70144427	Phonon 3D (Custom)	Phonon 3D			
-	90930554	Phonon 3D (Custom)	Phonon 3D			
-	154970797	Phonon 3D (Custom)	Phonon 3D			
-	216832203	Phonon 3D (Custom)	Phonon 3D			
-	217126235	Phonon 3D (Custom)	Phonon 3D			
+	77874754	Phonon 3D (Custom)	Phonon 3D			
+	93950238	Phonon 3D (Custom)	Phonon 3D			
 	218533386	Phonon 3D (Custom)	Phonon 3D			
-	243052153	Phonon 3D (Custom)	Phonon 3D			
+	347318698	Phonon 3D (Custom)	Phonon 3D			
 	488005132	Phonon 3D (Custom)	Phonon 3D			
-	489928463	Phonon 3D (Custom)	Phonon 3D			
-	505183716	Phonon 3D (Custom)	Phonon 3D			
-	555077136	Phonon 3D (Custom)	Phonon 3D			
-	568538711	Phonon 3D (Custom)	Phonon 3D			
-	609493845	Phonon 3D (Custom)	Phonon 3D			
+	655706665	Phonon 3D (Custom)	Phonon 3D			
 	697379302	Phonon 3D (Custom)	Phonon 3D			
-	699595943	Phonon 3D (Custom)	Phonon 3D			
 	704487814	Phonon 3D (Custom)	Phonon 3D			
-	837326554	Phonon 3D (Custom)	Phonon 3D			
-	848206576	Phonon 3D (Custom)	Phonon 3D			
+	845916475	Phonon 3D (Custom)	Phonon 3D			
+	972639024	Phonon 3D (Custom)	Phonon 3D			
+	972990973	Phonon 3D (Custom)	Phonon 3D			
+	2653529179	Three_Voices	Wwise Harmonizer			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	51417304	SheListens_Creak_Wood_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_9		39026
@@ -171,7 +162,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	732045735	SheListens_GlassStep_16	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_GlassStep_16_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Glass\SheListens_GlassStep_16		335400
 	775072888	SheListens_FS_Carpet_5	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_5_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_5		57476
 	779403974	SheListens_FS_Carpet_7	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_7_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_7		53088
-	782965782	SonarPings HI057601	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SonarPings HI057601_80FAC461.wem		\Actor-Mixer Hierarchy\Default Work Unit\SonarPings HI057601		602532
+	782965782	SonarPings HI057601	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SonarPings HI057601_CC0C73E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SonarPings HI057601		602532
 	823461823	SheListens_FS_Carpet_4	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_FS_Carpet_4_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\SheListens_FS_Carpet_4		62476
 	826047067	Footstep_13	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\Footstep_13_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Wood\Footstep_13		124512
 	829892214	SheListens_Witch_Idle_Moan_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Witch_Idle_Moan_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Witch Moans\SheListens_Witch_Idle_Moan_9		645092
