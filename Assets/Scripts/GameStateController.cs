@@ -9,7 +9,7 @@ public class GameStateController : MonoBehaviour {
 	public GameObject endImage;
 	public GameObject keyPickupSceneUpdatePrefab;
 	public AudioController audioController;
-	public Animation windowAnim; 
+	public GameObject currentWindow, brokenWindow, shatteredGlass; 
 
 	public GameObject[] objsToDestroyOnSpashscreen;
 
@@ -17,7 +17,9 @@ public class GameStateController : MonoBehaviour {
 	{
 		Instantiate(keyPickupSceneUpdatePrefab);
 		audioController.PlayKeyPickupSound();
-        windowAnim.Play(); 
+		currentWindow.SetActive (false);
+		brokenWindow.SetActive (true); 
+		shatteredGlass.SetActive (true); 
     }
 
     public void TriggerWinGameEvent()
