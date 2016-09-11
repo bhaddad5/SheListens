@@ -43,19 +43,16 @@ public class GameStateController : MonoBehaviour {
 
 		spashCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 10f;
 		spashCanvas.transform.eulerAngles = Camera.main.transform.eulerAngles * -1;
+		spashCanvas.transform.eulerAngles = new Vector3(0f, spashCanvas.transform.eulerAngles.y, 0f);
 		spashCanvas.transform.Rotate(new Vector3(0, 180f, 0));
 
 		endImage.SetActive(true);
 		blackImage.SetActive(false);
 		StartCoroutine(resetGame());
-
-		Debug.Log("run reset game");
 	}
 
 	IEnumerator resetGame()
 	{
-		Debug.Log("stuff!");
-
 		yield return new WaitForSeconds(3f);
 		endImage.SetActive(false);
 		UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");

@@ -8,16 +8,17 @@ public class PlayerHandController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if(other.tag == "Key")
+		if(other.tag == "Key" && !keyPickedUp)
 		{
 			keyPickedUp = true;
 			other.transform.SetParent(transform);
-			other.transform.localPosition = new Vector3(0, 0, 0.1f);
-			other.transform.localEulerAngles = Vector3.zero;
+			other.transform.localPosition = new Vector3(.02f, -0.05f, -0.04f);
+			other.transform.localEulerAngles = new Vector3(180, 0, 90);
 			stateController.TriggerKeyPickupEvent();
+            other.GetComponent<KeyPosController>().setKeypickedUp(true);
 		}
 
-		if (other.tag == "Lock" && keyPickedUp == true)
+		if (other.tag == "Lock" && keyPickedUp)
 		{
 			other.transform.parent.gameObject.SetActive(false);
 			WinZone.SetActive(true);

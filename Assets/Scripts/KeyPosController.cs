@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class KeyPosController : MonoBehaviour {
 
 	List<Vector3> keyPositions = new List<Vector3>();
+    private bool keyPickedUp = false;
 
 	void Start()
 	{
@@ -17,14 +18,22 @@ public class KeyPosController : MonoBehaviour {
 
 	public void RespawnKey()
 	{
-		Vector3 newPos = keyPositions[UnityEngine.Random.Range(0, keyPositions.Count)];
-		if(newPos == transform.position)
-		{
-			RespawnKey();
-		}
-		else
-		{
-			transform.position = newPos;
-		}
+        if (!keyPickedUp)
+        {
+            Vector3 newPos = keyPositions[UnityEngine.Random.Range(0, keyPositions.Count)];
+            if (newPos == transform.position)
+            {
+                RespawnKey();
+            }
+            else
+            {
+                transform.position = newPos;
+            }
+        }
 	}
+
+    public void setKeypickedUp(bool up)
+    {
+        keyPickedUp = up;
+    }
 }
