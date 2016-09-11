@@ -103,4 +103,9 @@ public class AudioController : MonoBehaviour {
 
 		prevTotalPlayerNoise = totalPlayerNoise;
 	}
+
+	public void PlayKeyPickupSound()
+	{
+		Debug.Log("play key pickup sound (glass shatter)");
+	}
 }

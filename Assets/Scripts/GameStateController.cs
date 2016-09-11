@@ -7,11 +7,13 @@ public class GameStateController : MonoBehaviour {
 	public GameObject spashCanvas;
 	public GameObject blackImage;
 	public GameObject endImage;
+	public GameObject keyPickupSceneUpdatePrefab;
+
 	public GameObject[] objsToDestroyOnSpashscreen;
 
 	public void TriggerKeyPickupEvent()
 	{
-
+		Instantiate(keyPickupSceneUpdatePrefab);
 	}
 
 	public void TriggerWinGameEvent()
