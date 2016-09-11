@@ -4,7 +4,7 @@ using System; //This allows the IComparable Interface
 using System.Collections.Generic;
 
 public class KeyPosController : MonoBehaviour {
-
+	public AudioController audioController;
 	List<Vector3> keyPositions = new List<Vector3>();
     private bool keyPickedUp = false;
 
@@ -31,7 +31,9 @@ public class KeyPosController : MonoBehaviour {
             else
             {
                 transform.position = newPos;
-            }
+				audioController.KeyMove(gameObject);
+
+			}
         }
 	}
 
