@@ -54,6 +54,10 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_GlassSmash" ID="{A800E4A9-C64F-4571-BDA1-C4601C1A358C}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Creaks" ID="{27B1C6A0-5B71-4D7C-9FA4-B5C8916DD76B}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
 							<Position X="1" Y="1"/>
 						</Module>
@@ -97,11 +101,15 @@
 							<ObjectRef Name="SheListens_Buzz" ID="{303957C2-0C77-426D-AC32-B00F7C4BC217}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
 							<Position X="4" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_CandleBurn" ID="{9F8CBE8B-15D6-4D11-9DA9-0A9CEEC1B885}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="4" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="witchDist" ID="{92236852-6D08-4686-985C-E882A27551B1}"/>
-							<Value>7.31005695748625E-317</Value>
+							<Value>7</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="headSpeed" ID="{8D65B786-666C-4132-9A9D-CBB1A1CA10F2}"/>
@@ -113,7 +121,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Hunting" ID="{7EA7C550-5586-4F7A-A88B-CBDD5168661A}"/>
+						<CurrentStateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
 						<CurrentStateRef Name="Off" ID="{1C28A4DE-AF4A-4F85-B9DE-856A2730DDCD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

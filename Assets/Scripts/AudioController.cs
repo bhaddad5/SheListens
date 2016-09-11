@@ -6,7 +6,7 @@ public class AudioController : MonoBehaviour {
 	private float playerHeadNoiseSpeedCutoff = 0.002f;
 	private float candleNoiseSpeedCutoff = 0.004f;
 	private float detectableMovementStepDist = 0.1f;
-	private float angryDistCutoff = 1.0f;
+	private float angryDistCutoff = 2.0f;
 	public Transform candle;
 	public WitchController Witch;
     public GameObject feet;
@@ -111,11 +111,11 @@ public class AudioController : MonoBehaviour {
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
 				//Debug.Log("play witch idle sound at distance: " + witchDistance);
 			}
-			else if (Vector3.Magnitude(Witch.transform.position - transform.position) >= angryDistCutoff)
+			else if (witchDistance >= angryDistCutoff)
 			{
 				AudioTriggers.SetState("Witch", "Hunting");
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
-				//Debug.Log("Play witch moving towards you at distance: " + witchDistance");
+				Debug.Log("Play witch moving towards you at distance: " + witchDistance);
 			}
 			else
 			{
@@ -124,7 +124,7 @@ public class AudioController : MonoBehaviour {
 				AudioTriggers.SetState("Witch", "Attack");
 				AudioTriggers.PostEvent("Play_Witch_Scream", Witch.gameObject);
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
-				//Debug.Log("Play witch angry at distance: " + witchDistance);
+				Debug.Log("Play witch angry at distance: " + witchDistance);
 			}
 			}
 		else
@@ -135,8 +135,14 @@ public class AudioController : MonoBehaviour {
 		prevTotalPlayerNoise = totalPlayerNoise;
 	}
 
+	public void GameOver()
+	{
+		AudioTriggers.SetState("Witch", "GameOver");
+	}
+
 	public void PlayKeyPickupSound()
 	{
+        AudioTriggers.PostEvent("Play_KeyPickUp", candle.gameObject);
 		//Debug.Log("play key pickup sound (glass shatter)");
 	}
 

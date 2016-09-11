@@ -14,6 +14,9 @@ public class KeyPosController : MonoBehaviour {
 		keyPositions.Add(new Vector3(-1.094f, -0.185f, 1.276f));
 		keyPositions.Add(new Vector3(1.608f, 0.751f, -0.842f));
 		keyPositions.Add(new Vector3(1.412f, -0.044f, -1.562f));
+		keyPositions.Add (new Vector3 (0.36f, 0.762f, 1.376f)); 
+		keyPositions.Add (new Vector3 (-0.463f, 1.128f, 1.376f));
+		keyPositions.Add (new Vector3 (-1.174f, 0.456f, -1.379f)); 
 	}
 
 	public void RespawnKey()

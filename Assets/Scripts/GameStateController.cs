@@ -8,6 +8,7 @@ public class GameStateController : MonoBehaviour {
 	public GameObject blackImage;
 	public GameObject endImage;
 	public GameObject creditsImage;
+	public GameObject winImage;
 	public GameObject keyPickupSceneUpdatePrefab;
 	public AudioController audioController;
 	public GameObject currentWindow, brokenWindow, shatteredGlass; 
@@ -27,7 +28,7 @@ public class GameStateController : MonoBehaviour {
 	{
 		blackImage.SetActive(true);
 
-		playTitleScreen(true);
+		playWinScreen();
 	}
 
 	public void TriggerDeathEvent()
@@ -35,6 +36,20 @@ public class GameStateController : MonoBehaviour {
 		blackImage.SetActive(true);
 
 		playTitleScreen(false);
+	}
+
+	private void playWinScreen()
+	{
+		foreach (GameObject obj in objsToDestroyOnSpashscreen)
+		{
+			obj.SetActive(false);
+		}
+
+		splashCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 10f;
+		splashCanvas.transform.LookAt(Camera.main.transform);
+		winImage.SetActive(true);
+
+		StartCoroutine(tempdelay(true));
 	}
 
 	private void playTitleScreen(bool won)
@@ -55,6 +70,8 @@ public class GameStateController : MonoBehaviour {
 		yield return new WaitForSeconds(3f);
 		endImage.SetActive(true);
 		blackImage.SetActive(false);
+		winImage.SetActive(false);
+		audioController.GameOver();
 		if (won)
 		{
 			StartCoroutine(winCreditsScreen());
@@ -64,7 +81,7 @@ public class GameStateController : MonoBehaviour {
 
 	IEnumerator resetGame()
 	{
-		yield return new WaitForSeconds(6f);
+		yield return new WaitForSeconds(4f);
 		UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
 	}
 

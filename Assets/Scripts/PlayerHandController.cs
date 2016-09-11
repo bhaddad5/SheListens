@@ -4,7 +4,8 @@ using System.Collections;
 public class PlayerHandController : MonoBehaviour {
 	public GameObject WinZone;
 	public GameStateController stateController;
-	private bool keyPickedUp = false;
+	public Animation doorAnim;
+	private bool keyPickedUp = true;
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -22,6 +23,7 @@ public class PlayerHandController : MonoBehaviour {
 		{
 			other.transform.parent.gameObject.SetActive(false);
 			WinZone.SetActive(true);
+			doorAnim.Play();
 		}
 	}
 }
