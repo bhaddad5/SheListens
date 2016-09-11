@@ -12,8 +12,8 @@ public class PlayerHandController : MonoBehaviour {
 		{
 			keyPickedUp = true;
 			other.transform.SetParent(transform);
-			other.transform.localPosition = new Vector3(0, 0, 0.1f);
-			other.transform.localEulerAngles = Vector3.zero;
+			other.transform.localPosition = new Vector3(.02f, -0.05f, -0.04f);
+			other.transform.localEulerAngles = new Vector3(180, 0, 90);
 			stateController.TriggerKeyPickupEvent();
 		}
 
