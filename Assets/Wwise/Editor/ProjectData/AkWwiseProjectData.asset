@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}'
-    m_lastTimePsrt1: 1586778324
-    m_lastTimePart2: -1999381876
+    m_lastTimePsrt1: -1902157752
+    m_lastTimePart2: -1999381875
     List:
     - Name: Play_BaseLayer
       Path: Default Work Unit\Play_BaseLayer
@@ -68,6 +68,36 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1602358412
       Guid: 25dc1ab65dd3734f9deaab1236bcc1d3
+      maxAttenuation: 0
+    - Name: Play_Glass_Smash
+      Path: Default Work Unit\Play_Glass_Smash
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Glass_Smash
+        ObjectType: 3
+      ID: 727285159
+      Guid: 2d265539ac86cf4db85671bcedb809fa
+      maxAttenuation: 0
+    - Name: Play_KeyBlip
+      Path: Default Work Unit\Play_KeyBlip
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_KeyBlip
+        ObjectType: 3
+      ID: -941495570
+      Guid: 71a1c57b164e274aaa3ceb2fd6f272f1
+      maxAttenuation: 0
+    - Name: Play_KeyPickUp
+      Path: Default Work Unit\Play_KeyPickUp
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_KeyPickUp
+        ObjectType: 3
+      ID: 885077343
+      Guid: b2af65874232fb47a1a22523fd58010e
       maxAttenuation: 0
     - Name: Play_Lightbulb_Buzz
       Path: Default Work Unit\Play_Lightbulb_Buzz

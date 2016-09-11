@@ -14,6 +14,7 @@ public class AudioController : MonoBehaviour {
     public GameObject window;
     public GameObject lampLight;
     public GameObject lampParent;
+    public GameObject door;
 
 	private float totalPlayerNoise;
 	private float prevTotalPlayerNoise = 0;
@@ -131,7 +132,7 @@ public class AudioController : MonoBehaviour {
 				AudioTriggers.SetState("Witch", "Attack");
 				AudioTriggers.PostEvent("Play_Witch_Scream", Witch.gameObject);
 				AudioTriggers.SetRTPC("witchDist", witchDistance);
-				Debug.Log("Play witch angry at distance: " + witchDistance);
+				//Debug.Log("Play witch angry at distance: " + witchDistance);
 			}
 
             //AudioTriggers.PostEvent("Play_ZapOff", lampLight);
@@ -165,6 +166,7 @@ public class AudioController : MonoBehaviour {
 	public void SetLampState(bool on)
 	{
 		lampOn = on;
+        Debug.Log("Lampstate " + on);
         if(on)
         {
             AudioTriggers.PostEvent("Play_ZapOn", lampLight);
@@ -174,4 +176,9 @@ public class AudioController : MonoBehaviour {
             AudioTriggers.PostEvent("Play_ZapOff", lampLight);
         }
 	}
+
+    public void  PlayDoorSound()
+    {
+        AudioTriggers.PostEvent("Play_DoorOpen", door);
+    }
 }

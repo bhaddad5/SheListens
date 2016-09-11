@@ -5,7 +5,7 @@ public class PlayerHandController : MonoBehaviour {
 	public GameObject WinZone;
 	public GameStateController stateController;
 	public Animation doorAnim;
-	private bool keyPickedUp = true;
+	private bool keyPickedUp = false;
 
 	void OnTriggerEnter(Collider other)
 	{

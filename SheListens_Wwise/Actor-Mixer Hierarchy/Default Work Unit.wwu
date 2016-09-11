@@ -2083,14 +2083,26 @@
 				</Sound>
 				<Sound Name="SheListens_Witch_Scream" ID="{4F0A02F2-326D-4340-94CC-27E134118A86}" ShortID="728800453" Type="SoundFX">
 					<PropertyList>
+						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
 								<Value>1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="bool" Value="False"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -3340,6 +3352,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -3413,6 +3430,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SheListens_ZapOn" ID="{B2950A39-6071-42D5-AD24-60EB282743F7}" ShortID="279545337">
+									<PropertyList>
+										<Property Name="TrimEnd" Type="Real64" Value="9.54300595238099E-02"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SheListens_ZapOn.wav</AudioFile>
 								</AudioFileSource>
@@ -3604,7 +3624,7 @@
 								<Property Name="Spatialization" Type="bool" Value="False"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-26</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3721,6 +3741,11 @@
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -3795,7 +3820,7 @@
 							<ChildrenList>
 								<AudioFileSource Name="SheListens_ZapOff-001" ID="{CCBDFF3B-3AAF-42AE-BBCB-02E1CBED03EB}" ShortID="340537939">
 									<PropertyList>
-										<Property Name="TrimEnd" Type="Real64" Value="1.77915071115974"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.29216340647224"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SheListens_ZapOff-001.wav</AudioFile>
