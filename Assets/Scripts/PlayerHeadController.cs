@@ -19,7 +19,7 @@ public class PlayerHeadController : MonoBehaviour {
 		}
 		if (other.GetComponent<WitchController>() != null)
 		{
-			gameStateController.TriggerWinGameEvent();
+			gameStateController.TriggerDeathEvent();
 		}
 	}
 
