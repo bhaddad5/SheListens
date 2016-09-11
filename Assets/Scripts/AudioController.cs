@@ -162,5 +162,13 @@ public class AudioController : MonoBehaviour {
 	public void SetLampState(bool on)
 	{
 		lampOn = on;
+        if(on)
+        {
+            AudioTriggers.PostEvent("Play_ZapOn", lampLight);
+        }
+        else
+        {
+            AudioTriggers.PostEvent("Play_ZapOff", lampLight);
+        }
 	}
 }
