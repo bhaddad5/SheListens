@@ -5379,7 +5379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c5358cb34da4d469bae7acc4d5f6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lamp: {fileID: 0}
+  lamp: {fileID: 108000011933231690}
   keyController: {fileID: 0}
   witch: {fileID: 0}
   audioController: {fileID: 0}
