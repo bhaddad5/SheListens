@@ -7,7 +7,7 @@ public class LampController : MonoBehaviour {
 	private float lampFlickerIntervalDefault = 7.0f;
 	private float lamoFlickerIntervalRange = 4.0f;
 	private float flickerRandomRange = 1.0f;
-	private float flickerOnTime = 20.0f;
+	private float flickerOnTime = 200.0f;
 
 	private float startingLampIntensity;
 	private float lastLampFlicker = -10f;
@@ -34,7 +34,7 @@ public class LampController : MonoBehaviour {
 		else if(flickerTimeout > 0)
 		{
 			flickerTimeout--;
-			lamp.intensity = currIntensity - (flickerTimeout / flickerOnTime)*currIntensity;
+			lamp.intensity = currIntensity - (1-(flickerTimeout / flickerOnTime))*currIntensity;
 		}
 		else
 		{

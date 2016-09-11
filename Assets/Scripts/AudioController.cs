@@ -11,6 +11,7 @@ public class AudioController : MonoBehaviour {
     public GameObject feet;
 
 	private float totalPlayerNoise;
+	private float prevTotalPlayerNoise = 0;
 	private Vector3 prevCandlePos;
 	private Transform playerHead;
 	private Vector3 prevPlayerPos;
@@ -52,7 +53,7 @@ public class AudioController : MonoBehaviour {
                 break;
         }
 
-            float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
+		float headMoveDist = Vector3.Magnitude(playerHead.position - prevPlayerPos);
 		if (headMoveDist >= playerHeadNoiseSpeedCutoff)
 		{
 			if (!trackindDetectableMovement)
@@ -64,6 +65,7 @@ public class AudioController : MonoBehaviour {
 			if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
 			{
 				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
+				Debug.Log("making player head sound from speed: " + headMoveDist);
 				AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
                 AudioTriggers.PostEvent("Play_Creaks", this.gameObject);
                 totalPlayerNoise += headMoveDist;
@@ -78,10 +80,27 @@ public class AudioController : MonoBehaviour {
 		float candleMoveDist = Vector3.Magnitude(candle.position - prevCandlePos);
 		if (candleMoveDist >= candleNoiseSpeedCutoff)
 		{
+			Debug.Log("making candle sound from speed: " + candleMoveDist);
 			totalPlayerNoise += candleMoveDist;
 		}
 		prevCandlePos = candle.position;
 
 		Witch.updateNoiseLevel(totalPlayerNoise);
+
+		float witchDistance = Vector3.Magnitude(transform.position - Witch.transform.position);
+		if (totalPlayerNoise == 0)
+		{
+			Debug.Log("play witch idle sound at distance: " + witchDistance);
+		}
+		else if(prevTotalPlayerNoise == 0)
+		{
+			Debug.Log("Play sound that the witch just saw me!");
+		}
+		else
+		{
+			Debug.Log("Play witch attack at distance: " + witchDistance);
+		}
+
+		prevTotalPlayerNoise = totalPlayerNoise;
 	}
 }
