@@ -18,6 +18,5 @@ public class KeyPosController : MonoBehaviour {
 	public void RespawnKey()
 	{
 		transform.position = keyPositions[UnityEngine.Random.Range(0, keyPositions.Count)];
-		Debug.Log(transform.position);
 	}
 }

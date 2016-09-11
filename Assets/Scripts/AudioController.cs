@@ -65,7 +65,7 @@ public class AudioController : MonoBehaviour {
 			if (Vector3.Magnitude(playerHead.position - startHeadDetectableMovementPos) > detectableMovementStepDist)
 			{
 				float wwiseSpeed = Utility.SuperLerp(0, 1, 0, 0.05f, headMoveDist);
-				Debug.Log("making player head sound from speed: " + headMoveDist);
+				//Debug.Log("making player head sound from speed: " + headMoveDist);
 				AudioTriggers.PostEvent("Play_Footstep", this.gameObject);
                 AudioTriggers.PostEvent("Play_Creaks", this.gameObject);
                 totalPlayerNoise += headMoveDist;

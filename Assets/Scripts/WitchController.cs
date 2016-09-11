@@ -72,6 +72,13 @@ public class WitchController : MonoBehaviour {
 		currentWitchArcSpeed = Random.Range(minWitchArcSpeed, maxWitchArcSpeed) * currentWitchArcDir;
 	}
 
+	public void resetWitchPosition()
+	{
+		transform.position = Camera.main.transform.position + new Vector3(0f, 0f, maxWitchDistanceFromPlayer);
+		transform.RotateAround(Camera.main.transform.position, Vector3.up, Random.Range(0, 360f));
+		transform.LookAt(Camera.main.transform);
+	}
+
 	private void updateWitchPosition()
 	{
 		currentWitchPos.y = fixedWitchHeight;
