@@ -70,22 +70,28 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4007242070	witchDist			\Default Work Unit\witchDist	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
-	832347536	WetScreamLFO			\Default Work Unit\WetScreamLFO	
 	896730353	WitchMoanLFO			\Default Work Unit\WitchMoanLFO	
 
 Effect plug-ins	ID	Name	Type				Notes
-	77874754	Phonon 3D (Custom)	Phonon 3D			
-	93950238	Phonon 3D (Custom)	Phonon 3D			
+	13076286	Phonon 3D (Custom)	Phonon 3D			
+	29352955	Phonon 3D (Custom)	Phonon 3D			
+	34958519	Phonon 3D (Custom)	Phonon 3D			
+	70144427	Phonon 3D (Custom)	Phonon 3D			
+	90930554	Phonon 3D (Custom)	Phonon 3D			
+	216832203	Phonon 3D (Custom)	Phonon 3D			
+	217126235	Phonon 3D (Custom)	Phonon 3D			
 	218533386	Phonon 3D (Custom)	Phonon 3D			
-	347318698	Phonon 3D (Custom)	Phonon 3D			
+	243052153	Phonon 3D (Custom)	Phonon 3D			
 	488005132	Phonon 3D (Custom)	Phonon 3D			
-	655706665	Phonon 3D (Custom)	Phonon 3D			
+	489928463	Phonon 3D (Custom)	Phonon 3D			
+	505183716	Phonon 3D (Custom)	Phonon 3D			
+	568538711	Phonon 3D (Custom)	Phonon 3D			
+	609493845	Phonon 3D (Custom)	Phonon 3D			
 	697379302	Phonon 3D (Custom)	Phonon 3D			
+	699595943	Phonon 3D (Custom)	Phonon 3D			
 	704487814	Phonon 3D (Custom)	Phonon 3D			
-	845916475	Phonon 3D (Custom)	Phonon 3D			
-	972639024	Phonon 3D (Custom)	Phonon 3D			
-	972990973	Phonon 3D (Custom)	Phonon 3D			
-	2653529179	Three_Voices	Wwise Harmonizer			
+	837326554	Phonon 3D (Custom)	Phonon 3D			
+	848206576	Phonon 3D (Custom)	Phonon 3D			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	51417304	SheListens_Creak_Wood_9	C:\Users\info\Documents\SheListens\SheListens_Wwise\.cache\Windows\SFX\SheListens_Creak_Wood_9_67E17904.wem		\Actor-Mixer Hierarchy\Default Work Unit\Creaks\SheListens_Creak_Wood_9		39026
