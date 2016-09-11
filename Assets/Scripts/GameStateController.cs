@@ -7,6 +7,7 @@ public class GameStateController : MonoBehaviour {
 	public GameObject splashCanvas;
 	public GameObject blackImage;
 	public GameObject endImage;
+	public GameObject creditsImage;
 	public GameObject keyPickupSceneUpdatePrefab;
 	public AudioController audioController;
 	public GameObject currentWindow, brokenWindow, shatteredGlass; 
@@ -26,17 +27,17 @@ public class GameStateController : MonoBehaviour {
 	{
 		blackImage.SetActive(true);
 
-		playTitleScreen();
+		playTitleScreen(true);
 	}
 
 	public void TriggerDeathEvent()
 	{
 		blackImage.SetActive(true);
 
-		playTitleScreen();
+		playTitleScreen(false);
 	}
 
-	private void playTitleScreen()
+	private void playTitleScreen(bool won)
 	{
 		foreach (GameObject obj in objsToDestroyOnSpashscreen)
 		{
@@ -46,20 +47,32 @@ public class GameStateController : MonoBehaviour {
 		splashCanvas.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 10f;
 		splashCanvas.transform.LookAt(Camera.main.transform);
 
-		StartCoroutine(tempdelay());
+		StartCoroutine(tempdelay(won));
 	}
 
-	IEnumerator tempdelay()
+	IEnumerator tempdelay(bool won)
 	{
 		yield return new WaitForSeconds(3f);
 		endImage.SetActive(true);
 		blackImage.SetActive(false);
-		StartCoroutine(resetGame());
+		if (won)
+		{
+			StartCoroutine(winCreditsScreen());
+		}
+		else StartCoroutine(resetGame());
 	}
 
 	IEnumerator resetGame()
 	{
 		yield return new WaitForSeconds(6f);
-		UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
+		else UnityEngine.SceneManagement.SceneManager.LoadScene("MainRoom");
+	}
+
+	IEnumerator winCreditsScreen()
+	{
+		yield return new WaitForSeconds(6f);
+		endImage.SetActive(false);
+		creditsImage.SetActive(true);
+		StartCoroutine(resetGame());
 	}
 }
