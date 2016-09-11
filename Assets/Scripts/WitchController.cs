@@ -6,10 +6,10 @@ public class WitchController : MonoBehaviour {
 
 	private float maxWitchDistanceFromPlayer = 2.8f;
 	private float moveAwayFromPlayerSpeed = -0.003f;
-	private float moveTowardsPlayerSpeedModifier = 0.8f;
+	private float moveTowardsPlayerSpeedModifier = 1.4f;
 	private float minWitchDirectionTime = 12.0f;
 	private float maxWitchDirectionTime = 24.0f;
-	private float minWitchArcSpeed = 0.002f;
+	private float minWitchArcSpeed = 0.004f;
 	private float maxWitchArcSpeed = 0.007f;
 	private float fixedWitchHeight = 1.2f;
 
@@ -33,7 +33,7 @@ public class WitchController : MonoBehaviour {
 	{
 		Vector3 witchNoiseMovement = new Vector3();
 
-		if (currentNoiseLevel == 0)
+		if (currentNoiseLevel == 0 || (!GetComponent<Renderer>().isVisible && Vector3.Magnitude(transform.position - Camera.main.transform.position) < 2.0f))
 		{
             witchNoiseMovement = transform.position;
 		}
@@ -67,7 +67,7 @@ public class WitchController : MonoBehaviour {
 
 	public void resetWitchPosition()
 	{
-		transform.position = Camera.main.transform.position + new Vector3(0f, 0f, maxWitchDistanceFromPlayer);
+		transform.position = Camera.main.transform.position + new Vector3(0f, 0f, 4f);
 		transform.RotateAround(Camera.main.transform.position, Vector3.up, Random.Range(0, 360f));
 		transform.LookAt(Camera.main.transform);
 	}
