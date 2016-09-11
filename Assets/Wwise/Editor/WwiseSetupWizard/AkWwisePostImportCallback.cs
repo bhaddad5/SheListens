@@ -12,46 +12,32 @@ public class AkWwisePostImportCallback
     static AkWwisePostImportCallback()
     {
         EditorApplication.hierarchyWindowChanged += CheckWwiseGlobalExistance;
-		EditorApplication.delayCall += RefreshCallback;
     }
 
 	[DidReloadScripts(100000000)]
 	static void RefreshCallback()
 	{
-		PostImportFunction();
-        if (File.Exists(Path.Combine(Application.dataPath, WwiseSettings.WwiseSettingsFilename)))
-        {
-			AkPluginActivator.Update();
-			AkPluginActivator.RefreshPlugins();
-
-#if UNITY_5
-       		// Check if platform is supported and installed
-            string Msg;
-            if (!CheckPlatform(out Msg))
-            {
-                EditorUtility.DisplayDialog("Warning", Msg, "OK");
-            }
-#endif
-        }
-    }
-
-    static void PostImportFunction()
+        EditorApplication.delayCall += PostImportFunction;
+        EditorApplication.delayCall += RefreshPlugins;
+	}
+	
+	static void PostImportFunction()
     {
-        EditorApplication.hierarchyWindowChanged += CheckWwiseGlobalExistance;
-
+		EditorApplication.hierarchyWindowChanged += CheckWwiseGlobalExistance;
+	
         if (EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.isCompiling)
         {
             return;
         }
 
-		// Do nothing in batch mode (unless when running the test suite in command mode).
-        string[] arguments = Environment.GetCommandLineArgs();
-		if (Array.IndexOf(arguments, "-nographics") != -1 && Environment.GetEnvironmentVariable("WWISE_UNITY_TESTSUITE") == null)
-        {
-            return;
-        }
-
-        try
+		// Do nothing in batch mode
+		string[] arguments = Environment.GetCommandLineArgs();
+		if( Array.IndexOf(arguments, "-nographics") != -1 )
+		{
+			return;
+		}
+		
+		try
 		{            
 			if (!File.Exists(Application.dataPath + Path.DirectorySeparatorChar + WwiseSettings.WwiseSettingsFilename))
 			{
@@ -66,6 +52,7 @@ public class AkWwisePostImportCallback
 
 			if( !string.IsNullOrEmpty(WwiseSetupWizard.Settings.WwiseProjectPath))
 			{
+				AkWwiseProjectInfo.Populate();
 				AkWwisePicker.PopulateTreeview();
 				if (AkWwiseProjectInfo.GetData().autoPopulateEnabled )
 				{
@@ -88,50 +75,8 @@ public class AkWwisePostImportCallback
 			EditorApplication.delayCall += DeletePopPicker;
 		}
 	}
-
-#if UNITY_5
-    static bool CheckPlatform(out string Msg)
-    {
-        Msg = string.Empty;
-#if UNITY_WSA_8_0
-        Msg = "The Wwise Unity integration does not support the Windows Store 8.0 SDK.";
-        return false;
-#else
-        // Start by checking if the integration supports the platform
-        switch (EditorUserBuildSettings.activeBuildTarget)
-        {
-            case BuildTarget.PSM:
-            case BuildTarget.SamsungTV:
-            case BuildTarget.Tizen:
-            case BuildTarget.WebGL:
-                Msg = "The Wwise Unity integration does not support this platform.";
-                return false;
-        }
-
-        // Then check if the integration is installed for this platform
-        PluginImporter[] importers = PluginImporter.GetImporters(EditorUserBuildSettings.activeBuildTarget);
-        bool found = false;
-        foreach (PluginImporter imp in importers)
-        {
-            if(imp.assetPath.Contains("AkSoundEngine"))
-            {
-                found = true;
-                break;
-            }
-        }
-
-        if(!found)
-        {
-            Msg = "The Wwise Unity integration for the " + EditorUserBuildSettings.activeBuildTarget.ToString() + " platform is currently not installed.";
-            return false;
-        }
-
-        return true;
-#endif
-    }
-#endif
-
-    static void RefreshPlugins()
+	
+	static void RefreshPlugins()
 	{
 #if !UNITY_5
 		// Check if there are some new platforms to install.
@@ -239,10 +184,10 @@ public class AkWwisePostImportCallback
     }
 	
 	static string s_CurrentScene = null;
-	static public void CheckWwiseGlobalExistance()
+	static void CheckWwiseGlobalExistance()
 	{
         WwiseSettings settings = WwiseSettings.LoadSettings();
-#if UNITY_5_0 || UNITY_5_1 || UNITY_5_2
+#if UNITY_5_0 || UNITY_5_1 || UNITY_5_2 || UNITY_4_6 || UNITY_4_7
         if (!settings.OldProject && (String.IsNullOrEmpty(EditorApplication.currentScene) || s_CurrentScene != EditorApplication.currentScene))
 #else
         string activeSceneName = UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene().name;
@@ -305,7 +250,7 @@ public class AkWwisePostImportCallback
             }
 
 
-#if UNITY_5_0 || UNITY_5_1 || UNITY_5_2
+#if UNITY_5_0 || UNITY_5_1 || UNITY_5_2 || UNITY_4_6 || UNITY_4_7
 			s_CurrentScene = EditorApplication.currentScene;
 #else
 			s_CurrentScene = activeSceneName;

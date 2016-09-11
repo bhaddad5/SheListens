@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{14E44101-145C-4942-B5AA-45B78237D55F}" SchemaVersion="72">
+<WwiseDocument Type="WorkUnit" ID="{CE28C5D5-456D-436B-99C2-A28AD088A247}" SchemaVersion="70">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{14E44101-145C-4942-B5AA-45B78237D55F}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{CE28C5D5-456D-436B-99C2-A28AD088A247}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="headSpeed" ID="{855BB069-D1B5-4952-83C9-AD1C26EE9009}">
+				<GameParameter Name="headSpeed" ID="{8D65B786-666C-4132-9A9D-CBB1A1CA10F2}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1"/>
 						<Property Name="Max" Type="Real64" Value="1"/>

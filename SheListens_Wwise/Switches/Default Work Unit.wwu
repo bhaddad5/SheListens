@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{F0A3B866-5F0D-4D19-B1FE-1A988C6CB7F3}" SchemaVersion="72">
+<WwiseDocument Type="WorkUnit" ID="{B69A6D90-8969-4075-96A4-4A845642D289}" SchemaVersion="70">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{F0A3B866-5F0D-4D19-B1FE-1A988C6CB7F3}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{B69A6D90-8969-4075-96A4-4A845642D289}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Floor" ID="{ED89DD4D-85E1-447D-B4AF-C14E30F363D8}">
+				<SwitchGroup Name="Floor" ID="{F9FEAFDF-B342-4AD5-AEA3-A210C331F5CE}">
 					<ChildrenList>
-						<Switch Name="Glass" ID="{269FF4A1-C232-40A9-BBD3-34326D4E342C}"/>
-						<Switch Name="Wood" ID="{12751B0A-8A47-4318-AAD1-070DE21F7A5A}"/>
-						<Switch Name="Rug" ID="{DA62544E-4B0D-4D24-B9AB-434D91139927}"/>
+						<Switch Name="Glass" ID="{9D881860-7C72-4ADF-A58C-30ACC1DF6E7F}"/>
+						<Switch Name="Carpet" ID="{180C05FD-691A-4B7F-BA39-204EE43F5839}"/>
+						<Switch Name="Wood" ID="{66597983-02CB-4165-989F-FA2B4F63A27D}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

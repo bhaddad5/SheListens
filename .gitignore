@@ -9,3 +9,5 @@ Temp
 *.info.validationcache
 *.info.wsettings
 SheListens_Wwise/Originals
+SheListens_Wwise/.cache
+SheListens_Wwise/.cache/

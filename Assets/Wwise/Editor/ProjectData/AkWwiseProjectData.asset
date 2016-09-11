@@ -8,16 +8,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51ea187e56ab65f45b5dd43342b295c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7468576bf833e4549bc9682e812f99a0, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  CurrentPluginConfig: 
+  CurrentPluginConfig: Release
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{4C619A7D-53CE-4116-9CA3-20BF9FC7BCAC}'
-    m_lastTimePsrt1: 571618007
-    m_lastTimePart2: -1999382046
+    Guid: '{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}'
+    m_lastTimePsrt1: -1101073726
+    m_lastTimePart2: -1999381943
     List:
     - Name: Play_Creaks
       Path: Default Work Unit\Play_Creaks
@@ -27,7 +27,7 @@ MonoBehaviour:
       - ElementName: Play_Creaks
         ObjectType: 3
       ID: 1247850169
-      Guid: 73fbb3e0bf123a4c8426f113f0707e02
+      Guid: a0c6b127715b7c4d9fa4b5c8916dd76b
       maxAttenuation: 0
     - Name: Play_Footstep
       Path: Default Work Unit\Play_Footstep
@@ -37,28 +37,38 @@ MonoBehaviour:
       - ElementName: Play_Footstep
         ObjectType: 3
       ID: 1602358412
-      Guid: e9ceb4a7a2d7744abf7e4528212763ab
+      Guid: 25dc1ab65dd3734f9deaab1236bcc1d3
+      maxAttenuation: 0
+    - Name: Play_Test
+      Path: Default Work Unit\Play_Test
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Test
+        ObjectType: 3
+      ID: -1107460150
+      Guid: 116a71d41146514bbb05a0ae8c058847
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{71719B7B-0EE6-42D4-8B2F-B66C06EC5BCF}'
-    m_lastTimePsrt1: -312419152
-    m_lastTimePart2: -1999382000
+    Guid: '{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}'
+    m_lastTimePsrt1: -737626886
+    m_lastTimePart2: -1999381949
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{0050AD36-57C2-4DE7-AC18-91799101116D}'
-    m_lastTimePsrt1: -479843510
-    m_lastTimePart2: -1999382092
+    Guid: '{8847A6A3-9435-4EC7-A1FB-D58E7A95B363}'
+    m_lastTimePsrt1: -737446758
+    m_lastTimePart2: -1999381949
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{F0A3B866-5F0D-4D19-B1FE-1A988C6CB7F3}'
-    m_lastTimePsrt1: -479813413
-    m_lastTimePart2: -1999382092
+    Guid: '{B69A6D90-8969-4075-96A4-4A845642D289}'
+    m_lastTimePsrt1: 453768920
+    m_lastTimePart2: -1999381943
     List:
     - Name: Floor
       Path: Default Work Unit\Floor
@@ -68,29 +78,29 @@ MonoBehaviour:
       - ElementName: Floor
         ObjectType: 11
       ID: 1088209313
-      Guid: 4ddd89ede1857d44b4afc14e30f363d8
+      Guid: dfaffef942b3d54aaea3a210c331f5ce
       values:
+      - Carpet
       - Glass
-      - Rug
       - Wood
       ValueIcons:
-      - ElementName: Glass
+      - ElementName: Carpet
         ObjectType: 10
-      - ElementName: Rug
+      - ElementName: Glass
         ObjectType: 10
       - ElementName: Wood
         ObjectType: 10
-      valueIDs: df900792a1b9722a8a58ab7a
+      valueIDs: 6473cd8fdf9007928a58ab7a
       ValueGuids:
-      - bytes: a1f49f2632c2a940bbd334326d4e342c
-      - bytes: 4e5462da0d4b244db9ab434d91139927
-      - bytes: 0a1b7512478a1843aad1070de21f7a5a
+      - bytes: fd050c181a697f4bba39204ee43f5839
+      - bytes: 6018889d727cdf4aa58c30acc1df6e7f
+      - bytes: 83795966cb026541989ffa2b4f63a27d
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{33850B41-52ED-4C92-9392-F1C39E1E600B}'
-    m_lastTimePsrt1: 1181065894
-    m_lastTimePart2: -1999382100
+    Guid: '{D0B48778-5B23-4100-8D69-20C1D36E6C26}'
+    m_lastTimePsrt1: 10258799
+    m_lastTimePart2: -1999381948
     List:
     - Name: Master
       Path: Default Work Unit\Master
@@ -100,11 +110,9 @@ MonoBehaviour:
       - ElementName: Master
         ObjectType: 7
       ID: -238283129
-      Guid: 0c3b636c92480d40980bca7d82c45a85
+      Guid: f096f241a9802c429c685f6e17714e91
   ExpandedItems:
   - /SheListens_Wwise
-  - /SheListens_Wwise/Events
-  - /SheListens_Wwise/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
