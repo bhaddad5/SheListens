@@ -10,6 +10,7 @@ public class AudioController : MonoBehaviour {
 	public Transform candle;
 	public WitchController Witch;
     public GameObject feet;
+	public GameObject creakObject;
 
 	private float totalPlayerNoise;
 	private float prevTotalPlayerNoise = 0;
