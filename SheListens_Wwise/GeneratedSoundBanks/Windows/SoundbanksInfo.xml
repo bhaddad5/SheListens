@@ -24,6 +24,8 @@
 				<Event Id="1247850169" Name="Play_Creaks"/>
 				<Event Id="1602358412" Name="Play_Footstep"/>
 				<Event Id="1228833390" Name="Play_GlassSmash"/>
+				<Event Id="885077343" Name="Play_KeyPickUp"/>
+				<Event Id="3213553131" Name="Play_KeyPing"/>
 				<Event Id="3859524437" Name="Play_Lightbulb_Buzz"/>
 				<Event Id="1449975651" Name="Play_Lightbulb_Metal"/>
 				<Event Id="1785283739" Name="Play_Lightbulb_Zap"/>
@@ -39,6 +41,10 @@
 				<File Id="51417304" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_9.wav</ShortName>
 					<Path>SFX\SheListens_Creak_Wood_9_67E17904.wem</Path>
+				</File>
+				<File Id="76024798" Language="SFX">
+					<ShortName>UI_SoundPack13_Scroll_version05.wav</ShortName>
+					<Path>SFX\UI_SoundPack13_Scroll_version05_9E69E797.wem</Path>
 				</File>
 				<File Id="81834948" Language="SFX">
 					<ShortName>SheListens_Creak_Wood_10.wav</ShortName>
@@ -323,6 +329,10 @@
 				<File Id="779403974" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_7.wav</ShortName>
 					<Path>SFX\SheListens_FS_Carpet_7_67E17904.wem</Path>
+				</File>
+				<File Id="782965782" Language="SFX">
+					<ShortName>SonarPings HI057601.wav</ShortName>
+					<Path>SFX\SonarPings HI057601_80FAC461.wem</Path>
 				</File>
 				<File Id="823461823" Language="SFX">
 					<ShortName>SheListens_FS_Carpet_4.wav</ShortName>

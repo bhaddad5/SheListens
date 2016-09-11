@@ -204,6 +204,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_KeyPing" ID="{C9A4002D-A7EE-41A7-82B4-70CA36C353EF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{317A568C-C821-4475-89E1-FDD7257621AB}" ShortID="866512423" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5F74451E-932C-42DA-9A3A-415ACD35988D}" Global="false">
+									<ObjectRef Name="SonarPings HI057601" ID="{3A180246-C42B-4A84-834F-9AE95C247C9C}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KeyPickUp" ID="{7E9212F7-79F9-42BE-AB1E-34F6B415E02E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E5ECDC89-A5E9-4B3B-84A2-B602EA169284}" ShortID="667606304" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{FE5D044A-7858-4564-853C-FF2FF210D789}" Global="false">
+									<ObjectRef Name="UI_SoundPack13_Scroll_version05" ID="{1F00A23A-A3CB-419C-BE8B-18174B7AB99E}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
