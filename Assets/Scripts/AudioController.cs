@@ -85,6 +85,9 @@ public class AudioController : MonoBehaviour {
 		}
 		prevCandlePos = candle.position;
 
+        if (Witch == null)
+            return;
+
 		Witch.updateNoiseLevel(totalPlayerNoise);
 
 		float witchDistance = Vector3.Magnitude(transform.position - Witch.transform.position);

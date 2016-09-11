@@ -2,5 +2,6 @@
 <PluginInfo Project="SheListens_Wwise" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
 		<Plugin Name="Wwise Silence" ID="6619138" DLL="SilenceGenerator"/>
+		<Plugin Name="Auro Headphone" ID="72093811" DLL="Auro"/>
 	</Plugins>
 </PluginInfo>
