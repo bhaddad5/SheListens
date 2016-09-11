@@ -18,6 +18,8 @@ public class AudioController : MonoBehaviour {
 	private Vector3 prevPlayerPos;
 	private bool trackindDetectableMovement = false;
 	private Vector3 startHeadDetectableMovementPos;
+	private Animator witchAngryAnim; 
+	private Animator witchIdleAnim; 
 
 	public enum currentFloorType
 	{
@@ -94,6 +96,8 @@ public class AudioController : MonoBehaviour {
 		float witchDistance = Vector3.Magnitude(transform.position - Witch.transform.position);
 		if (totalPlayerNoise == 0)
 		{
+			witchIdleAnim = GameObject.Find ("WitchModel").GetComponent<Animator> ();
+			witchIdleAnim.SetBool ("witchAngry", false); 
 			//Debug.Log("play witch idle sound at distance: " + witchDistance);
 		}
 		else if(Vector3.Magnitude(Witch.transform.position - transform.position) >= angryDistCutoff)
@@ -102,7 +106,8 @@ public class AudioController : MonoBehaviour {
 		}
 		else
 		{
-			//Debug.Log("Play witch angry at distance: " + witchDistance);
+			witchAngryAnim = GameObject.Find ("WitchModel").GetComponent<Animator> (); 
+			witchAngryAnim.SetBool ("witchAngry", true); 
 		}
 
 		prevTotalPlayerNoise = totalPlayerNoise;
