@@ -197,7 +197,7 @@
 							<PropertyList>
 								<Property Name="Ratio" Type="Real32" Value="50"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.25"/>
-								<Property Name="Threshold" Type="Real32" Value="-1"/>
+								<Property Name="Threshold" Type="Real32" Value="-6.6"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Nasty_Radio" ID="{7E6FAC41-3332-47EA-9AC6-625A78B63226}" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
