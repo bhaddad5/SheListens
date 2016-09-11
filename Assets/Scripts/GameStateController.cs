@@ -67,10 +67,11 @@ public class GameStateController : MonoBehaviour {
 
 	IEnumerator tempdelay(bool won)
 	{
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(3f);
 		endImage.SetActive(true);
 		blackImage.SetActive(false);
 		winImage.SetActive(false);
+		audioController.GameOver();
 		if (won)
 		{
 			StartCoroutine(winCreditsScreen());

@@ -135,6 +135,11 @@ public class AudioController : MonoBehaviour {
 		prevTotalPlayerNoise = totalPlayerNoise;
 	}
 
+	public void GameOver()
+	{
+		AudioTriggers.SetState("Witch", "GameOver");
+	}
+
 	public void PlayKeyPickupSound()
 	{
 		//Debug.Log("play key pickup sound (glass shatter)");
