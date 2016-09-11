@@ -3768,9 +3768,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<RTPCList>
-										<RTPC Name="" ID="{8B7509BA-C6D5-4AA2-A524-62FC0910C727}" ShortID="789797534">
-											<ReferenceList/>
-										</RTPC>
+										<RTPC Name="" ID="{8B7509BA-C6D5-4AA2-A524-62FC0910C727}" ShortID="789797534"/>
 									</RTPCList>
 								</Property>
 							</PropertyList>
@@ -3928,7 +3926,7 @@
 						<ActiveSource Name="SonarPings HI057601" ID="{BB64B229-BC36-4B2B-8577-6A811F8CDCC7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="GlassSmash_DSS02_19_2" ID="{B4EFEC2A-A08E-4557-B2EC-C75ABA1E4071}" ShortID="21030299" Type="SoundFX">
+				<BlendContainer Name="GlassSmash" ID="{BB872A8C-4AAC-4CF7-A5AC-086E6CD27B30}" ShortID="307054485">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
@@ -3938,110 +3936,165 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="GlassSmash_DSS02_19_2" ID="{DDF72705-E07D-4866-9D13-BC17AC59C1E2}" ShortID="609298479">
-							<Language>SFX</Language>
-							<AudioFile>GlassSmash_DSS02.19.2.wav</AudioFile>
-						</AudioFileSource>
+						<Sound Name="GlassCrash HI014303" ID="{A17AE144-A417-44F4-95DB-4F7D65BCA892}" ShortID="779318275" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GlassCrash HI014303" ID="{81509970-5B59-40BF-BAD0-C5AB47B957A9}" ShortID="117149768">
+									<Language>SFX</Language>
+									<AudioFile>GlassCrash HI014303.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GlassCrash HI014303" ID="{81509970-5B59-40BF-BAD0-C5AB47B957A9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Glass Smash 2" ID="{99A33EAA-940A-40B8-A446-91CBCEC89F1E}" ShortID="142209563">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-730</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GlassSmash_DSS02_20_3" ID="{4B2EB77D-6A3D-4FDD-A3D0-22B17CAF5EEA}" ShortID="750538457" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GlassSmash_DSS02_20_3" ID="{83A1B464-8B29-49E9-BD32-6C5C17A14AD4}" ShortID="1027994974">
+											<Language>SFX</Language>
+											<AudioFile>GlassSmash_DSS02.20.3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GlassSmash_DSS02_20_3" ID="{83A1B464-8B29-49E9-BD32-6C5C17A14AD4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GlassSmash_DSS02_21_2" ID="{07277749-AD32-4119-8278-D71C1B9F03DB}" ShortID="1006623781" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GlassSmash_DSS02_21_2" ID="{574D8E6A-459B-49CA-B24D-7E6B66C9155D}" ShortID="158986036">
+											<Language>SFX</Language>
+											<AudioFile>GlassSmash_DSS02.21.2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GlassSmash_DSS02_21_2" ID="{574D8E6A-459B-49CA-B24D-7E6B66C9155D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="GlassSmash_1" ID="{0AC50B12-00DD-4A4B-BE7E-E65C15B93C1B}" ShortID="215200525">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="GlassSmash_DSS02_19_2" ID="{B4EFEC2A-A08E-4557-B2EC-C75ABA1E4071}" ShortID="21030299" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GlassSmash_DSS02_19_2" ID="{DDF72705-E07D-4866-9D13-BC17AC59C1E2}" ShortID="609298479">
+											<Language>SFX</Language>
+											<AudioFile>GlassSmash_DSS02.19.2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GlassSmash_DSS02_19_2" ID="{DDF72705-E07D-4866-9D13-BC17AC59C1E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GlassSmash_DSS02_19_3" ID="{F33CE333-6515-4C8F-9513-64D7A1417EBA}" ShortID="870574209" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GlassSmash_DSS02_19_3" ID="{E1E85A14-2E1D-4F59-9E25-7E696BD06CAC}" ShortID="104479198">
+											<Language>SFX</Language>
+											<AudioFile>GlassSmash_DSS02.19.3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GlassSmash_DSS02_19_3" ID="{E1E85A14-2E1D-4F59-9E25-7E696BD06CAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GlassSmash_DSS02_20_2" ID="{00C85AAA-F20F-4235-953D-AB6E8ECE4122}" ShortID="1049631597" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GlassSmash_DSS02_20_2" ID="{E8A108E1-D940-4C49-B439-168CF0F2FB91}" ShortID="381417556">
+											<Language>SFX</Language>
+											<AudioFile>GlassSmash_DSS02.20.2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GlassSmash_DSS02_20_2" ID="{E8A108E1-D940-4C49-B439-168CF0F2FB91}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GlassSmash_DSS02_19_2" ID="{DDF72705-E07D-4866-9D13-BC17AC59C1E2}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="GlassSmash_DSS02_19_3" ID="{F33CE333-6515-4C8F-9513-64D7A1417EBA}" ShortID="870574209" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="GlassSmash_DSS02_19_3" ID="{E1E85A14-2E1D-4F59-9E25-7E696BD06CAC}" ShortID="104479198">
-							<Language>SFX</Language>
-							<AudioFile>GlassSmash_DSS02.19.3.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GlassSmash_DSS02_19_3" ID="{E1E85A14-2E1D-4F59-9E25-7E696BD06CAC}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="GlassSmash_DSS02_20_2" ID="{00C85AAA-F20F-4235-953D-AB6E8ECE4122}" ShortID="1049631597" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="GlassSmash_DSS02_20_2" ID="{E8A108E1-D940-4C49-B439-168CF0F2FB91}" ShortID="381417556">
-							<Language>SFX</Language>
-							<AudioFile>GlassSmash_DSS02.20.2.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GlassSmash_DSS02_20_2" ID="{E8A108E1-D940-4C49-B439-168CF0F2FB91}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="GlassSmash_DSS02_20_3" ID="{4B2EB77D-6A3D-4FDD-A3D0-22B17CAF5EEA}" ShortID="750538457" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="GlassSmash_DSS02_20_3" ID="{83A1B464-8B29-49E9-BD32-6C5C17A14AD4}" ShortID="1027994974">
-							<Language>SFX</Language>
-							<AudioFile>GlassSmash_DSS02.20.3.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GlassSmash_DSS02_20_3" ID="{83A1B464-8B29-49E9-BD32-6C5C17A14AD4}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="GlassSmash_DSS02_21_2" ID="{07277749-AD32-4119-8278-D71C1B9F03DB}" ShortID="1006623781" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="GlassSmash_DSS02_21_2" ID="{574D8E6A-459B-49CA-B24D-7E6B66C9155D}" ShortID="158986036">
-							<Language>SFX</Language>
-							<AudioFile>GlassSmash_DSS02.21.2.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GlassSmash_DSS02_21_2" ID="{574D8E6A-459B-49CA-B24D-7E6B66C9155D}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="GlassCrash HI014303" ID="{A17AE144-A417-44F4-95DB-4F7D65BCA892}" ShortID="779318275" Type="SoundFX">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="GlassCrash HI014303" ID="{81509970-5B59-40BF-BAD0-C5AB47B957A9}" ShortID="117149768">
-							<Language>SFX</Language>
-							<AudioFile>GlassCrash HI014303.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="GlassCrash HI014303" ID="{81509970-5B59-40BF-BAD0-C5AB47B957A9}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
