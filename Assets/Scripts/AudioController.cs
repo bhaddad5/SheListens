@@ -147,7 +147,7 @@ public class AudioController : MonoBehaviour {
 
 	public void KeyMove(GameObject key)
 	{
-		//AudioTriggers.PostEvent("Play_KeyMove", key);
+		AudioTriggers.PostEvent("Play_KeyBlip", key);
 	}
 
 	public void GameOver()
@@ -158,7 +158,7 @@ public class AudioController : MonoBehaviour {
     public void PlayKeyPickupSound()
 	{
         AudioTriggers.PostEvent("Play_KeyPickUp", candle.gameObject);
-        AudioTriggers.PostEvent("Play_GlassSmash", window);
+        AudioTriggers.PostEvent("Play_Glass_Smash", window);
         //Debug.Log("play key pickup sound (glass shatter)");
     }
 
