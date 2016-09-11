@@ -1208,8 +1208,70 @@
 				<RandomSequenceContainer Name="Witch Moans" ID="{CB16C787-C596-448D-B5FA-1085D4784642}" ShortID="897270936">
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FBB6FD64-52C7-4E46-9735-58CE995245AB}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D953E131-C37B-4EB5-9297-08C2BCC1EC13}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-0.5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Spatialization" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6138DD5A-A52E-42F5-B5C8-C6F6A6663F28}"/>
+								</ModifierInfo>
+							</ModifierList>
+							<RTPCList>
+								<RTPC Name="" ID="{B2CC4E87-9FFD-4279-9033-C4F87BEFBDFE}" ShortID="1061432054">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="WitchMoanLFO" ID="{078775CF-6E4A-4024-9BFD-EF74130F44EC}" WorkUnitID="{9595ED44-DF87-4029-B35A-91C7591325E5}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{9DF5F99E-51FF-4732-AB86-AFDBAEFF27D4}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-2.61672</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>4.01239</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -1520,14 +1582,55 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Witch" ID="{4C096A84-B064-44F1-B192-E33438DEFDC4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+								<State Name="Custom State" ID="{39589542-288E-43EA-9B42-226FE22657A4}" ShortID="1048862980">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Hunting" ID="{7EA7C550-5586-4F7A-A88B-CBDD5168661A}"/>
+								<State Name="Custom State" ID="{6E73B008-3B20-4F59-BA21-7DCF0A6C7E6D}" ShortID="856251451">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Attacking" ID="{63756DBE-4190-41DB-BAA0-0B42F6037938}"/>
+								<State Name="Custom State" ID="{F7382E29-99BD-4617-8E47-9149C704C0EA}" ShortID="54342826">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</RandomSequenceContainer>
 				<Sound Name="SheListens_Witch_Idle_Long" ID="{25368AD9-7E61-4420-82AD-3ABA28AD04E5}" ShortID="836804017" Type="SoundFX">
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{8394E8D3-4F4E-4AD2-AC47-020E975272ED}" ShortID="972990973" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -1535,21 +1638,75 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="SheListens_Witch_Idle_Long" ID="{9A9A48DD-690F-468B-8AEC-4F422B001EC6}" ShortID="1009246325">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="1"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="6.32513585195983"/>
+								<Property Name="TrimEnd" Type="Real64" Value="40.4410260770975"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>SheListens_Witch_Idle_Long.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Witch" ID="{4C096A84-B064-44F1-B192-E33438DEFDC4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+								<State Name="Custom State" ID="{CB47016A-67A1-4CC6-B2D1-621B06166E6A}" ShortID="801516103">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+								<State Name="Custom State" ID="{600C353F-4E22-40A1-94B5-83728D7CE6F4}" ShortID="74064182">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Attacking" ID="{63756DBE-4190-41DB-BAA0-0B42F6037938}"/>
+								<State Name="Custom State" ID="{F11C5F40-74E7-40DC-84F2-08BD97303B00}" ShortID="1067074232">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="SheListens_Witch_Idle_Long" ID="{9A9A48DD-690F-468B-8AEC-4F422B001EC6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SheListens_Witch_Scream" ID="{4F0A02F2-326D-4340-94CC-27E134118A86}" ShortID="728800453" Type="SoundFX">
 					<PropertyList>
-						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+							<ObjectRef Name="Three_Voices" ID="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{EE1F17CE-5EE6-4922-B283-BC46A3568F38}" ShortID="704487814" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -1557,21 +1714,112 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="SheListens_Witch_Scream" ID="{258FED51-7DD3-47F5-B947-954D377E4C63}" ShortID="603879417">
+							<PropertyList>
+								<Property Name="TrimEnd" Type="Real64" Value="5.4764326712828"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>SheListens_Witch_Scream.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Witch" ID="{4C096A84-B064-44F1-B192-E33438DEFDC4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+								<State Name="Custom State" ID="{1549D6F7-251E-4BA0-8361-76C83B405C84}" ShortID="998420324">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Hunting" ID="{7EA7C550-5586-4F7A-A88B-CBDD5168661A}"/>
+								<State Name="Custom State" ID="{4665179A-BB41-4487-9B5A-77CBE1F1A4C7}" ShortID="884309707">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+								<State Name="Custom State" ID="{88E842CC-EEEC-42FF-BCE3-CA8E6DA910C0}" ShortID="362072781">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="SheListens_Witch_Scream" ID="{258FED51-7DD3-47F5-B947-954D377E4C63}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SheListens_Amb_Layer1" ID="{C5F6D750-7FE6-4466-B96F-BEA329ED276B}" ShortID="237548225" Type="SoundFX">
 					<PropertyList>
+						<Property Name="3DPositionSource" Type="int16" Value="0"/>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{3B13616B-0BB8-4AB6-9AED-9EF98B090EE3}" ShortID="387072219">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{75929FA1-626B-4FFE-80B8-9FCCDBB55731}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{E20486BA-A489-4616-8CAF-09714C432A21}" ShortID="488005132" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -1583,6 +1831,131 @@
 							<AudioFile>SheListens_Amb_Layer1.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{E143FF42-862D-4970-B607-C008CC1AF8DB}">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="SheListens_Amb_Layer1_Path" ID="{9710384E-9A37-485A-982E-7371618D2DB7}">
+									<PointList>
+										<Point>
+											<XPos>61.39241</XPos>
+											<YPos>55.09554</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>73.4177215189873</XPos>
+											<YPos>-3.18471337579618</YPos>
+											<Flags>0</Flags>
+											<Time>625</Time>
+										</Point>
+										<Point>
+											<XPos>52.5316455696203</XPos>
+											<YPos>-61.1464968152866</YPos>
+											<Flags>0</Flags>
+											<Time>1250</Time>
+										</Point>
+										<Point>
+											<XPos>-6.32911392405063</XPos>
+											<YPos>-75.796178343949</YPos>
+											<Flags>0</Flags>
+											<Time>1875</Time>
+										</Point>
+										<Point>
+											<XPos>-82.2784810126582</XPos>
+											<YPos>-56.687898089172</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>-81.0126582278481</XPos>
+											<YPos>6.36942675159236</YPos>
+											<Flags>0</Flags>
+											<Time>3125</Time>
+										</Point>
+										<Point>
+											<XPos>-50.6329113924051</XPos>
+											<YPos>43.312101910828</YPos>
+											<Flags>0</Flags>
+											<Time>3750</Time>
+										</Point>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>70.7006369426752</YPos>
+											<Flags>0</Flags>
+											<Time>4375</Time>
+										</Point>
+										<Point>
+											<XPos>46.8354430379747</XPos>
+											<YPos>25.4777070063694</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="SheListens_Amb_Layer1_Path_01" ID="{978B343F-9FF2-4EB5-B3CB-D85FE8C193A0}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-56.3291139240506</XPos>
+											<YPos>52.8662420382166</YPos>
+											<Flags>0</Flags>
+											<Time>625</Time>
+										</Point>
+										<Point>
+											<XPos>-74.6835443037975</XPos>
+											<YPos>33.7579617834395</YPos>
+											<Flags>0</Flags>
+											<Time>1250</Time>
+										</Point>
+										<Point>
+											<XPos>-82.9113924050633</XPos>
+											<YPos>-19.1082802547771</YPos>
+											<Flags>0</Flags>
+											<Time>1875</Time>
+										</Point>
+										<Point>
+											<XPos>-65.1898734177215</XPos>
+											<YPos>-53.5031847133758</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>-4.43037974683544</XPos>
+											<YPos>-78.9808917197452</YPos>
+											<Flags>0</Flags>
+											<Time>3125</Time>
+										</Point>
+										<Point>
+											<XPos>64.5569620253164</XPos>
+											<YPos>-31.2101910828025</YPos>
+											<Flags>0</Flags>
+											<Time>3750</Time>
+										</Point>
+										<Point>
+											<XPos>59.4936708860759</XPos>
+											<YPos>35.031847133758</YPos>
+											<Flags>0</Flags>
+											<Time>4375</Time>
+										</Point>
+										<Point>
+											<XPos>39.2405063291139</XPos>
+											<YPos>58.5987261146497</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="SheListens_Amb_Layer1" ID="{0AD3E636-709D-4CA2-9F7C-5F3FFDB989DB}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -1590,10 +1963,18 @@
 				<Sound Name="SheListens_Amb_Layer2" ID="{BFED9889-4225-4ED1-9640-F61BB0583D45}" ShortID="37428566" Type="SoundFX">
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{4F1DADC5-1FA1-416D-90CC-6F9EEA3871FA}" ShortID="845916475" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -1605,6 +1986,31 @@
 							<AudioFile>SheListens_Amb_Layer2.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Witch" ID="{4C096A84-B064-44F1-B192-E33438DEFDC4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+								<State Name="Custom State" ID="{95B2404C-1323-4413-BED7-B6445B89FEAD}" ShortID="465217627">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+								<State Name="Custom State" ID="{4B46FA16-7BD8-4336-83AE-C280D800EB8D}" ShortID="709226448">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="SheListens_Amb_Layer2" ID="{C46C0FBA-18E9-4EF0-A04A-BC9E713A4154}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -1612,10 +2018,18 @@
 				<Sound Name="SheListens_Amb_Layer3" ID="{4FDC72CB-DD63-4D26-B8CD-FD89382833C3}" ShortID="773640008" Type="SoundFX">
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{CA41715B-BC93-4026-8F5B-89CF79235422}" ShortID="77874754" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -1627,6 +2041,31 @@
 							<AudioFile>SheListens_Amb_Layer3.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Witch" ID="{4C096A84-B064-44F1-B192-E33438DEFDC4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+								<State Name="Custom State" ID="{C957E5F4-184B-4063-AAAA-ECEC47E550E5}" ShortID="341603656">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+								<State Name="Custom State" ID="{65C212D7-2200-40B3-90E6-EF7B4D73AAD6}" ShortID="501359476">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-81"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="SheListens_Amb_Layer3" ID="{ECAF69BE-14E6-4003-AD83-A9A99EC7A428}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -1634,10 +2073,49 @@
 				<Sound Name="SheListens_Amb_Layer4" ID="{1A8322FB-3C13-4D5F-ACDD-4ED18FD7EF43}" ShortID="16250577" Type="SoundFX">
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{23689FD6-CC1F-4797-8B7A-B779E9048FE0}" ShortID="660478997">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="witchDist" ID="{92236852-6D08-4686-985C-E882A27551B1}" WorkUnitID="{CE28C5D5-456D-436B-99C2-A28AD088A247}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{9349FAC6-1067-4A4C-988A-79CD23C256AF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{F0BEC0CF-3D01-44C7-B0A2-BF2EC1454D43}" ShortID="972639024" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -1649,39 +2127,97 @@
 							<AudioFile>SheListens_Amb_Layer4.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Witch" ID="{4C096A84-B064-44F1-B192-E33438DEFDC4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+								<State Name="Custom State" ID="{41579480-9ABA-488F-A1A2-940C747E26C1}" ShortID="758821831">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+								<State Name="Custom State" ID="{7C230782-EC79-4395-B0E0-26815E7C3670}" ShortID="1067843378">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="SheListens_Amb_Layer4" ID="{441F098F-9BB6-4C31-9492-A17EBF463CDA}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="SheListens_Amb_Layer5" ID="{CDC59BFE-1F57-41EF-82FF-F227A9FF5D06}" ShortID="73371840" Type="SoundFX">
-					<PropertyList>
-						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="SheListens_Amb_Layer5" ID="{6A8C940C-0523-4CE5-865A-E2C856B7C308}" ShortID="308082261">
-							<Language>SFX</Language>
-							<AudioFile>SheListens_Amb_Layer5.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="SheListens_Amb_Layer5" ID="{6A8C940C-0523-4CE5-865A-E2C856B7C308}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="SheListens_Amb_Layer0" ID="{79624A88-CEA3-4F3C-86DE-60981B6C0747}" ShortID="996161186" Type="SoundFX">
 					<PropertyList>
+						<Property Name="3DPositionSource" Type="int16" Value="0"/>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{46B4F536-CDF4-45DE-A3AA-DE9C581946AD}" ShortID="1045204846">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{D5E58EE9-D7CD-417D-A600-5EF0B93519C2}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Phonon 3D (Custom)" ID="{AAC88B3B-B728-440C-8EC7-848A94EF26DF}" ShortID="697379302" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
@@ -1693,10 +2229,204 @@
 							<AudioFile>SheListens_Amb_Layer0.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{9C33D316-C85E-46BA-A35C-44B3E0AF397D}">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="SheListens_Amb_Layer0_Path" ID="{8B13F1C8-04AF-45B3-A080-9066B0DD3943}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-29.1139240506329</XPos>
+											<YPos>47.1337579617834</YPos>
+											<Flags>0</Flags>
+											<Time>500</Time>
+										</Point>
+										<Point>
+											<XPos>-81.6455696202532</XPos>
+											<YPos>15.2866242038217</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-81.0126582278481</XPos>
+											<YPos>-25.4777070063694</YPos>
+											<Flags>0</Flags>
+											<Time>1500</Time>
+										</Point>
+										<Point>
+											<XPos>-39.873417721519</XPos>
+											<YPos>-60.5095541401274</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>5.69620253164557</XPos>
+											<YPos>-75.1592356687898</YPos>
+											<Flags>0</Flags>
+											<Time>2500</Time>
+										</Point>
+										<Point>
+											<XPos>51.2658227848101</XPos>
+											<YPos>-42.6751592356688</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+										<Point>
+											<XPos>56.9620253164557</XPos>
+											<YPos>-14.6496815286624</YPos>
+											<Flags>0</Flags>
+											<Time>3500</Time>
+										</Point>
+										<Point>
+											<XPos>63.2911392405063</XPos>
+											<YPos>13.3757961783439</YPos>
+											<Flags>0</Flags>
+											<Time>4000</Time>
+										</Point>
+										<Point>
+											<XPos>51.8987341772152</XPos>
+											<YPos>35.6687898089172</YPos>
+											<Flags>0</Flags>
+											<Time>4500</Time>
+										</Point>
+										<Point>
+											<XPos>18.3544303797468</XPos>
+											<YPos>27.3885350318471</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="SheListens_Amb_Layer0_Path_01" ID="{29DFB3CF-7818-4DCA-AB43-C7A90DFAA2BE}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-41.1392405063291</XPos>
+											<YPos>36.3057324840764</YPos>
+											<Flags>0</Flags>
+											<Time>714</Time>
+										</Point>
+										<Point>
+											<XPos>76.5822784810127</XPos>
+											<YPos>15.2866242038217</YPos>
+											<Flags>0</Flags>
+											<Time>1428</Time>
+										</Point>
+										<Point>
+											<XPos>78.4810126582279</XPos>
+											<YPos>-61.7834394904459</YPos>
+											<Flags>0</Flags>
+											<Time>2142</Time>
+										</Point>
+										<Point>
+											<XPos>22.1519</XPos>
+											<YPos>-89.17197</YPos>
+											<Flags>0</Flags>
+											<Time>2857</Time>
+										</Point>
+										<Point>
+											<XPos>-73.4177215189873</XPos>
+											<YPos>-47.7707006369427</YPos>
+											<Flags>0</Flags>
+											<Time>3571</Time>
+										</Point>
+										<Point>
+											<XPos>-87.9746835443038</XPos>
+											<YPos>7.64331210191084</YPos>
+											<Flags>0</Flags>
+											<Time>4285</Time>
+										</Point>
+										<Point>
+											<XPos>-67.7215189873418</XPos>
+											<YPos>51.5923566878981</YPos>
+											<Flags>0</Flags>
+											<Time>5000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="SheListens_Amb_Layer0" ID="{655D3DA6-9572-4B75-B8B0-F62153E0F815}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Amb_Layer5" ID="{53B8CA1A-8687-4899-9830-C30541C86A3D}" ShortID="296504758">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SheListens_Amb_Layer5" ID="{CDC59BFE-1F57-41EF-82FF-F227A9FF5D06}" ShortID="73371840" Type="SoundFX">
+							<PropertyList>
+								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Spatialization" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Phonon 3D (Custom)" ID="{47B3E21F-A7A8-4D2B-9094-AF895C14A949}" ShortID="767424147" PluginName="Phonon 3D" CompanyID="128" PluginID="2" PluginType="3"/>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SheListens_Amb_Layer5" ID="{6A8C940C-0523-4CE5-865A-E2C856B7C308}" ShortID="308082261">
+									<Language>SFX</Language>
+									<AudioFile>SheListens_Amb_Layer5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SheListens_Amb_Layer5" ID="{6A8C940C-0523-4CE5-865A-E2C856B7C308}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence" ID="{396F525E-A5B9-43A8-BF4D-D6B49AAAA0BD}" ShortID="273106515" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{676DA25B-7D75-4841-A02E-6C45D6081A03}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F589A63C-715E-4FF8-B3AA-8C66BC06BEFD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{E6C3C32C-F112-4B1C-BD92-0544697FFE04}" ShortID="951874130" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{E6C3C32C-F112-4B1C-BD92-0544697FFE04}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

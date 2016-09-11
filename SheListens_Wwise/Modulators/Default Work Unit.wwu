@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9595ED44-DF87-4029-B35A-91C7591325E5}" SchemaVersion="70">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{9595ED44-DF87-4029-B35A-91C7591325E5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9595ED44-DF87-4029-B35A-91C7591325E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="WetScreamLFO" ID="{427F1401-652A-4EEB-98F2-6979898BA246}" ShortID="832347536">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="2.5"/>
+						<Property Name="LfoWaveform" Type="int32" Value="1"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="WitchMoanLFO" ID="{078775CF-6E4A-4024-9BFD-EF74130F44EC}" ShortID="896730353"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

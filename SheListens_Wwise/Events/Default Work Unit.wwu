@@ -36,6 +36,82 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Witch_Scream" ID="{B6AD0757-E0A7-4760-9B6E-FD21021813AB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{655E8CC8-3EE4-4A4D-8576-2186C0F2B78B}" ShortID="533574117" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1C5B45D2-889C-48C0-86C5-724293C9EB1E}" Global="false">
+									<ObjectRef Name="SheListens_Witch_Scream" ID="{4F0A02F2-326D-4340-94CC-27E134118A86}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Witch_Hunting" ID="{DCCC7C51-DD0D-4C91-B11F-6EF64772F7A8}">
+					<ChildrenList>
+						<Action Name="Play" ID="{544BD62B-8B20-4152-83D9-D642E51B1660}" ShortID="815218847" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{96FDB8F9-0472-4D13-8A54-AEA72B68F2FF}" Global="false">
+									<ObjectRef Name="SheListens_Witch_Idle_Long" ID="{25368AD9-7E61-4420-82AD-3ABA28AD04E5}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BaseLayer" ID="{587B60DE-6790-455E-BA9E-A2C39F71D1E9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FF60203D-FAF4-4B51-80A9-0746F8AF5892}" ShortID="851243580" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4B77C72A-232E-4DDC-A815-B7377D4F9521}" Global="false">
+									<ObjectRef Name="SheListens_Amb_Layer0" ID="{79624A88-CEA3-4F3C-86DE-60981B6C0747}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{8723A698-891B-4708-B436-9AE5E0400224}" ShortID="151543953" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{28F1D499-A5C9-41C4-BD9A-46E021C194B3}" Global="false">
+									<ObjectRef Name="SheListens_Amb_Layer1" ID="{C5F6D750-7FE6-4466-B96F-BEA329ED276B}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MusicEnemy" ID="{FCA5525C-7F92-4434-87C3-625A8B95B93E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3D8036A7-3B0D-4E8A-AC33-B24E153573B4}" ShortID="442664998" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{BB414796-13D5-44A1-A188-D1F3D4077789}" Global="false">
+									<ObjectRef Name="SheListens_Amb_Layer2" ID="{BFED9889-4225-4ED1-9640-F61BB0583D45}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{589DDC95-52A2-4A0D-A70B-3B5B47524F61}" ShortID="966443628" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{69BFB926-4A68-4F17-BF9A-D88664EA2E1D}" Global="false">
+									<ObjectRef Name="SheListens_Amb_Layer3" ID="{4FDC72CB-DD63-4D26-B8CD-FD89382833C3}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{6F4D7C8D-74DB-4AB2-86A5-4515B0DECDEC}" ShortID="545190432" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{26BDC06B-DFD7-45DC-9398-BFF15596EF2D}" Global="false">
+									<ObjectRef Name="SheListens_Amb_Layer4" ID="{1A8322FB-3C13-4D5F-ACDD-4ED18FD7EF43}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Witch_Moans" ID="{30138CB7-626B-4698-890E-7A09923AA040}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E2C9BB1F-C747-4FF5-8DA9-AE8C29190F0C}" ShortID="319571385" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C7D8CB91-AA7B-4088-9D46-F46BA50C8293}" Global="false">
+									<ObjectRef Name="Witch Moans" ID="{CB16C787-C596-448D-B5FA-1085D4784642}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

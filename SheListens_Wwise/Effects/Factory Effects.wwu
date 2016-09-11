@@ -1722,10 +1722,70 @@
 						</Effect>
 						<Effect Name="Three_Voices" ID="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
-								<Property Name="DryLevel" Type="Real32" Value="-3"/>
-								<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+								<Property Name="DryLevel" Type="Real32" Value="1"/>
+								<Property Name="Voice1FilterFrequency" Type="Real32" Value="778"/>
+								<Property Name="Voice1FilterQFactor" Type="Real32" Value="0.1"/>
+								<Property Name="Voice1Gain" Type="Real32" Value="2"/>
+								<Property Name="Voice1Pitch" Type="Real32" Value="-2200"/>
 								<Property Name="Voice2Enable" Type="bool" Value="True"/>
-								<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+								<Property Name="Voice2FilterFrequency" Type="Real32">
+									<RTPCList>
+										<RTPC Name="" ID="{09424799-8B5B-47FA-97E2-DAE96700662F}" ShortID="1032227283">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="WetScreamLFO" ID="{427F1401-652A-4EEB-98F2-6979898BA246}" WorkUnitID="{9595ED44-DF87-4029-B35A-91C7591325E5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C6D146B4-1894-4E72-88C0-F855AA5E18D5}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="5"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>375.14015</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>1000</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Voice2Gain" Type="Real32" Value="-9.5"/>
+								<Property Name="Voice2Pitch" Type="Real32" Value="1500"/>
+								<Property Name="WetLevel" Type="Real32" Value="5">
+									<RTPCList>
+										<RTPC Name="" ID="{981A5757-999C-4DC8-8554-945CDAD18426}" ShortID="233659004">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="WetScreamLFO" ID="{427F1401-652A-4EEB-98F2-6979898BA246}" WorkUnitID="{9595ED44-DF87-4029-B35A-91C7591325E5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{EC1DA11B-CC66-4157-B10C-E1F4BF8A2931}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1.87327</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>2.07427</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 						</Effect>
 					</ChildrenList>

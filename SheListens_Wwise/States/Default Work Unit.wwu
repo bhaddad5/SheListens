@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8847A6A3-9435-4EC7-A1FB-D58E7A95B363}" SchemaVersion="70">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{8847A6A3-9435-4EC7-A1FB-D58E7A95B363}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8847A6A3-9435-4EC7-A1FB-D58E7A95B363}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Witch" ID="{4C096A84-B064-44F1-B192-E33438DEFDC4}">
+					<ChildrenList>
+						<State Name="None" ID="{AEBE992C-15F1-48B8-B8B9-A51D2C07A2E2}"/>
+						<State Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+						<State Name="Hunting" ID="{7EA7C550-5586-4F7A-A88B-CBDD5168661A}"/>
+						<State Name="Attacking" ID="{63756DBE-4190-41DB-BAA0-0B42F6037938}"/>
+						<State Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Hunting" ID="{7EA7C550-5586-4F7A-A88B-CBDD5168661A}"/>
+							<EndState Name="GameOver" ID="{97767E30-D081-4C22-90F6-FC36BF889E55}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Attacking" ID="{63756DBE-4190-41DB-BAA0-0B42F6037938}"/>
+							<EndState Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Idle" ID="{70ECAF93-679F-4026-BDE2-92F9E5C104F2}"/>
+							<EndState Name="Attacking" ID="{63756DBE-4190-41DB-BAA0-0B42F6037938}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

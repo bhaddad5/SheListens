@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4F27D699-D8D8-478C-9183-278B9A4D8126}" SchemaVersion="70">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{4F27D699-D8D8-478C-9183-278B9A4D8126}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4F27D699-D8D8-478C-9183-278B9A4D8126}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Ambience" ID="{FDED0C4F-25E1-42FF-A8F8-FDF9D0A7FD2D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="SheListens_Amb_Layer0" ID="{79624A88-CEA3-4F3C-86DE-60981B6C0747}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SheListens_Amb_Layer1" ID="{C5F6D750-7FE6-4466-B96F-BEA329ED276B}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SheListens_Amb_Layer2" ID="{BFED9889-4225-4ED1-9640-F61BB0583D45}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SheListens_Amb_Layer3" ID="{4FDC72CB-DD63-4D26-B8CD-FD89382833C3}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SheListens_Amb_Layer4" ID="{1A8322FB-3C13-4D5F-ACDD-4ED18FD7EF43}" WorkUnitID="{50572EBC-E975-465A-B3E5-0BEE3FD35A52}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="witchDist" ID="{92236852-6D08-4686-985C-E882A27551B1}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="headSpeed" ID="{8D65B786-666C-4132-9A9D-CBB1A1CA10F2}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Attacking" ID="{63756DBE-4190-41DB-BAA0-0B42F6037938}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Carpet" ID="{180C05FD-691A-4B7F-BA39-204EE43F5839}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="General" ID="{0DE0D25D-D4B4-4AF3-92BB-E8D28259A497}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_BaseLayer" ID="{587B60DE-6790-455E-BA9E-A2C39F71D1E9}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Witch_Hunting" ID="{DCCC7C51-DD0D-4C91-B11F-6EF64772F7A8}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Creaks" ID="{27B1C6A0-5B71-4D7C-9FA4-B5C8916DD76B}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Witch_Scream" ID="{B6AD0757-E0A7-4760-9B6E-FD21021813AB}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Footstep" ID="{B61ADC25-D35D-4F73-9DEA-AB1236BCC1D3}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Witch_Moans" ID="{30138CB7-626B-4698-890E-7A09923AA040}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MusicEnemy" ID="{FCA5525C-7F92-4434-87C3-625A8B95B93E}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Test" ID="{D4716A11-4611-4B51-BB05-A0AE8C058847}" WorkUnitID="{31098BAF-BCFA-4536-AD8D-FD9DB15DF853}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="witchDist" ID="{92236852-6D08-4686-985C-E882A27551B1}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="headSpeed" ID="{8D65B786-666C-4132-9A9D-CBB1A1CA10F2}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Attacking" ID="{63756DBE-4190-41DB-BAA0-0B42F6037938}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Carpet" ID="{180C05FD-691A-4B7F-BA39-204EE43F5839}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
