@@ -33,6 +33,11 @@ public class AudioController : MonoBehaviour {
 		playerHead = Camera.main.transform;
 		prevPlayerPos = playerHead.position;
 		prevCandlePos = candle.position;
+        AudioTriggers.PostEvent("Play_BaseLayer", this.gameObject);
+        AudioTriggers.PostEvent("Play_MusicEnemy", Witch.gameObject);
+        AudioTriggers.PostEvent("Play_Witch_Hunting", Witch.gameObject);
+        AudioTriggers.PostEvent("Play_Witch_Idle", Witch.gameObject);
+
 	}
 
 	// Update is called once per frame
@@ -95,16 +100,23 @@ public class AudioController : MonoBehaviour {
 		float witchDistance = Vector3.Magnitude(transform.position - Witch.transform.position);
 		if (totalPlayerNoise == 0)
 		{
+            AudioTriggers.SetState("Witch", "Idle");
+            AudioTriggers.SetRTPC("witchDist", witchDistance);
 			//Debug.Log("play witch idle sound at distance: " + witchDistance);
 		}
 		else if(Vector3.Magnitude(Witch.transform.position - transform.position) >= angryDistCutoff)
 		{
-			//Debug.Log("Play witch moving towards you at distance: " + witchDistance");
-		}
+            AudioTriggers.SetState("Witch", "Hunting");
+            AudioTriggers.SetRTPC("witchDist", witchDistance);
+            //Debug.Log("Play witch moving towards you at distance: " + witchDistance");
+        }
 		else
 		{
-			//Debug.Log("Play witch angry at distance: " + witchDistance);
-		}
+            AudioTriggers.SetState("Witch", "Attack");
+            AudioTriggers.PostEvent("Play_Witch_Scream", Witch.gameObject);
+            AudioTriggers.SetRTPC("witchDist", witchDistance);
+            //Debug.Log("Play witch angry at distance: " + witchDistance);
+        }
 
 		prevTotalPlayerNoise = totalPlayerNoise;
 	}
