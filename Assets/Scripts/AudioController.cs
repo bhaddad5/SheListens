@@ -142,6 +142,7 @@ public class AudioController : MonoBehaviour {
 
 	public void PlayKeyPickupSound()
 	{
+        AudioTriggers.PostEvent("Play_KeyPickUp", candle.gameObject);
 		//Debug.Log("play key pickup sound (glass shatter)");
 	}
 
