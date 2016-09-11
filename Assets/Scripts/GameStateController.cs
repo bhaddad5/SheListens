@@ -24,20 +24,18 @@ public class GameStateController : MonoBehaviour {
 	{
 		blackImage.SetActive(true);
 
-		StartCoroutine(playTitleScreen());
+		playTitleScreen();
 	}
 
 	public void TriggerDeathEvent()
 	{
 		blackImage.SetActive(true);
 
-		StartCoroutine(playTitleScreen());
+		playTitleScreen();
 	}
 
-	IEnumerator playTitleScreen()
+	private void playTitleScreen()
 	{
-		yield return new WaitForSeconds(1f);
-
 		foreach (GameObject obj in objsToDestroyOnSpashscreen)
 		{
 			obj.SetActive(false);

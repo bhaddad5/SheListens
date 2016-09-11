@@ -194,7 +194,10 @@ MonoBehaviour:
         ObjectType: 7
       ID: -238283129
       Guid: f096f241a9802c429c685f6e17714e91
-  ExpandedItems: []
+  ExpandedItems:
+  - /SheListens_Wwise
+  - /SheListens_Wwise/Events
+  - /SheListens_Wwise/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

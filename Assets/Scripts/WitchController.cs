@@ -2,10 +2,11 @@
 using System.Collections;
 
 public class WitchController : MonoBehaviour {
+    public LampController lamp;
 
 	private float maxWitchDistanceFromPlayer = 2.8f;
 	private float moveAwayFromPlayerSpeed = -0.003f;
-	private float moveTowardsPlayerSpeedModifier = 1.3f;
+	private float moveTowardsPlayerSpeedModifier = 0.8f;
 	private float minWitchDirectionTime = 12.0f;
 	private float maxWitchDirectionTime = 24.0f;
 	private float minWitchArcSpeed = 0.002f;
@@ -18,7 +19,6 @@ public class WitchController : MonoBehaviour {
 	private float currentWitchArcTime = 0f;
 	private float currentWitchArcSpeed = 0f;
 	private float currentWitchArcDir = 1.0f;
-	private bool hittingWall = false;
 
 	// Update is called once per frame
 	void Update () {
@@ -33,16 +33,9 @@ public class WitchController : MonoBehaviour {
 	{
 		Vector3 witchNoiseMovement = new Vector3();
 
-		if (currentNoiseLevel == 0 && !hittingWall)
+		if (currentNoiseLevel == 0)
 		{
-			if (Vector3.Magnitude(transform.position - Camera.main.transform.position) < maxWitchDistanceFromPlayer)
-			{
-				witchNoiseMovement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, moveAwayFromPlayerSpeed);
-			}
-			else
-			{
-				witchNoiseMovement = Vector3.MoveTowards(transform.position, Camera.main.transform.position, -moveAwayFromPlayerSpeed);
-			}
+            witchNoiseMovement = transform.position;
 		}
 		else
 		{

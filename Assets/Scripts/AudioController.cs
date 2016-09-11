@@ -130,7 +130,6 @@ public class AudioController : MonoBehaviour {
 		else
 		{
 			//LAMP IS ON
->>>>>>> 83af251c59fc5f8458478586b7865954fe320ab6
 		}
 
 		prevTotalPlayerNoise = totalPlayerNoise;

@@ -28,14 +28,8 @@ public class LampController : MonoBehaviour {
 	void Update () {
 		if (Time.time - nextLampFlickerTime > lastLampFlicker)
 		{
-			currIntensity = Random.Range(startingLampIntensity - flickerRandomRange, startingLampIntensity + flickerRandomRange);
-			lamp.intensity = currIntensity;
-			lastLampFlicker = Time.time;
-			nextLampFlickerTime = Random.Range(lampFlickerIntervalDefault - flickerRandomRange, lampFlickerIntervalDefault + flickerRandomRange);
-			flickerTimeout = flickerOnTime;
-			witch.gameObject.SetActive(false);
-			audioController.SetLampState(true);
-		}
+            triggerFlash();
+        }
 		else if(flickerTimeout > 0)
 		{
 			flickerTimeout--;
@@ -51,4 +45,15 @@ public class LampController : MonoBehaviour {
 			audioController.SetLampState(false);
 		}
 	}
+
+    public void triggerFlash()
+    {
+        currIntensity = Random.Range(startingLampIntensity - flickerRandomRange, startingLampIntensity + flickerRandomRange);
+        lamp.intensity = currIntensity;
+        lastLampFlicker = Time.time;
+        nextLampFlickerTime = Random.Range(lampFlickerIntervalDefault - flickerRandomRange, lampFlickerIntervalDefault + flickerRandomRange);
+        flickerTimeout = flickerOnTime;
+        witch.gameObject.SetActive(false);
+        audioController.SetLampState(true);
+    }
 }
